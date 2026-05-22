@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Job Fit Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Job dashboard home">
+        <span class="brand-mark">JF</span>
+        <span>
+          <strong>Job Fit Dashboard</strong>
+          <small>Static GitHub Pages version</small>
+        </span>
+      </a>
+      <div class="top-actions">
+        <button class="icon-button" id="refreshButton" type="button" title="Refresh jobs" aria-label="Refresh jobs">↻</button>
+      </div>
+    </header>
+
+    <main id="app" class="shell">
+      <section class="loading">Loading jobs...</section>
+    </main>
+
+    <template id="jobCardTemplate">
+      <article class="job-card">
+        <div class="card-main">
+          <div class="score-ring" aria-label="Fit score">
+            <strong></strong>
+            <span>fit</span>
+          </div>
+          <div class="card-text">
+            <p class="company"></p>
+            <h2></h2>
+            <p class="meta-line"></p>
+            <p class="summary"></p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="verdict"></span>
+          <span class="progress-pill"></span>
+        </div>
+      </article>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

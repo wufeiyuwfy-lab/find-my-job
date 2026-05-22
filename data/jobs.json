@@ -1,0 +1,648 @@
+{
+  "exportedAt": "2026-05-22T14:43:37.887Z",
+  "jobs": [
+    {
+      "slug": "aimpoint-junior-product-manager",
+      "sourceType": "report",
+      "title": "Graduate Program - Junior Product Manager",
+      "company": "Aimpoint / Sandberg Development",
+      "location": "Sandberg Valley, Malmö, Sweden",
+      "score": 88,
+      "verdict": "Very strong fit",
+      "date": "2026-05-21",
+      "summary": "Sandberg Development's Graduate Program is based in Malmö and combines a project-based role in a portfolio company with an innovation and leadership program through EFL Executive Education. Aimpoint is hiring a Graduate Junior Product Manager to help shape product evolution from early ideas to market-leading solutions, working across business, R&D, operations, and sales.",
+      "applicationUrl": "https://sandbergdevelopmentab.teamtailor.com/en/jobs/7472258-graduate-program-junior-product-manager-at-aimpoint",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "job-report.pdf",
+        "cv": "# Feiyu Wu - Tailored CV Draft\n\nLund, Sweden | wufeiyuwfy@gmail.com | +46 0724438928\n\n## Profile\n\nProduct-development oriented founder and industrial designer with a strong interest in growing into a product manager role. Experienced in turning early ideas into tested concepts, working across users, engineering partners, stakeholders, funding bodies, and prototype development. Founder of SensoryWind AB, a health and comfort-focused product for indoor cycling, with funding from Lund University Innovation and Almi, pilot testing at Gerdahallen, and engineering collaboration on a functional prototype. Currently graduating from management studies at Lund University, combining design, engineering-oriented product development, and business thinking.\n\n## Fit For Aimpoint Junior Product Manager\n\n- Recent graduate profile combining engineering/design education and management studies.\n- Hands-on product development experience from idea, user need, prototype, pilot, and stakeholder support.\n- Strong match with cross-functional work across business, R&D/engineering, operations, and market-facing needs.\n- Practical understanding of physical products, manufacturability, reliability, user experience, and value creation.\n- Motivated to grow into structured product management through a graduate program.\n\n## Relevant Experience\n\n### Founder and CEO - SensoryWind AB\n\n- Developed a natural wind simulation system for indoor cycling that connects user comfort, physical product design, and product-market potential.\n- Secured SEK 180,000 from Lund University's Innovation program and SEK 100,000 from Almi.\n- Conducted pilot testing at Gerdahallen and secured a Letter of Intent for further integration and endorsement.\n- Collaborated with Razorback Engineer AB to develop a functional prototype with scalability and manufacturability in mind.\n- Worked across product direction, user feedback, stakeholder communication, funding, partner coordination, and fast product iteration.\n\n### NASA Project - Master Thesis\n\n- Developed a nature-therapy concept using synchronized wind speed, temperature, and scent to support wellbeing in space.\n- Worked with astronaut Jean-Francois Clervoy and was supervised by NASA experts Olga Bannova and Larry Toups.\n- Translated user needs, technical possibilities, and environmental constraints into a product concept.\n\n### H22 City Expo / Visit Lund\n\n- Designed public-space concepts with multidisciplinary teams and external stakeholders.\n- Represented Lund University in a future smart-city project organized by IKEA.\n- Delivered functional physical installations shaped by community needs and collaboration.\n\n## Education\n\n- Lund University - Management studies, graduating this year. Confirm exact program title and graduation month before submission.\n- Lund University - Master of Fine Arts in Industrial Design.\n- University of Nottingham Ningbo China - BEng Hons Product Design & Manufacture.\n\n## Skills\n\n- Product development: concept development, user-centered research, prototyping, pilot testing, manufacturability thinking, stakeholder alignment.\n- Business and strategy: funding acquisition, value proposition development, strategic execution, partner communication.\n- Tools: SolidWorks, KeyShot, Figma, Photoshop, Arduino, PyCharm, Google Workspace.\n- Prototyping: 3D printing, CNC machining, laser cutting, workshop model-making, wood/cardboard/clay/foam/metals/stone.\n- Languages: Chinese native, English IELTS 7, Swedish SFI 3C.\n\n## Tailoring Notes Before Submission\n\n- Confirm the exact Lund management program name.\n- Add any product analytics, market analysis, profitability, or business-case examples if available.\n- Add a short portfolio link if Fei has one.\n",
+        "letter": "# Motivation Letter Draft\n\nDear Sandberg Development and Aimpoint team,\n\nI am excited to apply for the Graduate Program - Junior Product Manager role at Aimpoint because it matches the direction I want to grow in: product management at the intersection of technology, user needs, business value, and high-quality physical products.\n\nMy background combines industrial design, product development, entrepreneurship, and management studies. As the founder of SensoryWind AB, I have been developing a natural wind simulation system for indoor cycling. This work has required me to move from an early idea to a tested product concept, secure funding, coordinate with engineering partners, run pilot testing, and communicate with stakeholders. Through this process, I learned how important it is to understand both why a product matters and how it can create value for users and the business.\n\nWhat attracts me to this role is the opportunity to learn the full product journey in a structured graduate program while contributing to real projects at Aimpoint. I am especially interested in how product decisions are made in a high-reliability product environment, where quality, precision, user understanding, and long-term product strategy all matter. My design and prototyping background helps me understand physical product experience, while my founder experience has trained me to be proactive, adaptable, and comfortable working across uncertainty.\n\nI also see strong value in the Sandberg Development Graduate Program and the innovation and leadership training with EFL Executive Education. Since I am currently graduating from management studies at Lund University, this combination of project-based product work and leadership development feels like a very relevant next step.\n\nI would be glad to bring my hands-on product development experience, international background, and motivation to grow into product management to Aimpoint and Sandberg Development.\n\nKind regards,\n\nFeiyu Wu\n",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 28
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 23
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 13
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 11
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 9
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 4
+          }
+        ],
+        "strengths": [
+          "Best current match among tested jobs: graduate/junior PM path, not a senior PM role.",
+          "Strong alignment with product development from early ideas to market-facing solutions.",
+          "Engineering-design plus management background fits the Business/Engineering degree requirement.",
+          "SensoryWind gives practical proof of product ownership, funding, pilots, stakeholder work, and prototype development.",
+          "Malmö location is practical from Lund compared with Stockholm or Copenhagen roles.",
+          "Aimpoint is a high-quality Swedish hardware/product company, which fits Fei's industrial design and physical-product strengths."
+        ],
+        "gaps": [
+          "Direct experience in defense, hunting, or sport shooting is not visible in the CV.",
+          "Quantitative data analysis and profitability/P&L experience should be strengthened or framed carefully.",
+          "The role may require comfort with defense-related products; Fei should decide whether that environment fits her values.",
+          "Exact management degree title and graduation month should be confirmed before final submission.",
+          "Swedish level is SFI 3C; do not imply professional Swedish unless the role confirms English is enough."
+        ],
+        "interview_points": [
+          "Use SensoryWind as the main product story: early idea, user need, prototype, pilot, funding, stakeholder support, and iteration.",
+          "Say clearly that this role is attractive because it is a structured path from designer/founder into product manager.",
+          "Connect Aimpoint's product area to precision, reliability, professional users, quality, and responsible product development, not generic enthusiasm for weapons.",
+          "Prepare one example of working across business, R&D/engineering, operations, and users.",
+          "Prepare one answer on value creation: how a product decision improves customer value, business potential, or long-term strategy.",
+          "Prepare a concise explanation of your management studies and how they complement industrial design."
+        ],
+        "questions_to_ask": [
+          "What kinds of product projects would the graduate junior product manager own during the first year?",
+          "How is the graduate program split between work at Aimpoint and the EFL leadership/innovation program?",
+          "What does success look like for a graduate participant after 6 and 12 months?",
+          "How does Aimpoint gather customer insight from professional users and enthusiasts?",
+          "How closely would this role work with R&D, operations, sales, and product management?",
+          "What product data or market signals does the team use when prioritizing new product development?",
+          "Is Swedish required for daily work, or is English sufficient in the graduate program?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 33000,
+          "mid": 39000,
+          "high": 46000,
+          "period": "month",
+          "note": "This is a graduate/junior product manager program, so the likely range should be below mid-level product manager benchmarks. Unionen's product owner IT market salary range is much higher, and Glassdoor Malmö PM numbers also reflect experienced PMs. For this graduate junior role in Malmö, a practical expectation is about SEK 33k-46k/month, with SEK 38k-42k/month a reasonable target discussion range if asked."
+        }
+      }
+    },
+    {
+      "slug": "digest-contour-design-software-product-manager",
+      "sourceType": "digest",
+      "title": "Software Product Manager",
+      "company": "Contour Design",
+      "location": "Copenhagen",
+      "score": 84,
+      "verdict": "Active / likely open",
+      "date": "2026-05-21",
+      "summary": "Hardware/software product role connecting ergonomic physical products with digital services, product strategy, user research, AI-related features, and go-to-market.",
+      "applicationUrl": "https://bebee.com/dk/jobs/software-product-manager-contour-design-copenhagen-capital-region-of%E2%80%93theirstack-669884408",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Excellent fit for hardware plus software plus user needs plus Figma/product thinking."
+        ],
+        "gaps": [
+          "May expect stronger software product management experience than Fei currently shows."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Excellent fit for hardware plus software plus user needs plus Figma/product thinking.",
+          "Prepare an honest answer for this risk: May expect stronger software product management experience than Fei currently shows."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Not included in digest."
+        }
+      }
+    },
+    {
+      "slug": "digest-medeon-science-park-incubator-manager",
+      "sourceType": "digest",
+      "title": "Incubator Manager",
+      "company": "Medeon Science Park",
+      "location": "Malmo",
+      "score": 82,
+      "verdict": "Active / deadline soon, May 26, 2026",
+      "date": "2026-05-21",
+      "summary": "Incubator role supporting startups with validation, funding, commercialization, scaling, events, and investor relations.",
+      "applicationUrl": "https://www.medeon.se/stories-news/blog/incubator-manager/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Highly aligned with Fei's founder, LU Innovation, hardware/product, validation, and startup-support background."
+        ],
+        "gaps": [
+          "This is a senior role and Scandinavian language is preferred."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Highly aligned with Fei's founder, LU Innovation, hardware/product, validation, and startup-support background.",
+          "Prepare an honest answer for this risk: This is a senior role and Scandinavian language is preferred."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Not included in digest."
+        }
+      }
+    },
+    {
+      "slug": "unionpay-business-development",
+      "sourceType": "report",
+      "title": "Business Development Associate / Business Development(2026F039)",
+      "company": "UnionPay International",
+      "location": "Stockholm County, Sweden",
+      "score": 76,
+      "verdict": "Strong thematic fit, but posting closed",
+      "date": "2026-05-21",
+      "summary": "UnionPay International is looking for a proactive Business Development Associate to support Nordic and Baltic payment-network expansion through partner coordination, merchant engagement, marketing campaigns, market analysis, reporting, and operational execution. The public LinkedIn page says the role is no longer accepting applications.",
+      "applicationUrl": "https://se.linkedin.com/jobs/view/business-development-2026f039-at-unionpay-international-4371673768",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "2026-05-21-Business Development Associate-UnionPay International-DDL Closed.pdf",
+        "cv": "# Feiyu Wu - Tailored CV Draft\n\nLund, Sweden | wufeiyuwfy@gmail.com | +46 0724438928\n\n## Profile\n\nBusiness-development and product-oriented founder with a Chinese-English international background, Sweden-based stakeholder experience, and hands-on experience turning early-stage opportunities into funded pilots, partner conversations, and executable product work. Founder of SensoryWind AB, incubated through LU Innovation, with funding from Lund University Innovation and Almi, a pilot with Gerdahallen, and collaboration with external engineering partners. Currently graduating from management studies at Lund University, with a strong interest in international partnerships, Nordic market expansion, and cross-border business execution.\n\n## Fit For UnionPay International\n\n- Chinese native and fluent English user with international study and project experience across China, Sweden, Denmark, and Australia.\n- Sweden-based, with experience working with local stakeholders such as LU Innovation, Almi, Gerdahallen, Visit Lund, and engineering partners.\n- Founder experience covering stakeholder management, business development, funding, pilot testing, partner communication, and operational follow-up.\n- Strong hands-on mindset for field visits, testing, user/merchant observation, and translating feedback into practical next steps.\n\n## Relevant Experience\n\n### Founder and CEO - SensoryWind AB\n\n- Built and developed a natural wind simulation system for indoor cycling, connecting user comfort, hardware development, and business potential.\n- Secured SEK 180,000 from Lund University's Innovation program and SEK 100,000 from Almi.\n- Conducted pilot testing at Gerdahallen and secured a Letter of Intent for further product integration and endorsement.\n- Coordinated with Razorback Engineer AB to develop a functional prototype with scalability and manufacturability in mind.\n- Managed stakeholder communication, product iteration, funding-related documentation, and partner follow-up in an early-stage startup environment.\n\n### NASA Project - Master Thesis\n\n- Developed a wellbeing-oriented nature simulation concept using synchronized wind speed, temperature, and scent.\n- Worked with astronaut Jean-Francois Clervoy and was supervised by NASA experts Olga Bannova and Larry Toups.\n- Translated user needs, environmental constraints, and technical possibilities into a product concept for mental wellbeing.\n\n### Public And Stakeholder Projects\n\n- H22 City Expo: core designer in a seven-person team representing Lund University in a future smart-city project organized by IKEA.\n- Visit Lund: designed and built a public gathering space in Lund city center, working closely with local stakeholders and community needs.\n- Bamboo Weaving Culture Inheritance Workshop: team leader and representative at an international exhibition in Australia.\n\n## Education\n\n- Lund University - Management studies, graduating this year. Confirm exact program title and month before submission.\n- Lund University - Master of Fine Arts in Industrial Design.\n- University of Nottingham Ningbo China - BEng Hons Product Design & Manufacture.\n\n## Skills\n\n- Business development: stakeholder communication, partner follow-up, funding acquisition, pilot testing, strategic execution.\n- Market and user insight: user-centered research, questionnaires, field observation, feedback collection, report writing.\n- Tools: Figma, Google Workspace, SolidWorks, KeyShot, Photoshop, Arduino, PyCharm.\n- Languages: Chinese native, English IELTS 7, Swedish SFI 3C.\n\n## Tailoring Notes Before Submission\n\n- Add Excel, SQL, BI, financial reporting, or market-analysis examples if Fei has them.\n- Confirm the exact management program title at Lund University.\n- Add any payment, fintech, banking, merchant, retail, or China-Nordic partnership examples if available.\n",
+        "letter": "# Motivation Letter Draft\n\nDear UnionPay International team,\n\nI am writing to express my interest in the Business Development role supporting the Nordic and Baltic markets. What attracts me most is the opportunity to work at the intersection of international payments, partner development, market expansion, and cross-cultural communication.\n\nMy background combines product development, entrepreneurship, stakeholder coordination, and international experience. As the founder of SensoryWind AB in Sweden, I have built an early-stage product from concept into funded and tested development. This included securing support from Lund University Innovation and Almi, running pilot testing with Gerdahallen, coordinating with engineering partners, and following up with stakeholders to move the project forward. These experiences have trained me to be proactive, detail-oriented, and comfortable working across business, user, and operational needs.\n\nI believe I can bring particular value to UnionPay International because I can bridge Chinese and Nordic working contexts. I am a native Chinese speaker, use English professionally, and have studied and worked on projects in Sweden for several years. I understand both the importance of clear headquarters communication and the need to adapt business development work to local partners, merchants, and market realities.\n\nAlthough my direct background is not in payments, I am strongly motivated to learn the payment ecosystem, including acquirers, merchant acceptance, transaction growth, and partner campaigns. I would bring a hands-on mindset to merchant visits, market analysis, reporting, and operational coordination, while building the financial-services knowledge needed to contribute more independently over time.\n\nI would be happy to discuss how my founder experience, Chinese-English communication ability, and Sweden-based stakeholder background could support UnionPay International's Nordic and Baltic market development.\n\nKind regards,\n\nFeiyu Wu\n",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 24
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 20
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 12
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 7
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 10
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 3
+          }
+        ],
+        "strengths": [
+          "Chinese-English bridge with local Sweden/Nordic context, directly aligned with headquarters communication needs.",
+          "Founder experience gives credible business development evidence: funding, pilots, LOI, partners, stakeholder follow-up, and execution.",
+          "Strong fit for a developmental associate role because the job explicitly welcomes exceptional recent graduates.",
+          "Good narrative fit for Nordic/Baltic expansion: Fei can connect Chinese global payment infrastructure with local user and merchant realities.",
+          "Hands-on, field-oriented profile fits merchant visits, testing, and regional coordination better than a purely office-based candidate."
+        ],
+        "gaps": [
+          "The LinkedIn post says applications are no longer accepted, so direct application may not be possible.",
+          "No direct payments, fintech, acquiring, merchant acceptance, or financial-services experience shown in the CV.",
+          "Data analysis tools for transaction analysis are under-evidenced; Excel/SQL/BI are not explicit.",
+          "Nordic language is only SFI 3C, so Swedish should be framed as developing, not professional fluency.",
+          "Large corporate reporting, compliance, and internal process experience is less visible than startup/project experience."
+        ],
+        "interview_points": [
+          "Open with the China-Nordic bridge: Chinese native, English professional, Sweden-based, and comfortable across international contexts.",
+          "Use SensoryWind as proof of business development: securing funding, finding partners, piloting, managing stakeholders, and turning interest into concrete next steps.",
+          "Prepare a story about visiting/testing with users or stakeholders and converting observations into action.",
+          "Show curiosity about payments: acquirers, merchants, acceptance coverage, transaction volume, signage, and campaign performance.",
+          "Prepare a practical 30-60-90 day plan focused on learning payment ecosystem basics, mapping partners, supporting reporting, and joining merchant/partner visits.",
+          "Handle the data-tool gap proactively: say you can strengthen Excel/BI/SQL quickly and connect it to your prior reporting and PyCharm/Python exposure."
+        ],
+        "questions_to_ask": [
+          "Since the posting appears closed, is the Nordic/Baltic Business Development role still open or is there a future intake?",
+          "What are the most important Nordic/Baltic market priorities for the first six months?",
+          "Which partners would this role work with most often: acquirers, payment providers, merchants, or headquarters teams?",
+          "What metrics define success: acceptance coverage, transaction volume, merchant activation, campaign results, or reporting quality?",
+          "How much travel is expected across Nordic and Baltic markets?",
+          "What data tools and reporting templates does the regional team use today?",
+          "How does the role grow from support work into independent ownership?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 38000,
+          "mid": 45000,
+          "high": 55000,
+          "period": "month",
+          "note": "Swedish business-development benchmarks vary widely. For Stockholm, affärsutvecklare averages are often around SEK 53k-64k/month, while this role is associate/developmental and suitable for 1-3 years or exceptional graduates. A Fei-specific reasonable discussion range is SEK 38k-48k/month, with SEK 45k as a practical midpoint and higher upside if they value Chinese-English headquarters coordination plus founder experience."
+        }
+      }
+    },
+    {
+      "slug": "digest-relesys-ai-product-manager",
+      "sourceType": "digest",
+      "title": "AI Product Manager",
+      "company": "Relesys",
+      "location": "Copenhagen",
+      "score": 73,
+      "verdict": "Active",
+      "date": "2026-05-21",
+      "summary": "AI/product role in a scale-up, focused on discovery, user needs, strategy, and cross-functional coordination.",
+      "applicationUrl": "https://thehub.io/jobs/69d99016883c1e8780786f73",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Relevant if Fei positions Lovable/AI workflow and founder experience well."
+        ],
+        "gaps": [
+          "Probably more senior than ideal."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Relevant if Fei positions Lovable/AI workflow and founder experience well.",
+          "Prepare an honest answer for this risk: Probably more senior than ideal."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Not included in digest."
+        }
+      }
+    },
+    {
+      "slug": "digest-io-interactive-product-manager",
+      "sourceType": "digest",
+      "title": "Product Manager",
+      "company": "IO Interactive",
+      "location": "Malmo / Copenhagen / Barcelona / Brighton, hybrid",
+      "score": 72,
+      "verdict": "Open",
+      "date": "2026-05-22",
+      "summary": "Product and UX role owning roadmap, backlog, user stories, UX/UI workflows, technical requirements, and stakeholder alignment for the Glacier game engine.",
+      "applicationUrl": "https://apply.ioi.dk/jobs/7628480-product-manager?source=swedengamejobs",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong product/UX/hardware-to-software bridge. Fei's product development, Figma, prototyping, founder ownership, and user-centered design background are relevant."
+        ],
+        "gaps": [
+          "They prefer product management or related experience in games, game engines, developer tools, or technical product development. This is more senior/technical than Fei's current PM evidence."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Strong product/UX/hardware-to-software bridge. Fei's product development, Figma, prototyping, founder ownership, and user-centered design background are relevant.",
+          "Prepare an honest answer for this risk: They prefer product management or related experience in games, game engines, developer tools, or technical product development. This is more senior/technical than Fei's current PM evidence."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Likely around SEK 45k-60k/month equivalent depending on level and location; technical/game PM experience could push higher."
+        }
+      }
+    },
+    {
+      "slug": "digest-techbbq-partnership-success-coordinator-intern",
+      "sourceType": "digest",
+      "title": "Partnership Success Coordinator Intern",
+      "company": "TechBBQ",
+      "location": "Copenhagen",
+      "score": 70,
+      "verdict": "Active",
+      "date": "2026-05-21",
+      "summary": "Startup ecosystem internship focused on partnership coordination, event operations, and corporate/startup/investor exposure.",
+      "applicationUrl": "https://thehub.io/jobs/69e1781051abdd36bf3090c5",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Relevant startup ecosystem entry point with international partner network and coordination work."
+        ],
+        "gaps": [
+          "Unpaid and more ecosystem/operations-focused than product management."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Relevant startup ecosystem entry point with international partner network and coordination work.",
+          "Prepare an honest answer for this risk: Unpaid and more ecosystem/operations-focused than product management."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Unpaid internship."
+        }
+      }
+    },
+    {
+      "slug": "digest-inriver-product-manager",
+      "sourceType": "digest",
+      "title": "Product Manager",
+      "company": "Inriver",
+      "location": "Malmo, hybrid",
+      "score": 68,
+      "verdict": "Open",
+      "date": "2026-05-22",
+      "summary": "Product management in an AI-powered product content platform, with customer discovery, product strategy, UX principles, lifecycle work, and cross-functional collaboration.",
+      "applicationUrl": "https://career.inriver.com/jobs/7665247-product-manager",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong overlap with customer discovery, product strategy, UX principles, product lifecycle, cross-functional work with engineering/design/sales/marketing, and turning complex product workflows into clear direction."
+        ],
+        "gaps": [
+          "They ask for 3+ years in product management, preferably AI/data-intensive platforms, plus data-model/product architecture knowledge."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Strong overlap with customer discovery, product strategy, UX principles, product lifecycle, cross-functional work with engineering/design/sales/marketing, and turning complex product workflows into clear direction.",
+          "Prepare an honest answer for this risk: They ask for 3+ years in product management, preferably AI/data-intensive platforms, plus data-model/product architecture knowledge."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Likely SEK 50k-65k/month for experienced PM in Malmo; as a transition candidate, negotiate lower only if treated as a growth-potential PM."
+        }
+      }
+    },
+    {
+      "slug": "digest-visma-software-nordic-product-specialist-visma-net",
+      "sourceType": "digest",
+      "title": "Product Specialist Visma Net",
+      "company": "Visma Software Nordic",
+      "location": "Stockholm / Malmo / Oslo / Trondheim / Fredrikstad, hybrid",
+      "score": 66,
+      "verdict": "Open, deadline May 29, 2026",
+      "date": "2026-05-22",
+      "summary": "Product/customer bridge role around ERP software, product insights, user experience, customer experience, software testing, and Nordic collaboration.",
+      "applicationUrl": "https://vismasoftware.teamtailor.com/jobs/7649853-product-specialist-visma-net?promotion=1972705-finn-no",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Could be a pragmatic entry point into software/product-adjacent work through product insights, testing, UX, and customer experience."
+        ],
+        "gaps": [
+          "Requires communication in a Scandinavian language and English. Fei's Swedish is SFI 3C, so this is likely the biggest barrier."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Could be a pragmatic entry point into software/product-adjacent work through product insights, testing, UX, and customer experience.",
+          "Prepare an honest answer for this risk: Requires communication in a Scandinavian language and English. Fei's Swedish is SFI 3C, so this is likely the biggest barrier."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Likely SEK 38k-50k/month depending on product/customer-support seniority and location."
+        }
+      }
+    },
+    {
+      "slug": "digest-sybo-product-management-intern",
+      "sourceType": "digest",
+      "title": "Product Management Intern",
+      "company": "SYBO",
+      "location": "Copenhagen, full-time unpaid internship, fall 2026",
+      "score": 63,
+      "verdict": "Open",
+      "date": "2026-05-22",
+      "summary": "Product management internship with data, design, live operations, and product growth for Subway Surfers.",
+      "applicationUrl": "https://sybo.teamtailor.com/jobs/7212619-product-management-intern",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Direct PM learning environment in Copenhagen with data, design, live operations, and product growth exposure."
+        ],
+        "gaps": [
+          "Unpaid and requires being enrolled in a university program that supports a full-time internship as part of the education."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Direct PM learning environment in Copenhagen with data, design, live operations, and product growth exposure.",
+          "Prepare an honest answer for this risk: Unpaid and requires being enrolled in a university program that supports a full-time internship as part of the education."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Unpaid internship."
+        }
+      }
+    },
+    {
+      "slug": "digest-amaris-consulting-senior-product-owner-digital-product-lead",
+      "sourceType": "digest",
+      "title": "Senior Product Owner / Digital Product Lead",
+      "company": "Amaris Consulting",
+      "location": "Malmo",
+      "score": 62,
+      "verdict": "Active / likely open",
+      "date": "2026-05-21",
+      "summary": "Product ownership for customer-facing digital products, cross-functional delivery, user feedback, and agile product management.",
+      "applicationUrl": "https://se.linkedin.com/jobs/view/senior-product-owner-f-m-x-at-amaris-consulting-4388343489",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "English-friendly Malmo location and product ownership responsibilities make it worth monitoring."
+        ],
+        "gaps": [
+          "More senior than Fei's target level."
+        ],
+        "interview_points": [
+          "Explain why this role fits: English-friendly Malmo location and product ownership responsibilities make it worth monitoring.",
+          "Prepare an honest answer for this risk: More senior than Fei's target level."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Not included in digest."
+        }
+      }
+    },
+    {
+      "slug": "digest-eletive-sales-development-intern-lia-b2b-saas",
+      "sourceType": "digest",
+      "title": "Sales Development Intern (LIA) - B2B SaaS",
+      "company": "Eletive",
+      "location": "Malmo, full-time internship",
+      "score": 58,
+      "verdict": "Open",
+      "date": "2026-05-22",
+      "summary": "Startup/SaaS business development role involving customer conversations, pipeline building, AI-supported prospecting, HubSpot/Sales Navigator, and an international sales team.",
+      "applicationUrl": "https://thehub.io/jobs/69bb3cb8a1803bcda6301ddc",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Useful if Fei wants a business-development bridge into product/commercial roles in a SaaS environment."
+        ],
+        "gaps": [
+          "Unpaid, designed for LIA/academic-credit internships, and requires fluent Swedish and English."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Useful if Fei wants a business-development bridge into product/commercial roles in a SaaS environment.",
+          "Prepare an honest answer for this risk: Unpaid, designed for LIA/academic-credit internships, and requires fluent Swedish and English."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Unpaid internship."
+        }
+      }
+    }
+  ]
+}
