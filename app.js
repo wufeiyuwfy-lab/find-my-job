@@ -214,6 +214,109 @@ function listItems(items, limit = 6) {
   return safeItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 }
 
+function markdownInline(value) {
+  return escapeHtml(value)
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/`([^`]+)`/g, "<code>$1</code>");
+}
+
+function markdownToHtml(markdown) {
+  const lines = String(markdown || "").split(/\r?\n/);
+  let html = "";
+  let inList = false;
+  let inCode = false;
+  let inTable = false;
+
+  const closeList = () => {
+    if (inList) {
+      html += "</ul>";
+      inList = false;
+    }
+  };
+  const closeTable = () => {
+    if (inTable) {
+      html += "</tbody></table>";
+      inTable = false;
+    }
+  };
+  const tableCells = (line) => line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
+    if (line.startsWith("```")) {
+      closeList();
+      closeTable();
+      html += inCode ? "</code></pre>" : "<pre><code>";
+      inCode = !inCode;
+      continue;
+    }
+
+    if (inCode) {
+      html += `${escapeHtml(line)}\n`;
+      continue;
+    }
+
+    if (!line.trim()) {
+      closeList();
+      closeTable();
+      continue;
+    }
+
+    const nextLine = lines[index + 1] || "";
+    if (line.trim().startsWith("|") && nextLine.trim().match(/^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/)) {
+      closeList();
+      closeTable();
+      const headers = tableCells(line);
+      html += `<table><thead><tr>${headers.map((cell) => `<th>${markdownInline(cell)}</th>`).join("")}</tr></thead><tbody>`;
+      inTable = true;
+      continue;
+    }
+
+    if (line.trim().match(/^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/)) {
+      continue;
+    }
+
+    if (inTable && line.trim().startsWith("|")) {
+      const cells = tableCells(line);
+      html += `<tr>${cells.map((cell) => `<td>${markdownInline(cell)}</td>`).join("")}</tr>`;
+      continue;
+    }
+
+    closeTable();
+
+    const heading = line.match(/^(#{1,4})\s+(.+)$/);
+    if (heading) {
+      closeList();
+      const level = Math.min(heading[1].length + 2, 5);
+      html += `<h${level}>${markdownInline(heading[2])}</h${level}>`;
+      continue;
+    }
+
+    const bullet = line.match(/^\s*-\s+(.+)$/);
+    if (bullet) {
+      if (!inList) {
+        html += "<ul>";
+        inList = true;
+      }
+      html += `<li>${markdownInline(bullet[1])}</li>`;
+      continue;
+    }
+
+    closeList();
+    html += `<p>${markdownInline(line)}</p>`;
+  }
+
+  closeList();
+  closeTable();
+  if (inCode) html += "</code></pre>";
+  return html;
+}
+
 function renderReport(job) {
   const salary = job.analysis?.salary || {};
   document.querySelector("#contentPanel").innerHTML = `
@@ -222,10 +325,11 @@ function renderReport(job) {
         <h2>Report</h2>
         <p>${escapeHtml(job.summary || "Review the job report and preparation strategy.")}</p>
       </div>
-      <div class="button-row">
-        ${job.applicationUrl ? `<a class="secondary-button" href="${escapeHtml(job.applicationUrl)}" target="_blank" rel="noreferrer">Job post</a>` : ""}
-      </div>
     </div>
+    <div class="deep-analysis-actions">
+      <button class="primary-button" id="deepAnalysisButton" type="button">Deeper analysis report</button>
+    </div>
+    <section class="deep-analysis hidden" id="deepAnalysisPanel"></section>
     <div class="summary-grid">
       <article class="info-box">
         <h3>Fit score breakdown</h3>
@@ -246,6 +350,19 @@ function renderReport(job) {
       </article>
     </div>
   `;
+
+  document.querySelector("#deepAnalysisButton").addEventListener("click", () => {
+    const host = document.querySelector("#deepAnalysisPanel");
+    host.classList.remove("hidden");
+    if (job.files?.deepReport) {
+      host.innerHTML = `
+        <div class="analysis-status ready">Analyst report ready</div>
+        <article class="markdown-preview">${markdownToHtml(job.files.deepReport)}</article>
+      `;
+    } else {
+      host.innerHTML = `<div class="empty-state">No deeper analysis report was exported for this job yet.</div>`;
+    }
+  });
 }
 
 function renderTextFile(job, key, title) {

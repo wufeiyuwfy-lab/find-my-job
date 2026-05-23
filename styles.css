@@ -485,6 +485,101 @@ h1 {
   padding-left: 20px;
 }
 
+.deep-analysis-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin: -4px 0 18px;
+}
+
+.deep-analysis {
+  margin-bottom: 18px;
+}
+
+.analysis-status {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.analysis-status.ready {
+  color: #fff;
+  background: var(--olive);
+  border-color: var(--olive);
+}
+
+.analysis-status.requested {
+  color: #4f3d1b;
+  background: #fff8df;
+  border-color: #ead8a8;
+}
+
+.markdown-preview {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fcfcfa;
+}
+
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5 {
+  margin: 18px 0 8px;
+  line-height: 1.2;
+}
+
+.markdown-preview h3:first-child,
+.markdown-preview h4:first-child,
+.markdown-preview h5:first-child {
+  margin-top: 0;
+}
+
+.markdown-preview p,
+.markdown-preview li {
+  color: #414a44;
+  line-height: 1.55;
+}
+
+.markdown-preview ul {
+  margin: 0 0 12px;
+  padding-left: 20px;
+}
+
+.markdown-preview code {
+  padding: 2px 5px;
+  border-radius: 5px;
+  background: var(--soft);
+}
+
+.markdown-preview pre {
+  overflow: auto;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--soft);
+}
+
+.markdown-preview table {
+  width: 100%;
+  margin: 12px 0 18px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.markdown-preview th,
+.markdown-preview td {
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+.markdown-preview th {
+  background: var(--soft);
+  font-weight: 800;
+}
+
 .editor {
   width: 100%;
   min-height: 560px;
