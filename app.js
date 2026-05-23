@@ -214,6 +214,31 @@ function listItems(items, limit = 6) {
   return safeItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 }
 
+function shouldShowDeepAnalysis(job) {
+  return Number(job.score) >= 80 || Boolean(job.files?.deepReport?.trim());
+}
+
+function renderDeepAnalysis(job) {
+  if (!shouldShowDeepAnalysis(job)) return "";
+  const report = job.files?.deepReport || "";
+  const content = report.trim()
+    ? `
+      <div class="analysis-status ready">Deep analysis report ready</div>
+      <article class="markdown-preview">${markdownToHtml(report)}</article>
+    `
+    : `<div class="empty-state">Deep analysis report missing from export for this high-score job.</div>`;
+
+  return `
+    <section class="deep-analysis" id="deepAnalysisPanel">
+      <div class="deep-analysis-heading">
+        <h3>Deep analysis report</h3>
+        <span>${Number(job.score) >= 80 ? "High-score auto report" : "Additional report"}</span>
+      </div>
+      ${content}
+    </section>
+  `;
+}
+
 function markdownInline(value) {
   return escapeHtml(value)
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
@@ -326,10 +351,7 @@ function renderReport(job) {
         <p>${escapeHtml(job.summary || "Review the job report and preparation strategy.")}</p>
       </div>
     </div>
-    <div class="deep-analysis-actions">
-      <button class="primary-button" id="deepAnalysisButton" type="button">Deeper analysis report</button>
-    </div>
-    <section class="deep-analysis hidden" id="deepAnalysisPanel"></section>
+    ${renderDeepAnalysis(job)}
     <div class="summary-grid">
       <article class="info-box">
         <h3>Fit score breakdown</h3>
@@ -350,19 +372,6 @@ function renderReport(job) {
       </article>
     </div>
   `;
-
-  document.querySelector("#deepAnalysisButton").addEventListener("click", () => {
-    const host = document.querySelector("#deepAnalysisPanel");
-    host.classList.remove("hidden");
-    if (job.files?.deepReport) {
-      host.innerHTML = `
-        <div class="analysis-status ready">Analyst report ready</div>
-        <article class="markdown-preview">${markdownToHtml(job.files.deepReport)}</article>
-      `;
-    } else {
-      host.innerHTML = `<div class="empty-state">No deeper analysis report was exported for this job yet.</div>`;
-    }
-  });
 }
 
 function renderTextFile(job, key, title) {
