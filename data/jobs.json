@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-25T12:47:51.049Z",
+  "exportedAt": "2026-05-25T22:45:45.566Z",
   "jobs": [
     {
       "slug": "aimpoint-junior-product-manager",
@@ -143,6 +143,124 @@
           "period": "",
           "note": "Not included in digest."
         }
+      }
+    },
+    {
+      "slug": "digest-samsung-mx-product-manager-graduate",
+      "sourceType": "digest",
+      "title": "Product Manager MX - Graduate",
+      "company": "Samsung Nordics",
+      "location": "Kista, Stockholm, hybrid",
+      "score": 79,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Graduate product-management role in Samsung's MX Nordic team, supporting product strategy, market/customer analysis, portfolio work, sales performance, and cross-functional Nordic product decisions.",
+      "applicationUrl": "https://sec.wd3.myworkdayjobs.com/en-US/Samsung_Careers/job/Product-Manager-MX---Graduate_R116240",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Best early-career fit today because it is explicitly a graduate product-management role with 0-2 years of relevant experience.",
+          "Strong bridge from Fei's product design, management studies, international background, and consumer-product interest.",
+          "Language fit is good: English is mandatory, while Swedish and Korean are only meriting."
+        ],
+        "gaps": [
+          "The role is commercially and analytics-heavy, so Fei should emphasize market analysis, product strategy, Excel/data comfort, and business decision support."
+        ],
+        "interview_points": [
+          "Position SensoryWind as evidence of taking a product from user need to prototype, pilot, stakeholder feedback, and business learning.",
+          "Prepare examples of using data, market research, or customer feedback to make product decisions."
+        ],
+        "questions_to_ask": [
+          "What products and Nordic markets would the graduate support first?",
+          "How is the graduate trained into full product ownership?",
+          "What analytics tools and sales/product data systems does the team use?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "34k",
+          "mid": "39k",
+          "high": "46k",
+          "period": "month",
+          "note": "Graduate product-management roles in Stockholm/Kista likely sit below experienced PM benchmarks; confirm salary, pension, and review timing."
+        },
+        "language_fit": "English mandatory; Swedish and Korean are meriting.",
+        "company_signal": "Official Samsung Workday listing is active with Apply visible and end date May 30, 2026.",
+        "application_angle": "Use a product-development plus business-analysis angle: design-founder who can connect customer needs, commercial signals, and Nordic product strategy."
+      }
+    },
+    {
+      "slug": "digest-hm-home-junior-product-designer",
+      "sourceType": "digest",
+      "title": "Junior Product Designer - H&M HOME",
+      "company": "H&M Group",
+      "location": "Stockholm, 5-month contract",
+      "score": 78,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Junior product-design role for H&M HOME hardgoods, supporting product designers with artwork, sample evaluation, 3D modelling, trend research, assortment overviews, and cross-functional product work.",
+      "applicationUrl": "https://career.hm.com/us-en/job/40ad2b0a-c404-4c9a-a990-7b8be1c8cf77/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Very strong match with Fei's industrial/product design education, hardgoods/material understanding, 3D modelling, KeyShot, and hands-on product-development background.",
+          "Language fit is clear: English fluency is required and Swedish is not necessary.",
+          "Junior level makes it more realistic than many senior PM roles."
+        ],
+        "gaps": [
+          "It is a short 5-month contract and more design/product-development than product management."
+        ],
+        "interview_points": [
+          "Lead with product design, materials, prototype, rendering, and trend-research examples from the portfolio.",
+          "Frame the role as a practical bridge into commercial product development in a global brand."
+        ],
+        "questions_to_ask": [
+          "Is there any possibility to extend beyond the five-month contract?",
+          "What portfolio format and hardgoods examples would be most useful?",
+          "How does the team divide work between designers, developers, planners, and product managers?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "28k",
+          "mid": "33k",
+          "high": "38k",
+          "period": "month",
+          "note": "Likely junior product/design-contract range in Stockholm; confirm contract terms, vacation, and extension possibility."
+        },
+        "language_fit": "English fluency required; Swedish is not necessary.",
+        "company_signal": "Official H&M careers page has Apply now visible and describes the role as full-time temporary contract.",
+        "application_angle": "Best angle is commercial hardgoods design: industrial designer with product-development, materials, prototyping, and visualisation strength."
       }
     },
     {
@@ -292,6 +410,64 @@
       }
     },
     {
+      "slug": "digest-spotify-product-manager-platform-tooling",
+      "sourceType": "digest",
+      "title": "Product Manager - Platform Tooling",
+      "company": "Spotify",
+      "location": "Stockholm, flexible hybrid",
+      "score": 71,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Internal platform product role for shared web tooling, operator-facing finance workflows, AI-assisted capabilities, discovery, roadmap work, and engineering/design collaboration.",
+      "applicationUrl": "https://www.lifeatspotify.com/jobs/product-manager-platform-tooling",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Good product-discovery and user-centered product match, especially around simplifying complex workflows and collaborating with R&D and design.",
+          "Spotify's listing emphasizes curiosity, clear communication, synthesis of user/data/technical inputs, and interest in AI-assisted workflows."
+        ],
+        "gaps": [
+          "Likely expects stronger software/platform PM experience, internal tools experience, and comfort with technical architecture than Fei can currently prove."
+        ],
+        "interview_points": [
+          "Use SensoryWind and NASA thesis as examples of translating ambiguous user needs and technical constraints into product direction.",
+          "Prepare a concise story about learning AI tools and using them responsibly in product work."
+        ],
+        "questions_to_ask": [
+          "How technical is the day-to-day expectation for this PM?",
+          "What level of finance-systems knowledge is required on entry?",
+          "How much mentoring exists for a candidate transitioning from product design/founder work?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "55k",
+          "mid": "65k",
+          "high": "80k",
+          "period": "month",
+          "note": "Spotify PM roles in Stockholm are likely experienced-level; salary depends heavily on leveling."
+        },
+        "language_fit": "English-friendly global company listing; no Swedish requirement found.",
+        "company_signal": "Official Spotify careers page has Apply visible and lists the role in Stockholm.",
+        "application_angle": "Position as a user-centered product builder who can learn technical/internal tooling fast, with strong design and stakeholder communication."
+      }
+    },
+    {
       "slug": "digest-findity-product-manager-payments",
       "sourceType": "digest",
       "title": "Product Manager - Payments",
@@ -389,6 +565,64 @@
           "period": "",
           "note": "Unpaid internship."
         }
+      }
+    },
+    {
+      "slug": "digest-quinyx-product-manager-analytics",
+      "sourceType": "digest",
+      "title": "Product Manager - Analytics",
+      "company": "Quinyx",
+      "location": "Stockholm, hybrid",
+      "score": 69,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Analytics product role for a workforce-management platform, owning embedded reports, self-serve analytics, data-as-a-service, customer needs, roadmap, KPIs, and AI-supported PM workflows.",
+      "applicationUrl": "https://careers.quinyx.com/jobs/7571768-product-manager-analytics",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Good PM learning signal around user interviews, customer needs, KPIs, roadmap, and cross-functional product work.",
+          "International team and hybrid Stockholm setup look friendly for an English-speaking candidate."
+        ],
+        "gaps": [
+          "They specifically want product management experience with analytics/reporting/data-as-a-product and LLM tools, which is a stretch."
+        ],
+        "interview_points": [
+          "Frame Fei's founder work as evidence of customer discovery, prioritization, and learning loops.",
+          "Prepare a concrete example of using AI tools for research, synthesis, or product workflow."
+        ],
+        "questions_to_ask": [
+          "What analytics/product-data experience is mandatory versus learnable?",
+          "What is the product team structure and support for this role?",
+          "What does success look like in the first six months?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "50k",
+          "mid": "60k",
+          "high": "72k",
+          "period": "month",
+          "note": "Likely experienced PM range in Stockholm. Treat as stretch unless they are flexible on analytics PM depth."
+        },
+        "language_fit": "No Swedish requirement found in the listing; Quinyx describes an international team.",
+        "company_signal": "Official Quinyx Teamtailor listing is active with Apply now visible.",
+        "application_angle": "Emphasize customer discovery, user-centered product thinking, and AI-assisted workflow curiosity while being honest about analytics depth."
       }
     },
     {
@@ -538,6 +772,64 @@
       }
     },
     {
+      "slug": "digest-eqt-product-manager-finance-tech",
+      "sourceType": "digest",
+      "title": "Product Manager - Finance Tech",
+      "company": "EQT Group",
+      "location": "Stockholm",
+      "score": 64,
+      "verdict": "New / stretch / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Finance and corporate-systems product role driving roadmaps, digital transformation, automation, AI-enabled capabilities, stakeholder alignment, and delivery across finance, legal, HR, and corporate operations.",
+      "applicationUrl": "https://job-boards.greenhouse.io/eqtpartners/jobs/4873973101",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Good business-technology bridge role with roadmap, stakeholder, automation, and AI-enabled transformation themes.",
+          "Fei's management studies and founder coordination can support the cross-functional story."
+        ],
+        "gaps": [
+          "Requires finance systems transformation, enterprise platforms, and proven PM/project delivery experience. This is a significant stretch."
+        ],
+        "interview_points": [
+          "Only apply if Fei wants a business systems/product transformation route, not a design/product-development route.",
+          "Prepare examples of stakeholder alignment, structured delivery, and process improvement."
+        ],
+        "questions_to_ask": [
+          "How much finance-systems experience is required from day one?",
+          "Would adjacent product/founder/project experience be considered?",
+          "Is sponsorship or work authorization support available if needed?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "55k",
+          "mid": "70k",
+          "high": "90k",
+          "period": "month",
+          "note": "Likely experienced product/transformation compensation in Stockholm; exact level depends on seniority."
+        },
+        "language_fit": "No Swedish requirement found in the Greenhouse listing.",
+        "company_signal": "Greenhouse page labels the role as New and includes an active application form.",
+        "application_angle": "A stretch application should focus on business transformation, stakeholder communication, and AI literacy rather than design."
+      }
+    },
+    {
       "slug": "digest-evroc-product-manager",
       "sourceType": "digest",
       "title": "Product Manager",
@@ -638,98 +930,6 @@
       }
     },
     {
-      "slug": "digest-amaris-consulting-senior-product-owner-digital-product-lead",
-      "sourceType": "digest",
-      "title": "Senior Product Owner / Digital Product Lead",
-      "company": "Amaris Consulting",
-      "location": "Malmo",
-      "score": 62,
-      "verdict": "Active / likely open",
-      "date": "2026-05-21",
-      "summary": "Product ownership for customer-facing digital products, cross-functional delivery, user feedback, and agile product management.",
-      "applicationUrl": "https://se.linkedin.com/jobs/view/senior-product-owner-f-m-x-at-amaris-consulting-4388343489",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "English-friendly Malmo location and product ownership responsibilities make it worth monitoring."
-        ],
-        "gaps": [
-          "More senior than Fei's target level."
-        ],
-        "interview_points": [
-          "Explain why this role fits: English-friendly Malmo location and product ownership responsibilities make it worth monitoring.",
-          "Prepare an honest answer for this risk: More senior than Fei's target level."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Not included in digest."
-        }
-      }
-    },
-    {
-      "slug": "digest-f-i-x-a-t-e-business-development",
-      "sourceType": "digest",
-      "title": "Business Development",
-      "company": "F I X A T E",
-      "location": "Gothenburg",
-      "score": 62,
-      "verdict": "Active on The Hub",
-      "date": "2026-05-22",
-      "summary": "Startup business development role owning lead generation, partnerships, content, inbound/outbound strategy, and international growth across Sweden, Denmark, the UK, and the Netherlands.",
-      "applicationUrl": "https://thehub.io/jobs/678b82e0478e381e14056a2f",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Fei's founder experience, stakeholder work, and startup execution are relevant to building business development from the ground up."
-        ],
-        "gaps": [
-          "Requires fluent Swedish and English. Fei's Swedish is SFI 3C, so this is a real barrier unless the company is flexible."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Fei's founder experience, stakeholder work, and startup execution are relevant to building business development from the ground up.",
-          "Prepare an honest answer for this risk: Requires fluent Swedish and English. Fei's Swedish is SFI 3C, so this is a real barrier unless the company is flexible."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Competitive salary with performance-based bonus/equity potential. Comparable Gothenburg BDR/BD roles often sit around SEK 35k-50k/month plus variable compensation."
-        }
-      }
-    },
-    {
       "slug": "digest-ubiquiti-product-project-manager",
       "sourceType": "digest",
       "title": "Product/Project Manager",
@@ -784,6 +984,98 @@
       }
     },
     {
+      "slug": "digest-f-i-x-a-t-e-business-development",
+      "sourceType": "digest",
+      "title": "Business Development",
+      "company": "F I X A T E",
+      "location": "Gothenburg",
+      "score": 62,
+      "verdict": "Active on The Hub",
+      "date": "2026-05-22",
+      "summary": "Startup business development role owning lead generation, partnerships, content, inbound/outbound strategy, and international growth across Sweden, Denmark, the UK, and the Netherlands.",
+      "applicationUrl": "https://thehub.io/jobs/678b82e0478e381e14056a2f",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Fei's founder experience, stakeholder work, and startup execution are relevant to building business development from the ground up."
+        ],
+        "gaps": [
+          "Requires fluent Swedish and English. Fei's Swedish is SFI 3C, so this is a real barrier unless the company is flexible."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Fei's founder experience, stakeholder work, and startup execution are relevant to building business development from the ground up.",
+          "Prepare an honest answer for this risk: Requires fluent Swedish and English. Fei's Swedish is SFI 3C, so this is a real barrier unless the company is flexible."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Competitive salary with performance-based bonus/equity potential. Comparable Gothenburg BDR/BD roles often sit around SEK 35k-50k/month plus variable compensation."
+        }
+      }
+    },
+    {
+      "slug": "digest-amaris-consulting-senior-product-owner-digital-product-lead",
+      "sourceType": "digest",
+      "title": "Senior Product Owner / Digital Product Lead",
+      "company": "Amaris Consulting",
+      "location": "Malmo",
+      "score": 62,
+      "verdict": "Active / likely open",
+      "date": "2026-05-21",
+      "summary": "Product ownership for customer-facing digital products, cross-functional delivery, user feedback, and agile product management.",
+      "applicationUrl": "https://se.linkedin.com/jobs/view/senior-product-owner-f-m-x-at-amaris-consulting-4388343489",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "English-friendly Malmo location and product ownership responsibilities make it worth monitoring."
+        ],
+        "gaps": [
+          "More senior than Fei's target level."
+        ],
+        "interview_points": [
+          "Explain why this role fits: English-friendly Malmo location and product ownership responsibilities make it worth monitoring.",
+          "Prepare an honest answer for this risk: More senior than Fei's target level."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Not included in digest."
+        }
+      }
+    },
+    {
       "slug": "digest-bravura-automotive-client-product-owner-for-calibration",
       "sourceType": "digest",
       "title": "Product Owner for Calibration",
@@ -826,52 +1118,6 @@
           "high": "",
           "period": "",
           "note": "Listing source shows around SEK 54,900/month."
-        }
-      }
-    },
-    {
-      "slug": "digest-eletive-sales-development-intern-lia-b2b-saas",
-      "sourceType": "digest",
-      "title": "Sales Development Intern (LIA) - B2B SaaS",
-      "company": "Eletive",
-      "location": "Malmo, full-time internship",
-      "score": 58,
-      "verdict": "Open",
-      "date": "2026-05-22",
-      "summary": "Startup/SaaS business development role involving customer conversations, pipeline building, AI-supported prospecting, HubSpot/Sales Navigator, and an international sales team.",
-      "applicationUrl": "https://thehub.io/jobs/69bb3cb8a1803bcda6301ddc",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Useful if Fei wants a business-development bridge into product/commercial roles in a SaaS environment."
-        ],
-        "gaps": [
-          "Unpaid, designed for LIA/academic-credit internships, and requires fluent Swedish and English."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Useful if Fei wants a business-development bridge into product/commercial roles in a SaaS environment.",
-          "Prepare an honest answer for this risk: Unpaid, designed for LIA/academic-credit internships, and requires fluent Swedish and English."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Unpaid internship."
         }
       }
     },
@@ -930,6 +1176,52 @@
       }
     },
     {
+      "slug": "digest-eletive-sales-development-intern-lia-b2b-saas",
+      "sourceType": "digest",
+      "title": "Sales Development Intern (LIA) - B2B SaaS",
+      "company": "Eletive",
+      "location": "Malmo, full-time internship",
+      "score": 58,
+      "verdict": "Open",
+      "date": "2026-05-22",
+      "summary": "Startup/SaaS business development role involving customer conversations, pipeline building, AI-supported prospecting, HubSpot/Sales Navigator, and an international sales team.",
+      "applicationUrl": "https://thehub.io/jobs/69bb3cb8a1803bcda6301ddc",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Useful if Fei wants a business-development bridge into product/commercial roles in a SaaS environment."
+        ],
+        "gaps": [
+          "Unpaid, designed for LIA/academic-credit internships, and requires fluent Swedish and English."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Useful if Fei wants a business-development bridge into product/commercial roles in a SaaS environment.",
+          "Prepare an honest answer for this risk: Unpaid, designed for LIA/academic-credit internships, and requires fluent Swedish and English."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Unpaid internship."
+        }
+      }
+    },
+    {
       "slug": "digest-onepartnergroup-pwc-context-business-development-representative-m-a",
       "sourceType": "digest",
       "title": "Business Development Representative - M&A",
@@ -972,52 +1264,6 @@
           "high": "",
           "period": "",
           "note": "Listing source shows around SEK 51,300/month fixed and variable salary indication."
-        }
-      }
-    },
-    {
-      "slug": "digest-essity-assortment-manager",
-      "sourceType": "digest",
-      "title": "Assortment Manager",
-      "company": "Essity",
-      "location": "Gothenburg",
-      "score": 57,
-      "verdict": "Listed as active/recent",
-      "date": "2026-05-22",
-      "summary": "Temporary product assortment role for a baby portfolio, connecting consumer/customer needs, business objectives, product portfolio decisions, and regulatory requirements.",
-      "applicationUrl": "https://jobbland.se/jobb/assortment-manager-sesss-20216412",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Relevant to product portfolio thinking, consumer needs, business objectives, and cross-functional product assortment work."
-        ],
-        "gaps": [
-          "More assortment/category management than product management, so it may not build the PM path as directly as Aimpoint, IO Interactive, or Inriver."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Relevant to product portfolio thinking, consumer needs, business objectives, and cross-functional product assortment work.",
-          "Prepare an honest answer for this risk: More assortment/category management than product management, so it may not build the PM path as directly as Aimpoint, IO Interactive, or Inriver."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Likely around SEK 42k-58k/month depending on seniority and category/portfolio experience."
         }
       }
     },
@@ -1073,6 +1319,52 @@
         "language_fit": "English OK.",
         "company_signal": "Grafana Labs is a global observability/open-source software company; role is remote in Sweden with published salary range.",
         "application_angle": "Apply only if Fei wants to test a product-marketing path rather than a direct PM/Product Owner path."
+      }
+    },
+    {
+      "slug": "digest-essity-assortment-manager",
+      "sourceType": "digest",
+      "title": "Assortment Manager",
+      "company": "Essity",
+      "location": "Gothenburg",
+      "score": 57,
+      "verdict": "Listed as active/recent",
+      "date": "2026-05-22",
+      "summary": "Temporary product assortment role for a baby portfolio, connecting consumer/customer needs, business objectives, product portfolio decisions, and regulatory requirements.",
+      "applicationUrl": "https://jobbland.se/jobb/assortment-manager-sesss-20216412",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Relevant to product portfolio thinking, consumer needs, business objectives, and cross-functional product assortment work."
+        ],
+        "gaps": [
+          "More assortment/category management than product management, so it may not build the PM path as directly as Aimpoint, IO Interactive, or Inriver."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Relevant to product portfolio thinking, consumer needs, business objectives, and cross-functional product assortment work.",
+          "Prepare an honest answer for this risk: More assortment/category management than product management, so it may not build the PM path as directly as Aimpoint, IO Interactive, or Inriver."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Likely around SEK 42k-58k/month depending on seniority and category/portfolio experience."
+        }
       }
     },
     {
