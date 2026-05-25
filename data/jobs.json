@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-25T09:07:18.365000Z",
+  "exportedAt": "2026-05-25T12:45:06.788Z",
   "jobs": [
     {
       "slug": "aimpoint-junior-product-manager",
@@ -100,52 +100,6 @@
       }
     },
     {
-      "slug": "digest-contour-design-software-product-manager",
-      "sourceType": "digest",
-      "title": "Software Product Manager",
-      "company": "Contour Design",
-      "location": "Copenhagen",
-      "score": 84,
-      "verdict": "Active / likely open",
-      "date": "2026-05-21",
-      "summary": "Hardware/software product role connecting ergonomic physical products with digital services, product strategy, user research, AI-related features, and go-to-market.",
-      "applicationUrl": "https://bebee.com/dk/jobs/software-product-manager-contour-design-copenhagen-capital-region-of%E2%80%93theirstack-669884408",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": "# Company Job Validation Report\n\n## 1. Executive summary\n\n- Company: Contour Design\n- Position: Software Product Manager\n- Country: Denmark\n- City/region: Copenhagen / Vesterbro\n- Candidate level: early-career to mid-level stretch\n- Field: software product management, ergonomic hardware, digital services, user research\n- Overall recommendation: Continue but verify key issues\n- Overall score: 3.8 / 5\n- Parent-friendly summary: This is a legitimate and attractive hardware-plus-software product role at an established ergonomic-device company. It strongly matches Feiyu's product-development, user research, physical-product, and design background, but it is likely a stretch because the posting asks for proven software product management, analytics, Agile/Scrum, and technical literacy around software and AI/ML. It is worth continuing if the team accepts transferable founder/product experience, but salary, mentorship, exact seniority, and cross-border Denmark/Sweden practicalities must be checked.\n\n## 2. Scorecard\n\n| Area | Score 1-5 | Evidence status | Confidence | Explanation |\n|---|---:|---|---|---|\n| Company legitimacy | 5 | Found publicly | High | Contour has official company pages, public LinkedIn presence, a Copenhagen headquarters, named products, and a visible job ad. |\n| Financial stability | 4 | Found publicly | Medium | Contour describes a long operating history and Polaris Private Equity acquisition. Detailed current financials are not easy to verify from the job ad. |\n| Role clarity | 4 | Found publicly | High | The job ad gives concrete responsibilities across software roadmap, lifecycle, user research, analytics, cross-functional delivery, AI-driven features, and go-to-market. |\n| Candidate-role fit | 4 | Estimated from public signals | Medium | Feiyu's founder/product-development background fits the hardware, user need, research, stakeholder, and Figma parts; direct software PM evidence is weaker. |\n| Learning potential | 4 | Estimated from public signals | Medium | Reporting to VP Product Management and Product Strategy could be valuable if the VP provides mentorship, but the role may expect independent ownership quickly. |\n| Manager/team support signals | 3 | Must ask employer | Medium | Reporting line is visible, but day-to-day support, team size, and onboarding depth are not published. |\n| Salary fairness | 3 | Estimated from public signals | Medium | Copenhagen product-manager benchmarks are high, but this role's exact level and salary are unpublished. |\n| Benefits clarity | 2 | Must ask employer | Medium | Pension, paid vacation, bonus, relocation, and cross-border benefits are not shown in the ad. |\n| Contract clarity | 3 | Found publicly | Medium | The role is described as full-time and on-site; contract terms, probation, notice, and pension are not listed. |\n| Work-life balance signals | 3 | Found publicly | Low | The ad describes flexibility and helpful colleagues, but workload and release-pressure expectations are unknown. |\n| Cross-border complexity | 2 | Must ask employer | High | Feiyu lives in Sweden and the role is on-site in Copenhagen, so tax, social insurance, pension, commute, and remote-work rules need checking. |\n| Overall opportunity quality | 4 | Estimated from public signals | Medium | Strong strategic fit, but software PM seniority and Denmark/Sweden complexity make verification important. |\n\n## 3. Public facts found\n\n| Item | Finding | Evidence status | Confidence | Source |\n|---|---|---|---|---|\n| Job location and setup | The job ad lists Copenhagen / Vesterbro, full-time, on-site, with English as the language requirement. | Found publicly | High | https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078 |\n| Application route | The posting says to apply through LinkedIn or by sending a targeted CV to job@contourdesign.com. | Found publicly | High | https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078 |\n| Role scope | The role owns vision, strategy, and delivery for software products and online services complementing ergonomic and hygienic mice and keyboards. | Found publicly | High | https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078 |\n| Responsibilities | Responsibilities include product vision, roadmap, full lifecycle, user research, analytics, technical specifications, AI-driven features, and go-to-market support. | Found publicly | High | https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078 |\n| Required profile | The ad asks for proven software product management, technical literacy, Agile/Scrum, tools such as Jira/Figma/Asana, market research, and data analysis. | Found publicly | High | https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078 |\n| Company business | Contour describes itself as a market leader in research, development, and design of ergonomic computer hardware with RollerMouse, UniMouse, and Shuttle Controller. | Found publicly | High | https://www.contourdesign.com/company/about |\n| Company history | Contour's official site says it was founded in 1995 and acquired by Polaris Private Equity in 2021. | Found publicly | High | https://www.contourdesign.com/company/about |\n| Company footprint | Contour says it is headquartered in Denmark and operates across six continents, with a global headquarters at Nyropsgade 41-43 in Copenhagen V. | Found publicly | High | https://www.contourdesign.com/company/about |\n| LinkedIn company profile | LinkedIn lists Contour Design as computer hardware manufacturing, Copenhagen V, privately held, founded 1995, and 201-500 employees. | Found publicly | Medium | https://www.linkedin.com/company/contourdevices |\n| Salary benchmark | LønRadar's May 2026 Product Manager data shows a Denmark median total salary of DKK 58,065/month and 25th-75th percentile of DKK 50,850-68,200/month. | Found publicly | Medium | https://loenradar.dk/loen/product-manager |\n\n## 4. Estimated signals\n\n| Area | Estimate | Reasoning | Confidence | How to verify |\n|---|---|---|---|---|\n| Role seniority | Mid-level stretch despite LinkedIn's graduate label | The responsibilities sound like ownership of a full software portfolio, not a narrow junior role. | Medium | Ask what experience level the hiring manager truly expects and whether founder-led product work counts. |\n| Feiyu fit | Strong on physical product, user needs, stakeholder work, and design; weaker on software roadmap and analytics | SensoryWind and design studies map well to user-centered hardware/software products, but the ad asks for proven software PM. | Medium | Ask whether the team is open to a design-founder profile transitioning into software PM. |\n| Values fit | Strong | Ergonomics, health at work, inclusive design, and reducing strain fit Feiyu's wellbeing/product background. | High | Ask which user problems and software services are the current priority. |\n| Cross-border load | Meaningful | On-site Copenhagen from Sweden can be viable but requires commute and tax/social-insurance planning. | High | Check Oresunddirekt, Danish tax, pension, and remote-work terms before accepting. |\n\n## 5. Salary benchmark\n\n- Likely salary range: DKK 45,000-62,000/month total compensation for Feiyu-specific discussion, depending on whether Contour treats this as junior/transition, regular PM, or software PM.\n- Sources used: Contour job ad, LønRadar Denmark Product Manager 2026 data, and role-seniority inference from responsibilities.\n- Offered salary assessment: unknown because no salary is published.\n- Caveats: Published product-manager salary benchmarks may overstate Feiyu's immediate leverage if the company sees her as a transition candidate; they may understate expectations if the role requires independent software PM ownership.\n- Negotiation notes: Ask for base salary, employer pension, vacation, probation period, salary review timing, commute flexibility, and whether Swedish residence affects payroll, tax, and social insurance.\n\n| Salary item | Finding | Evidence status | Confidence | Source / note |\n|---|---|---|---|---|\n| Published salary | Not listed in the job ad. | Not found | High | LinkedIn job ad does not show compensation. |\n| Denmark PM benchmark | Median Product Manager total salary is DKK 58,065/month; 25th-75th percentile is DKK 50,850-68,200/month. | Found publicly | Medium | https://loenradar.dk/loen/product-manager |\n| Feiyu-specific practical target | DKK 48,000-56,000/month would be a reasonable initial discussion range if the role is not senior. | Estimated from public signals | Medium | Adjust after employer clarifies seniority and pension. |\n\n## 6. Red flags\n\n| Red flag | Evidence | Severity | What to ask or verify |\n|---|---|---|---|\n| Software PM expectations may be higher than Feiyu's current direct experience | The ad asks for proven software product management, technical literacy, analytics, Agile/Scrum, and AI/ML concepts. | Medium | \"Would founder-led hardware/product development plus Figma/user research be considered enough for this role?\" |\n| On-site Copenhagen creates cross-border complexity | The ad says full-time, on-site in Copenhagen while Feiyu lives in Sweden. | Medium | \"Can the company support Swedish-resident employees, and what are the tax/social-insurance implications?\" |\n| Salary and benefits are unpublished | No salary, pension, vacation, or bonus information is visible. | Medium | \"What is the salary range and pension contribution for this role?\" |\n| Portfolio ownership may be broad | The role owns software products and online services tied to the hardware portfolio. | Mild | \"How many products/services would the role own during the first six months?\" |\n\n## 7. Green flags\n\n| Green flag | Evidence | Why it matters |\n|---|---|---|\n| English requirement | The posting states English as the language requirement. | Removes the main Swedish/Danish language barrier. |\n| Hardware-software bridge | The role connects digital services with ergonomic and hygienic physical products. | Very aligned with Feiyu's industrial design and product-development background. |\n| Health and wellbeing mission | Contour focuses on reducing strain and improving healthier computer work. | Fits Feiyu's wellbeing-oriented product story from SensoryWind and NASA concept work. |\n| Visible product leadership reporting line | The ad says the role reports to VP Product Management and Product Strategy. | Could provide strong product mentorship if the VP is hands-on. |\n\n## 8. Missing information\n\n| Missing item | Why it matters | Who to ask | Suggested question |\n|---|---|---|---|\n| Salary range | Determines whether Copenhagen commuting and cross-border work are viable. | HR / recruiter | \"What salary range has been budgeted for this Software Product Manager role?\" |\n| Pension and benefits | Denmark compensation often includes pension and benefits that affect total value. | HR | \"What employer pension, insurance, vacation, and benefits are included?\" |\n| Seniority expectation | Determines whether Feiyu is a credible candidate or a stretch. | Hiring manager | \"Is this role open to a design-founder transitioning into software PM?\" |\n| Onboarding support | Critical because software PM is a stretch. | VP Product Management | \"What support and onboarding would the new PM receive in the first 90 days?\" |\n| Cross-border terms | Swedish residence creates tax and social insurance issues. | HR | \"Have you employed Swedish-resident Copenhagen employees before?\" |\n\n## 9. Potential LinkedIn connectors\n\nNo strong public Lund University alumni connector at Contour was found during this quick website-report pass. Broader searches should target Contour product/design leaders, Polaris portfolio contacts in Denmark, and Lund alumni in Copenhagen hardware/software product management.\n\n| Person | Current public role/company | Lund University connection | Why relevant | Evidence status | Confidence | Suggested coffee-chat angle | Source |\n|---|---|---|---|---|---|---|---|\n| Not found | Not found | Not found | No reliable public Contour + Lund match found. | Not found | Low | Ask recruiter directly whether there is a product team member open to a short role-fit chat. | Search result review |\n\n### Coffee-chat message template\n\nHi, I am exploring the Software Product Manager role at Contour Design. My background is in industrial design, product development, and founder-led hardware/product work in Sweden. I would value a short 15-minute chat about how Contour's software product work connects user research, hardware, and digital services. Thank you.\n\n### Coffee-chat questions\n\n- How technical is the software PM work day to day?\n- What kinds of user research or analytics most influence roadmap decisions?\n- What would make a design-founder profile successful in the first six months?\n\n## 10. Questions to ask the employer\n\n### Salary and salary review\n- What is the salary range for this role?\n- Is there a salary review after probation or after the first year?\n\n### Collective agreement / contract\n- Is the role covered by a Danish collective agreement or company policy equivalent?\n- What probation period and notice period apply?\n\n### Pension and insurance\n- What employer pension contribution is included?\n- What health, accident, travel, and life insurance are included?\n\n### Overtime and working hours\n- What are normal working hours?\n- How are launch periods, overtime, and flex time handled?\n\n### Manager and team support\n- Who is the direct manager?\n- How much product mentorship is available from the VP Product Management and Product Strategy?\n\n### Learning and development\n- What software, analytics, and Agile skills should the new hire build before starting?\n\n### Remote/hybrid work\n- The ad says on-site. Is any hybrid work possible after onboarding?\n\n### Role expectations\n- What are the first three product problems this role would own?\n- How many engineers and designers would the role work with?\n\n### Cross-border Denmark/Sweden issues\n- Can the company employ someone living in Sweden?\n- Which country handles tax, pension, social insurance, and remote-work limits?\n\n## 11. Contract items to check before signing\n\n| Contract item | What to check | Risk if unclear |\n|---|---|---|\n| Job title | Exact title and whether it is junior, regular, or senior PM. | Future career signal may be unclear. |\n| Salary | Monthly gross salary and whether pension is included or added. | Offer may be below Copenhagen PM market. |\n| Pension | Employer contribution and provider. | Total compensation may be weaker than it looks. |\n| Work location | On-site expectation and hybrid flexibility. | Commute burden from Sweden may be high. |\n| Cross-border terms | Tax, social insurance, pension, and remote-work rules. | Legal/financial surprises. |\n| Probation and notice | Length and termination terms. | Planning risk. |\n| Overtime | Whether overtime is paid, flexed, or included. | Hidden workload. |\n| IP/confidentiality | Any restrictive clauses. | Future startup or portfolio work limitations. |\n\n## 12. Candidate-friendly summary\n\nThis is a very interesting role because it combines physical products, user research, ergonomics, software services, and product strategy. Feiyu can tell a strong story around SensoryWind: identifying a user comfort problem, building a physical product concept, working with engineering partners, testing with users, and translating feedback into product decisions.\n\nThe biggest challenge is that the role may not be junior in practice. The ad asks for proven software product management and data/technical skills. Feiyu should not hide that gap; she should position herself as a product-development founder who can bridge hardware, users, design, and business while learning the deeper software PM parts quickly.\n\n## 13. Final recommendation\n\n- Final recommendation: Continue but verify key issues\n- Main reason: Strong mission and hardware/software fit, but direct software PM seniority and cross-border Copenhagen terms need verification.\n- What would improve the recommendation: clear mentorship, openness to a transition profile, salary around or above DKK 50k/month with pension, and manageable hybrid/commute terms.\n- What would make the recommendation worse: expectation of fully independent senior software PM from day one, no cross-border support, weak salary, or no product mentorship.\n- Next 3 actions:\n  - Apply with a CV framing SensoryWind as product ownership and user research.\n  - Ask seniority, software PM expectations, salary, pension, and hybrid/cross-border questions early.\n  - Prepare examples for user research, roadmap prioritization, Figma, and translating hardware feedback into software features.\n\n## 14. Sources\n\n- Contour Software Product Manager job ad: https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078\n- Contour official About page: https://www.contourdesign.com/company/about\n- Contour LinkedIn company page: https://www.linkedin.com/company/contourdevices\n- LønRadar Product Manager Denmark salary data: https://loenradar.dk/loen/product-manager\n\n## 15. Research metadata\n\n- Date researched: 2026-05-24\n- Company name: Contour Design\n- Position name: Software Product Manager\n- Country: Denmark\n- City/region: Copenhagen / Vesterbro\n- Job ad URL: https://dk.linkedin.com/jobs/view/software-product-manager-at-contour-design-4403237078\n- Candidate level: early-career to mid-level stretch\n- Field: software product management, product development, ergonomic hardware, digital services\n- Candidate lives in: Sweden\n- Work location: Denmark, on-site\n- Cross-border Sweden/Denmark issues apply: Yes\n"
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Excellent fit for hardware plus software plus user needs plus Figma/product thinking."
-        ],
-        "gaps": [
-          "May expect stronger software product management experience than Fei currently shows."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Excellent fit for hardware plus software plus user needs plus Figma/product thinking.",
-          "Prepare an honest answer for this risk: May expect stronger software product management experience than Fei currently shows."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Not included in digest."
-        }
-      }
-    },
-    {
       "slug": "digest-medeon-science-park-incubator-manager",
       "sourceType": "digest",
       "title": "Incubator Manager",
@@ -166,7 +120,7 @@
         "cv": "",
         "letter": "",
         "ppt": "",
-        "deepReport": "# Company Job Validation Report\n\n## 1. Executive summary\n\n- Company: Medeon Science Park\n- Position: Incubator Manager\n- Country: Sweden\n- City/region: Malmö\n- Candidate level: senior-leaning stretch for Feiyu\n- Field: life science incubation, startup support, innovation, commercialization, business development\n- Overall recommendation: Continue but verify key issues\n- Overall score: 3.7 / 5\n- Parent-friendly summary: Medeon is a legitimate and established Malmö life-science science park with public ownership by the City of Malmö and Wihlborgs. The role is highly aligned with Feiyu's startup, innovation, funding, validation, and ecosystem interests, but it appears more senior than a typical early-career role because it asks for overall responsibility for the incubator, fundraising/financing optimization, and leading business coaches. Feiyu should treat this as a strong stretch opportunity and verify language expectations, leadership seniority, salary, and support structure before investing heavily.\n\n## 2. Scorecard\n\n| Area | Score 1-5 | Evidence status | Confidence | Explanation |\n|---|---:|---|---|---|\n| Company legitimacy | 5 | Found publicly | High | Medeon has an official website, named CEO, address, public ownership, long operating history, and a visible role page. |\n| Financial stability | 4 | Found publicly | Medium | Medeon is owned by City of Malmö and Wihlborgs Fastigheter, which lowers legitimacy risk, but role budget and finances are not published in the ad. |\n| Role clarity | 4 | Found publicly | High | The role page describes responsibilities, reporting line, focus areas, and application route. |\n| Candidate-role fit | 4 | Estimated from public signals | Medium | Feiyu's founder and LU Innovation experience fit startup support, validation, and commercialization, but direct incubator leadership is limited. |\n| Learning potential | 5 | Found publicly | High | The role sits inside a strong life-science innovation ecosystem with startups, scaleups, labs, healthcare, industry, and investors. |\n| Manager/team support signals | 3 | Found publicly | Medium | The role reports to the CEO, but the level of mentoring for a stretch candidate is not clear. |\n| Salary fairness | 3 | Estimated from public signals | Medium | Comparable Swedish business manager salaries can be high, but nonprofit/science-park pay and exact seniority are unknown. |\n| Benefits clarity | 2 | Must ask employer | Medium | Pension, collective agreement, overtime, wellness allowance, and vacation terms are not published. |\n| Contract clarity | 3 | Found publicly | Medium | Application route and reporting line are clear; employment type and detailed contract terms are not visible. |\n| Work-life balance signals | 3 | Estimated from public signals | Low | Strategic plus operational responsibility, events, investor relations, and startup support may create broad workload. |\n| Cross-border complexity | 4 | Found publicly | High | Feiyu lives in Sweden and the job is in Malmö, so Denmark/Sweden cross-border issues are not central. |\n| Overall opportunity quality | 4 | Estimated from public signals | Medium | Excellent strategic fit and legitimacy, but likely seniority mismatch needs careful handling. |\n\n## 3. Public facts found\n\n| Item | Finding | Evidence status | Confidence | Source |\n|---|---|---|---|---|\n| Job status | Medeon published the Incubator Manager role on 2026-05-12 and invites applications by CV and short motivation statement. | Found publicly | High | https://www.medeon.se/stories-news/blog/incubator-manager/ |\n| Application route | The role page says to send application materials to medeon@medeon.se and direct questions to CEO Malin Bornschein. | Found publicly | High | https://www.medeon.se/stories-news/blog/incubator-manager/ |\n| Deadline signal | Medicon Village listed the Incubator Manager role with application deadline 26 May. | Found publicly | Medium | https://se.linkedin.com/company/mediconvillage |\n| Role scope | The role has overall responsibility for Medeon's incubator and supports ideas, startups, and scaleups with validation, funding, commercialization, and scaling. | Found publicly | High | https://www.medeon.se/stories-news/blog/incubator-manager/ |\n| Reporting line | The role reports to the CEO of Medeon Science Park. | Found publicly | High | https://www.medeon.se/stories-news/blog/incubator-manager/ |\n| Focus areas | Medeon focuses on medtech, diabetes, oral health, healthy aging, with prevention as a cross-cutting theme. | Found publicly | High | https://www.medeon.se/stories-news/blog/incubator-manager/ |\n| Company history | Medeon describes itself as Scandinavia's first and most experienced life-science-focused science park, established in 1985. | Found publicly | High | https://www.medeon.se/about-us/who-we-are/ |\n| Ownership | Medeon is owned by the City of Malmö (60%) and Wihlborgs Fastigheter AB (40%). | Found publicly | High | https://www.medeon.se/about-us/owners-board/ |\n| Ecosystem | Medeon says it provides business development, strategic networks, infrastructure, and collaboration between industry, academia, and the public sector. | Found publicly | High | https://www.medeon.se/about-us/who-we-are/ |\n| Salary benchmark | Unionen's 2025 Swedish market salary range for business manager and similar roles was SEK 47,000-97,470/month. | Found publicly | Medium | https://www.unionen.se/rad-och-stod/om-lon/marknadsloner/business-manager |\n\n## 4. Estimated signals\n\n| Area | Estimate | Reasoning | Confidence | How to verify |\n|---|---|---|---|---|\n| Role seniority | Senior or senior-leaning | Overall incubator responsibility, leading business coaches, fundraising/financing optimization, and CEO reporting suggest meaningful seniority. | High | Ask whether they consider early-career founder profiles or require prior incubator/program leadership. |\n| Feiyu fit | Strong thematic fit but seniority stretch | Feiyu has founder, LU Innovation, Almi, prototype, validation, and pilot experience, but not yet a long record coaching many startups. | Medium | Ask whether founder/operator experience can substitute for incubator management experience. |\n| Language risk | Swedish or Scandinavian language may matter | The role is in Malmö, works with regional companies and healthcare/industry actors, and the digest flagged Scandinavian language preference. The official page should be checked directly for final wording before applying. | Medium | Ask if English is sufficient for daily work and external stakeholder meetings. |\n| Salary fairness | Likely should not be junior-level pay | The role's responsibility level suggests compensation should reflect management/business-development responsibility. | Medium | Ask for salary range and collective agreement status. |\n\n## 5. Salary benchmark\n\n- Likely salary range: SEK 42,000-58,000/month for a nonprofit/science-park incubator manager context; higher may be possible if the role is treated as senior business-development management.\n- Sources used: official role responsibilities, Malmö location, and Unionen business manager salary benchmark.\n- Offered salary assessment: unknown because salary is not published.\n- Caveats: Unionen's business manager group is broad and may include more commercial roles than a science-park nonprofit role. Medeon's exact collective agreement and salary structure must be checked.\n- Negotiation notes: Because this role carries overall incubator responsibility, avoid accepting a junior salary unless mentoring, title, scope, and growth path are clearly favorable.\n\n| Salary item | Finding | Evidence status | Confidence | Source / note |\n|---|---|---|---|---|\n| Published salary | Not found in the role page. | Not found | High | Medeon role page does not show salary. |\n| Swedish benchmark | Unionen's 2025 business manager range was SEK 47,000-97,470/month. | Found publicly | Medium | https://www.unionen.se/rad-och-stod/om-lon/marknadsloner/business-manager |\n| Feiyu-specific practical range | SEK 42,000-52,000/month would be a cautious discussion range if they see her as a stretch candidate; role responsibility may justify more. | Estimated from public signals | Medium | Verify with employer and union advice. |\n\n## 6. Red flags\n\n| Red flag | Evidence | Severity | What to ask or verify |\n|---|---|---|---|\n| Role may be too senior for Feiyu right now | The role has overall responsibility for the incubator and includes leading business coaches. | Medium | \"Would you consider a founder/innovation profile without prior incubator manager title?\" |\n| Language expectations are uncertain | Regional stakeholder, healthcare, and startup support work may require Swedish/Scandinavian even if not obvious from the summary. | Medium | \"Is English sufficient for daily work, coaching, and partner meetings?\" |\n| Salary and benefits are unpublished | No salary, collective agreement, pension, overtime, or benefits are listed. | Medium | \"What salary range and collective agreement/benefit package apply?\" |\n| Broad strategic and operational workload | The role covers strategy, operations, financing, coaches, events, partners, healthcare, industry, investors, and owners. | Mild | \"What are the first-year priorities and what support team is in place?\" |\n\n## 7. Green flags\n\n| Green flag | Evidence | Why it matters |\n|---|---|---|\n| Strong legitimacy | Medeon has long history, public ownership, official address, named CEO, and public role page. | Low scam risk and strong ecosystem credibility. |\n| Excellent startup-support alignment | The role focuses on validation, funding, commercialization, scaling, and innovation support. | Directly fits Feiyu's founder and LU Innovation experience. |\n| Malmö location | The job is in Malmö, close to Lund. | Practical compared with Copenhagen or Stockholm roles. |\n| Life-science and medtech ecosystem | Medeon focuses on medtech, diabetes, oral health, healthy aging, and prevention. | Strong bridge to Feiyu's health/wellbeing product interests. |\n| CEO reporting line | The role reports to CEO Malin Bornschein. | High exposure and learning potential if expectations are realistic. |\n\n## 8. Missing information\n\n| Missing item | Why it matters | Who to ask | Suggested question |\n|---|---|---|---|\n| Required experience level | Determines whether Feiyu is realistically competitive. | CEO / hiring team | \"How many years of incubator, startup coaching, or leadership experience do you expect?\" |\n| Language requirement | Swedish may be needed for regional stakeholder work. | CEO / HR | \"Is English sufficient, or is professional Swedish/Scandinavian required?\" |\n| Salary range | Determines fairness for a high-responsibility role. | CEO / HR | \"What salary range is budgeted for the Incubator Manager role?\" |\n| Team structure | The role mentions leading coaches; support level is unclear. | CEO | \"How many coaches and team members support the incubator?\" |\n| Contract and collective agreement | Affects pension, overtime, insurance, and job security. | HR / CEO | \"Is the role covered by a collective agreement or equivalent employment policy?\" |\n\n## 9. Potential LinkedIn connectors\n\nNo confirmed current Medeon employee with a clear Lund University connection was identified for direct coffee-chat outreach in this quick website-report pass. Broader public results show useful nearby ecosystem leads in Lund/Malmö life science and innovation who may understand Medeon's environment.\n\n| Person | Current public role/company | Lund University connection | Why relevant | Evidence status | Confidence | Suggested coffee-chat angle | Source |\n|---|---|---|---|---|---|---|---|\n| Annie George Chandy | Abarceo Pharma / past public connection to Medeon Science Park, Malmö | Lund University | Broader life-science innovation and Medeon ecosystem perspective, not a confirmed current Medeon contact. | Estimated from public signals | Low | Ask about Malmö life-science startup ecosystem and what incubator roles usually require. | https://se.linkedin.com/in/annie-george-chandy-7b5a135 |\n| Lund/Malmö life-science innovation leads | Nearby ecosystem contacts at LU Innovation, Medicon Village, SmiLe Venture Hub, and Ideon | Lund University ecosystem | Useful if no Medeon direct contact is available. | Estimated from public signals | Low | Ask what experience level is expected for incubator manager roles in Skåne. | Search result review |\n\n### Coffee-chat message template\n\nHi, I am considering the Incubator Manager role at Medeon Science Park. My background is in product development, startup founding, LU Innovation, and health/wellbeing product concepts. I would value a short 15-minute conversation about what makes someone successful in life-science incubation in Malmö. Thank you.\n\n### Coffee-chat questions\n\n- How senior are incubator manager roles usually in the Skåne life-science ecosystem?\n- Is Swedish normally required for coaching startups and working with regional partners?\n- What experience would make a founder profile credible for this kind of role?\n\n## 10. Questions to ask the employer\n\n### Salary and salary review\n- What is the salary range for this position?\n- Is there an annual salary review?\n\n### Collective agreement / contract\n- Is the role covered by a collective agreement?\n- What probation and notice periods apply?\n\n### Pension and insurance\n- What occupational pension and insurance package is included?\n- Is there wellness allowance or occupational healthcare?\n\n### Overtime and working hours\n- What are normal weekly hours?\n- Are evening events or investor/startup events expected, and how is overtime handled?\n\n### Manager and team support\n- Who supports the Incubator Manager day to day?\n- How many coaches or program staff are currently connected to the incubator?\n\n### Learning and development\n- Would there be onboarding in life-science regulation, funding, and medtech commercialization?\n\n### Remote/hybrid work\n- Is the role fully on-site at Medeon or partly hybrid?\n\n### Role expectations\n- What are the top three first-year goals?\n- What does success look like after 6 and 12 months?\n\n### Cross-border Denmark/Sweden issues\n- Not central if Feiyu lives and works in Sweden. If any Denmark travel or remote work is added later, verify tax, pension, social insurance, and travel rules separately.\n\n## 11. Contract items to check before signing\n\n| Contract item | What to check | Risk if unclear |\n|---|---|---|\n| Job title and scope | Whether the title includes full incubator ownership from day one. | Too much responsibility without support. |\n| Salary | Monthly gross salary and review timing. | Underpayment for senior responsibility. |\n| Collective agreement | Whether Swedish collective agreement terms apply. | Weak pension/overtime clarity. |\n| Pension and insurance | Occupational pension and insurance levels. | Lower total compensation. |\n| Working hours | Events, evening work, and flex/overtime rules. | Hidden workload. |\n| Language requirement | English vs Swedish/Scandinavian expectations. | Eligibility risk. |\n| Team support | Number of coaches and operational staff. | Role may be too broad for one person. |\n| Probation and notice | Probation and termination terms. | Planning risk. |\n\n## 12. Candidate-friendly summary\n\nThis is a very attractive role on paper because it connects directly to Feiyu's real experience: founding SensoryWind, getting support from LU Innovation and Almi, developing prototypes, validating with users, and thinking about commercialization. It is also in Malmö, which is practical from Lund.\n\nThe main caution is seniority. This is not just a startup-support assistant role. Medeon describes overall responsibility for the incubator, financing efforts, structure, business coaches, partners, and CEO reporting. Feiyu should apply only with a confident story and should quickly verify whether they are open to a high-potential founder profile rather than an already experienced incubator leader.\n\n## 13. Final recommendation\n\n- Final recommendation: Continue but verify key issues\n- Main reason: Strong legitimacy and strategic fit, but likely seniority and language expectations need verification.\n- What would improve the recommendation: English accepted for daily work, clear support team, openness to founder profile, fair salary, and realistic first-year goals.\n- What would make the recommendation worse: professional Swedish requirement, expectation of many years managing incubators, low salary for broad responsibility, or little support from CEO/team.\n- Next 3 actions:\n  - Apply quickly if still open, because the deadline signal is May 26.\n  - Frame SensoryWind, LU Innovation, funding, validation, and commercialization as the core fit story.\n  - Ask language, seniority, support team, salary, collective agreement, and first-year goals before investing too much time.\n\n## 14. Sources\n\n- Medeon Incubator Manager role page: https://www.medeon.se/stories-news/blog/incubator-manager/\n- Medeon Who We Are page: https://www.medeon.se/about-us/who-we-are/\n- Medeon Owners & Board page: https://www.medeon.se/about-us/owners-board/\n- Medicon Village LinkedIn job roundup mentioning deadline: https://se.linkedin.com/company/mediconvillage\n- Unionen business manager salary benchmark: https://www.unionen.se/rad-och-stod/om-lon/marknadsloner/business-manager\n\n## 15. Research metadata\n\n- Date researched: 2026-05-24\n- Company name: Medeon Science Park\n- Position name: Incubator Manager\n- Country: Sweden\n- City/region: Malmö\n- Job ad URL: https://www.medeon.se/stories-news/blog/incubator-manager/\n- Candidate level: senior-leaning stretch\n- Field: life science incubation, startup support, innovation, commercialization, business development\n- Candidate lives in: Sweden\n- Work location: Sweden\n- Cross-border Sweden/Denmark issues apply: No\n"
+        "deepReport": ""
       },
       "analysis": {
         "score_breakdown": [],
@@ -188,195 +142,6 @@
           "high": "",
           "period": "",
           "note": "Not included in digest."
-        }
-      }
-    },
-    {
-      "slug": "digest-scrive-product-manager",
-      "sourceType": "digest",
-      "title": "Product Manager",
-      "company": "Scrive",
-      "location": "Stockholm / Copenhagen / remote hubs",
-      "score": 76,
-      "verdict": "Open / likely open",
-      "date": "2026-05-25",
-      "summary": "Product-management role with discovery, roadmap ownership, customer champion work, stakeholder communication, product trio collaboration, and commercial strategy across digital identity / SaaS contexts.",
-      "applicationUrl": "https://www.thehub.io/jobs/69fa85592e5259e9ef6ee9c2",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Strong product-management role with discovery, roadmap ownership, customer champion work, stakeholder communication, product trio collaboration, and commercial strategy. One of the cleaner PM matches for moving toward SaaS/product."
-        ],
-        "gaps": [
-          "They ask for 2-4 years of PM experience and complex SaaS/digital identity experience. Founder/product-development experience helps, but direct SaaS PM evidence is still a gap."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Strong product-management role with discovery, roadmap ownership, customer champion work, stakeholder communication, product trio collaboration, and commercial strategy. One of the cleaner PM matches for moving toward SaaS/product.",
-          "Prepare an honest answer for this risk: They ask for 2-4 years of PM experience and complex SaaS/digital identity experience. Founder/product-development experience helps, but direct SaaS PM evidence is still a gap."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Stockholm/Copenhagen PM market likely around SEK 50k-70k/month or DKK 50k-68k/month depending on location and seniority."
-        }
-      }
-    },
-    {
-      "slug": "unionpay-business-development",
-      "sourceType": "report",
-      "title": "Business Development Associate / Business Development(2026F039)",
-      "company": "UnionPay International",
-      "location": "Stockholm County, Sweden",
-      "score": 76,
-      "verdict": "Strong thematic fit, but posting closed",
-      "date": "2026-05-21",
-      "summary": "UnionPay International is looking for a proactive Business Development Associate to support Nordic and Baltic payment-network expansion through partner coordination, merchant engagement, marketing campaigns, market analysis, reporting, and operational execution. The public LinkedIn page says the role is no longer accepting applications.",
-      "applicationUrl": "https://se.linkedin.com/jobs/view/business-development-2026f039-at-unionpay-international-4371673768",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "2026-05-21-Business Development Associate-UnionPay International-DDL Closed.pdf",
-        "cv": "# Feiyu Wu - Tailored CV Draft\n\nLund, Sweden | wufeiyuwfy@gmail.com | +46 0724438928\n\n## Profile\n\nBusiness-development and product-oriented founder with a Chinese-English international background, Sweden-based stakeholder experience, and hands-on experience turning early-stage opportunities into funded pilots, partner conversations, and executable product work. Founder of SensoryWind AB, incubated through LU Innovation, with funding from Lund University Innovation and Almi, a pilot with Gerdahallen, and collaboration with external engineering partners. Currently graduating from management studies at Lund University, with a strong interest in international partnerships, Nordic market expansion, and cross-border business execution.\n\n## Fit For UnionPay International\n\n- Chinese native and fluent English user with international study and project experience across China, Sweden, Denmark, and Australia.\n- Sweden-based, with experience working with local stakeholders such as LU Innovation, Almi, Gerdahallen, Visit Lund, and engineering partners.\n- Founder experience covering stakeholder management, business development, funding, pilot testing, partner communication, and operational follow-up.\n- Strong hands-on mindset for field visits, testing, user/merchant observation, and translating feedback into practical next steps.\n\n## Relevant Experience\n\n### Founder and CEO - SensoryWind AB\n\n- Built and developed a natural wind simulation system for indoor cycling, connecting user comfort, hardware development, and business potential.\n- Secured SEK 180,000 from Lund University's Innovation program and SEK 100,000 from Almi.\n- Conducted pilot testing at Gerdahallen and secured a Letter of Intent for further product integration and endorsement.\n- Coordinated with Razorback Engineer AB to develop a functional prototype with scalability and manufacturability in mind.\n- Managed stakeholder communication, product iteration, funding-related documentation, and partner follow-up in an early-stage startup environment.\n\n### NASA Project - Master Thesis\n\n- Developed a wellbeing-oriented nature simulation concept using synchronized wind speed, temperature, and scent.\n- Worked with astronaut Jean-Francois Clervoy and was supervised by NASA experts Olga Bannova and Larry Toups.\n- Translated user needs, environmental constraints, and technical possibilities into a product concept for mental wellbeing.\n\n### Public And Stakeholder Projects\n\n- H22 City Expo: core designer in a seven-person team representing Lund University in a future smart-city project organized by IKEA.\n- Visit Lund: designed and built a public gathering space in Lund city center, working closely with local stakeholders and community needs.\n- Bamboo Weaving Culture Inheritance Workshop: team leader and representative at an international exhibition in Australia.\n\n## Education\n\n- Lund University - Management studies, graduating this year. Confirm exact program title and month before submission.\n- Lund University - Master of Fine Arts in Industrial Design.\n- University of Nottingham Ningbo China - BEng Hons Product Design & Manufacture.\n\n## Skills\n\n- Business development: stakeholder communication, partner follow-up, funding acquisition, pilot testing, strategic execution.\n- Market and user insight: user-centered research, questionnaires, field observation, feedback collection, report writing.\n- Tools: Figma, Google Workspace, SolidWorks, KeyShot, Photoshop, Arduino, PyCharm.\n- Languages: Chinese native, English IELTS 7, Swedish SFI 3C.\n\n## Tailoring Notes Before Submission\n\n- Add Excel, SQL, BI, financial reporting, or market-analysis examples if Fei has them.\n- Confirm the exact management program title at Lund University.\n- Add any payment, fintech, banking, merchant, retail, or China-Nordic partnership examples if available.\n",
-        "letter": "# Motivation Letter Draft\n\nDear UnionPay International team,\n\nI am writing to express my interest in the Business Development role supporting the Nordic and Baltic markets. What attracts me most is the opportunity to work at the intersection of international payments, partner development, market expansion, and cross-cultural communication.\n\nMy background combines product development, entrepreneurship, stakeholder coordination, and international experience. As the founder of SensoryWind AB in Sweden, I have built an early-stage product from concept into funded and tested development. This included securing support from Lund University Innovation and Almi, running pilot testing with Gerdahallen, coordinating with engineering partners, and following up with stakeholders to move the project forward. These experiences have trained me to be proactive, detail-oriented, and comfortable working across business, user, and operational needs.\n\nI believe I can bring particular value to UnionPay International because I can bridge Chinese and Nordic working contexts. I am a native Chinese speaker, use English professionally, and have studied and worked on projects in Sweden for several years. I understand both the importance of clear headquarters communication and the need to adapt business development work to local partners, merchants, and market realities.\n\nAlthough my direct background is not in payments, I am strongly motivated to learn the payment ecosystem, including acquirers, merchant acceptance, transaction growth, and partner campaigns. I would bring a hands-on mindset to merchant visits, market analysis, reporting, and operational coordination, while building the financial-services knowledge needed to contribute more independently over time.\n\nI would be happy to discuss how my founder experience, Chinese-English communication ability, and Sweden-based stakeholder background could support UnionPay International's Nordic and Baltic market development.\n\nKind regards,\n\nFeiyu Wu\n",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [
-          {
-            "label": "Must-have requirements",
-            "weight": 30,
-            "score": 24
-          },
-          {
-            "label": "Relevant experience and achievements",
-            "weight": 25,
-            "score": 20
-          },
-          {
-            "label": "Product/domain match",
-            "weight": 15,
-            "score": 12
-          },
-          {
-            "label": "Software/tools/process match",
-            "weight": 15,
-            "score": 7
-          },
-          {
-            "label": "Location/language fit",
-            "weight": 10,
-            "score": 10
-          },
-          {
-            "label": "Growth potential and motivation",
-            "weight": 5,
-            "score": 3
-          }
-        ],
-        "strengths": [
-          "Chinese-English bridge with local Sweden/Nordic context, directly aligned with headquarters communication needs.",
-          "Founder experience gives credible business development evidence: funding, pilots, LOI, partners, stakeholder follow-up, and execution.",
-          "Strong fit for a developmental associate role because the job explicitly welcomes exceptional recent graduates.",
-          "Good narrative fit for Nordic/Baltic expansion: Fei can connect Chinese global payment infrastructure with local user and merchant realities.",
-          "Hands-on, field-oriented profile fits merchant visits, testing, and regional coordination better than a purely office-based candidate."
-        ],
-        "gaps": [
-          "The LinkedIn post says applications are no longer accepted, so direct application may not be possible.",
-          "No direct payments, fintech, acquiring, merchant acceptance, or financial-services experience shown in the CV.",
-          "Data analysis tools for transaction analysis are under-evidenced; Excel/SQL/BI are not explicit.",
-          "Nordic language is only SFI 3C, so Swedish should be framed as developing, not professional fluency.",
-          "Large corporate reporting, compliance, and internal process experience is less visible than startup/project experience."
-        ],
-        "interview_points": [
-          "Open with the China-Nordic bridge: Chinese native, English professional, Sweden-based, and comfortable across international contexts.",
-          "Use SensoryWind as proof of business development: securing funding, finding partners, piloting, managing stakeholders, and turning interest into concrete next steps.",
-          "Prepare a story about visiting/testing with users or stakeholders and converting observations into action.",
-          "Show curiosity about payments: acquirers, merchants, acceptance coverage, transaction volume, signage, and campaign performance.",
-          "Prepare a practical 30-60-90 day plan focused on learning payment ecosystem basics, mapping partners, supporting reporting, and joining merchant/partner visits.",
-          "Handle the data-tool gap proactively: say you can strengthen Excel/BI/SQL quickly and connect it to your prior reporting and PyCharm/Python exposure."
-        ],
-        "questions_to_ask": [
-          "Since the posting appears closed, is the Nordic/Baltic Business Development role still open or is there a future intake?",
-          "What are the most important Nordic/Baltic market priorities for the first six months?",
-          "Which partners would this role work with most often: acquirers, payment providers, merchants, or headquarters teams?",
-          "What metrics define success: acceptance coverage, transaction volume, merchant activation, campaign results, or reporting quality?",
-          "How much travel is expected across Nordic and Baltic markets?",
-          "What data tools and reporting templates does the regional team use today?",
-          "How does the role grow from support work into independent ownership?"
-        ],
-        "salary": {
-          "currency": "SEK",
-          "low": 38000,
-          "mid": 45000,
-          "high": 55000,
-          "period": "month",
-          "note": "Swedish business-development benchmarks vary widely. For Stockholm, affärsutvecklare averages are often around SEK 53k-64k/month, while this role is associate/developmental and suitable for 1-3 years or exceptional graduates. A Fei-specific reasonable discussion range is SEK 38k-48k/month, with SEK 45k as a practical midpoint and higher upside if they value Chinese-English headquarters coordination plus founder experience."
-        }
-      }
-    },
-    {
-      "slug": "digest-caliber-product-owner",
-      "sourceType": "digest",
-      "title": "Product Owner",
-      "company": "Caliber",
-      "location": "Copenhagen / Greater Copenhagen / Southern Sweden",
-      "score": 74,
-      "verdict": "Open / likely open",
-      "date": "2026-05-25",
-      "summary": "Product-owner role with user stories, business logic, prioritization, Jira, project management, and connecting developers with business needs.",
-      "applicationUrl": "https://thehub.io/jobs/6327fb34f0071c1ad3967586",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Good regional fit from Lund and a plausible product bridge role. The role connects business needs, product ownership, developers, prioritization, and software delivery."
-        ],
-        "gaps": [
-          "It is still a software/SaaS product-owner role, so Fei needs to frame SensoryWind as practical product ownership and show fast learning around Jira/agile workflows."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Good regional fit from Lund and a plausible product bridge role. The role connects business needs, product ownership, developers, prioritization, and software delivery.",
-          "Prepare an honest answer for this risk: It is still a software/SaaS product-owner role, so Fei needs to frame SensoryWind as practical product ownership and show fast learning around Jira/agile workflows."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Copenhagen product-owner roles often sit around DKK 48k-65k/month depending on seniority and SaaS depth."
         }
       }
     },
@@ -565,98 +330,6 @@
       }
     },
     {
-      "slug": "digest-rebtel-product-manager-payments",
-      "sourceType": "digest",
-      "title": "Product Manager - Payments",
-      "company": "Rebtel",
-      "location": "Stockholm, hybrid",
-      "score": 68,
-      "verdict": "Open / likely open",
-      "date": "2026-05-25",
-      "summary": "Payments product role covering product strategy, roadmap, user payment flows, localization, external provider coordination, and market expansion.",
-      "applicationUrl": "https://rebtel.teamtailor.com/jobs/6578703-product-manager-payments",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "International product, localization, provider coordination, and market expansion can connect to Fei's China/international background and founder experience."
-        ],
-        "gaps": [
-          "Payments/fintech domain knowledge and provider/card-network experience are likely expected. This is a stretch unless they value cross-cultural product and business-development background."
-        ],
-        "interview_points": [
-          "Explain why this role fits: International product, localization, provider coordination, and market expansion can connect to Fei's China/international background and founder experience.",
-          "Prepare an honest answer for this risk: Payments/fintech domain knowledge and provider/card-network experience are likely expected. This is a stretch unless they value cross-cultural product and business-development background."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Stockholm payments PM roles likely around SEK 50k-70k/month depending on PM and fintech experience."
-        }
-      }
-    },
-    {
-      "slug": "digest-h-m-plm-cad-application-expert",
-      "sourceType": "digest",
-      "title": "PLM/CAD Application Expert",
-      "company": "H&M",
-      "location": "Stockholm",
-      "score": 67,
-      "verdict": "Open / likely open",
-      "date": "2026-05-25",
-      "summary": "Product-tech bridge role connecting product development, PLM/CAD tools, business requirements, workshops, stakeholders, testing, and user-centered process improvement.",
-      "applicationUrl": "https://career.hm.com/us-en/job/3188daea-20db-4c4f-8cb4-46c7f8b30856/",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Not a classic PM role, but it uses industrial design, product development, tool/process thinking, stakeholder work, and user-centered improvement."
-        ],
-        "gaps": [
-          "They may prefer direct PLM/CAD system integration experience. The role also requires 4 days per week in the Stockholm office."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Not a classic PM role, but it uses industrial design, product development, tool/process thinking, stakeholder work, and user-centered improvement.",
-          "Prepare an honest answer for this risk: They may prefer direct PLM/CAD system integration experience. The role also requires 4 days per week in the Stockholm office."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Stockholm application expert / PLM business-tech roles likely around SEK 45k-60k/month depending on system and stakeholder experience."
-        }
-      }
-    },
-    {
       "slug": "digest-visma-software-nordic-product-specialist-visma-net",
       "sourceType": "digest",
       "title": "Product Specialist Visma Net",
@@ -745,52 +418,6 @@
           "high": "",
           "period": "",
           "note": "Unpaid internship."
-        }
-      }
-    },
-    {
-      "slug": "digest-univrses-business-developer",
-      "sourceType": "digest",
-      "title": "Business Developer",
-      "company": "Univrses",
-      "location": "Stockholm",
-      "score": 63,
-      "verdict": "Open / likely open",
-      "date": "2026-05-25",
-      "summary": "Deep-tech business development role around 3D computer vision, infrastructure intelligence, ROI narratives, public/corporate stakeholders, and international expansion.",
-      "applicationUrl": "https://thehub.io/jobs/69ded5e7c14e3e7a51f7a7a1",
-      "progress": {
-        "completed": 0,
-        "total": 7,
-        "percent": 0
-      },
-      "files": {
-        "pdf": "",
-        "cv": "",
-        "letter": "",
-        "ppt": "",
-        "deepReport": ""
-      },
-      "analysis": {
-        "score_breakdown": [],
-        "strengths": [
-          "Could use Fei's founder, product-development, stakeholder, and technical-translation strengths in a deep-tech commercial setting."
-        ],
-        "gaps": [
-          "It expects proven sales/business development experience, ideally SaaS/deep tech/high-growth startup. It is less direct for product management than Scrive or Caliber."
-        ],
-        "interview_points": [
-          "Explain why this role fits: Could use Fei's founder, product-development, stakeholder, and technical-translation strengths in a deep-tech commercial setting.",
-          "Prepare an honest answer for this risk: It expects proven sales/business development experience, ideally SaaS/deep tech/high-growth startup. It is less direct for product management than Scrive or Caliber."
-        ],
-        "questions_to_ask": [],
-        "salary": {
-          "currency": "",
-          "low": "",
-          "mid": "",
-          "high": "",
-          "period": "",
-          "note": "Stockholm deep-tech business developer roles likely around SEK 40k-60k/month plus possible variable depending on seniority."
         }
       }
     },

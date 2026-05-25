@@ -241,6 +241,11 @@ h1 {
   background: #f8fbff;
 }
 
+.job-card.is-deleted {
+  border-color: rgba(101, 112, 106, 0.35);
+  background: #f2f3ef;
+}
+
 .card-main {
   display: grid;
   grid-template-columns: 78px minmax(0, 1fr);
@@ -355,6 +360,7 @@ h1 {
 }
 
 .applied-button,
+.restore-button,
 .remove-button,
 .danger-button {
   display: inline-flex;
@@ -364,6 +370,18 @@ h1 {
   border-radius: 8px;
   font-size: 13px;
   font-weight: 800;
+}
+
+.restore-button {
+  border: 1px solid rgba(102, 115, 84, 0.45);
+  background: #f7faef;
+  color: #4e5f3d;
+}
+
+.restore-button:hover,
+.restore-button:focus {
+  border-color: var(--olive);
+  outline: none;
 }
 
 .applied-button {
@@ -564,31 +582,6 @@ h1 {
 
 .deep-analysis {
   margin-bottom: 18px;
-}
-
-.deep-analysis-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.deep-analysis-heading h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.deep-analysis-heading span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  padding: 5px 9px;
-  border-radius: 999px;
-  background: var(--soft);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
 }
 
 .analysis-status {

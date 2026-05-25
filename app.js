@@ -3,8 +3,11 @@ const refreshButton = document.querySelector("#refreshButton");
 const cardTemplate = document.querySelector("#jobCardTemplate");
 const hiddenKey = "job-fit-dashboard-hidden";
 const appliedKey = "job-fit-dashboard-applied";
+const restoredKey = "job-fit-dashboard-restored";
 
 let allJobs = [];
+let allDeletedJobs = [];
+let defaultAppliedJobs = [];
 let activeTab = "report";
 let activeFilter = "open";
 
@@ -30,6 +33,19 @@ function setHiddenJobs(hidden) {
   localStorage.setItem(hiddenKey, JSON.stringify([...hidden].sort()));
 }
 
+function getRestoredJobs() {
+  try {
+    const restored = JSON.parse(localStorage.getItem(restoredKey) || "[]");
+    return new Set(Array.isArray(restored) ? restored : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function setRestoredJobs(restored) {
+  localStorage.setItem(restoredKey, JSON.stringify([...restored].sort()));
+}
+
 function getAppliedJobs() {
   try {
     const applied = JSON.parse(localStorage.getItem(appliedKey) || "[]");
@@ -46,18 +62,44 @@ function setAppliedJobs(applied) {
 function visibleJobs(filter = activeFilter) {
   const hidden = getHiddenJobs();
   const applied = getAppliedJobs();
-  return allJobs.filter((job) => {
+  if (filter === "deleted") return deletedJobs();
+  return activeJobs().filter((job) => {
     if (hidden.has(job.slug)) return false;
     if (filter === "applied") return applied.has(job.slug);
     return !applied.has(job.slug);
   });
 }
 
+function deletedJobs() {
+  const hidden = getHiddenJobs();
+  const restored = getRestoredJobs();
+  const localDeleted = allJobs.filter((job) => hidden.has(job.slug));
+  const exportedDeleted = allDeletedJobs.filter((job) => !restored.has(job.slug));
+  const bySlug = new Map([...exportedDeleted, ...localDeleted].map((job) => [job.slug, { ...job, deleted: true }]));
+  return [...bySlug.values()].sort((a, b) => b.score - a.score || a.company.localeCompare(b.company));
+}
+
+function activeJobs() {
+  const restored = getRestoredJobs();
+  const restoredDeleted = allDeletedJobs.filter((job) => restored.has(job.slug));
+  const bySlug = new Map([...allJobs, ...restoredDeleted].map((job) => [job.slug, { ...job, deleted: false }]));
+  return [...bySlug.values()];
+}
+
 async function loadJobs() {
-  const response = await fetch("./data/jobs.json", { cache: "no-store" });
-  if (!response.ok) throw new Error("Could not load static job data.");
-  const payload = await response.json();
-  allJobs = Array.isArray(payload.jobs) ? payload.jobs : [];
+  const [jobsResponse, deletedResponse, appliedResponse] = await Promise.all([
+    fetch("./data/jobs.json", { cache: "no-store" }),
+    fetch("./data/deleted-jobs.json", { cache: "no-store" }).catch(() => null),
+    fetch("./data/applied-jobs.json", { cache: "no-store" }).catch(() => null),
+  ]);
+  if (!jobsResponse.ok) throw new Error("Could not load static job data.");
+  const jobsPayload = await jobsResponse.json();
+  const deletedPayload = deletedResponse?.ok ? await deletedResponse.json() : {};
+  const appliedPayload = appliedResponse?.ok ? await appliedResponse.json() : {};
+  allJobs = Array.isArray(jobsPayload.jobs) ? jobsPayload.jobs : [];
+  allDeletedJobs = Array.isArray(deletedPayload.jobs) ? deletedPayload.jobs : [];
+  defaultAppliedJobs = Array.isArray(appliedPayload.applied) ? appliedPayload.applied : [];
+  setAppliedJobs(new Set([...defaultAppliedJobs, ...getAppliedJobs()]));
 }
 
 function setRoute(path) {
@@ -96,13 +138,14 @@ function renderHome() {
   const jobs = visibleJobs();
   const openCount = visibleJobs("open").length;
   const appliedCount = visibleJobs("applied").length;
+  const deletedCount = visibleJobs("deleted").length;
   const stats = summarizeScores(jobs);
   app.innerHTML = `
     <section class="hero">
       <div>
         <p class="eyebrow">Application pipeline</p>
-        <h1>${activeFilter === "applied" ? "Review the jobs already marked as applied." : "Track every job report from strongest fit to weakest fit."}</h1>
-        <p class="hero-copy">This static version is hosted from HTML/JSON. Applied and removed jobs are saved only in this browser.</p>
+        <h1>${homeTitle()}</h1>
+        <p class="hero-copy">${homeCopy()}</p>
       </div>
       <div class="stats" aria-label="Dashboard summary">
         <div class="stat"><strong>${stats.total}</strong><span>jobs</span></div>
@@ -113,6 +156,7 @@ function renderHome() {
     <section class="filter-bar" aria-label="Job filters">
       <button class="filter-button" data-filter="open" type="button">Open jobs <span>${openCount}</span></button>
       <button class="filter-button" data-filter="applied" type="button">Applied <span>${appliedCount}</span></button>
+      <button class="filter-button" data-filter="deleted" type="button">Deleted <span>${deletedCount}</span></button>
     </section>
     <section class="job-grid" aria-label="Jobs"></section>
   `;
@@ -127,7 +171,7 @@ function renderHome() {
 
   const grid = app.querySelector(".job-grid");
   if (!jobs.length) {
-    grid.innerHTML = `<div class="empty-state">${activeFilter === "applied" ? "No jobs are marked as applied yet." : "No open jobs are visible. Check Applied or clear this browser's site data to restore hidden jobs."}</div>`;
+    grid.innerHTML = `<div class="empty-state">${emptyMessage()}</div>`;
     return;
   }
 
@@ -135,10 +179,12 @@ function renderHome() {
   for (const job of jobs) {
     const node = cardTemplate.content.firstElementChild.cloneNode(true);
     const isApplied = applied.has(job.slug);
+    const isDeleted = activeFilter === "deleted";
     node.tabIndex = 0;
     node.setAttribute("role", "link");
     node.setAttribute("aria-label", `Open ${job.title} at ${job.company}`);
     node.classList.toggle("is-applied", isApplied);
+    node.classList.toggle("is-deleted", isDeleted);
     node.style.setProperty("--score-angle", `${Math.max(0, Math.min(100, job.score)) * 3.6}deg`);
     node.querySelector(".score-ring strong").textContent = job.score;
     node.querySelector(".company").textContent = job.company;
@@ -158,26 +204,38 @@ function renderHome() {
     sourceLink.addEventListener("click", (event) => event.stopPropagation());
     node.querySelector(".card-footer").appendChild(sourceLink);
 
-    const appliedButton = document.createElement("button");
-    appliedButton.className = "applied-button";
-    appliedButton.type = "button";
-    appliedButton.textContent = isApplied ? "Applied" : "Mark applied";
-    appliedButton.setAttribute("aria-pressed", String(isApplied));
-    appliedButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      toggleApplied(job.slug);
-    });
-    node.querySelector(".card-footer").appendChild(appliedButton);
+    if (isDeleted) {
+      const restoreButton = document.createElement("button");
+      restoreButton.className = "restore-button";
+      restoreButton.type = "button";
+      restoreButton.textContent = "Restore";
+      restoreButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        restoreJob(job.slug);
+      });
+      node.querySelector(".card-footer").appendChild(restoreButton);
+    } else {
+      const appliedButton = document.createElement("button");
+      appliedButton.className = "applied-button";
+      appliedButton.type = "button";
+      appliedButton.textContent = isApplied ? "Applied" : "Mark applied";
+      appliedButton.setAttribute("aria-pressed", String(isApplied));
+      appliedButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        toggleApplied(job.slug);
+      });
+      node.querySelector(".card-footer").appendChild(appliedButton);
 
-    const removeButton = document.createElement("button");
-    removeButton.className = "remove-button";
-    removeButton.type = "button";
-    removeButton.textContent = "Remove";
-    removeButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      removeJob(job.slug);
-    });
-    node.querySelector(".card-footer").appendChild(removeButton);
+      const removeButton = document.createElement("button");
+      removeButton.className = "remove-button";
+      removeButton.type = "button";
+      removeButton.textContent = "Remove";
+      removeButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        removeJob(job.slug);
+      });
+      node.querySelector(".card-footer").appendChild(removeButton);
+    }
 
     const detailPath = `?job=${encodeURIComponent(job.slug)}`;
     node.addEventListener("click", () => setRoute(detailPath));
@@ -189,6 +247,23 @@ function renderHome() {
     });
     grid.appendChild(node);
   }
+}
+
+function homeTitle() {
+  if (activeFilter === "applied") return "Review the jobs already marked as applied.";
+  if (activeFilter === "deleted") return "Review jobs removed from the main dashboard.";
+  return "Track every job report from strongest fit to weakest fit.";
+}
+
+function homeCopy() {
+  if (activeFilter === "deleted") return "Deleted jobs are hidden from Open and Applied, but kept here so you can restore them if needed.";
+  return "This static version is hosted from HTML/JSON. Applied and deleted jobs are saved in this browser, with the latest exported state included.";
+}
+
+function emptyMessage() {
+  if (activeFilter === "applied") return "No jobs are marked as applied yet.";
+  if (activeFilter === "deleted") return "No jobs have been deleted from the dashboard.";
+  return "No open jobs are visible. Check Applied or Deleted, or clear this browser's site data to restore local changes.";
 }
 
 function toggleApplied(slug) {
@@ -212,8 +287,19 @@ function removeJob(slug) {
   renderHome();
 }
 
+function restoreJob(slug) {
+  const hidden = getHiddenJobs();
+  const restored = getRestoredJobs();
+  hidden.delete(slug);
+  restored.add(slug);
+  setHiddenJobs(hidden);
+  setRestoredJobs(restored);
+  showToast("Job restored to open jobs");
+  renderHome();
+}
+
 function renderJob(slug) {
-  const job = allJobs.find((item) => item.slug === slug);
+  const job = activeJobs().find((item) => item.slug === slug) || deletedJobs().find((item) => item.slug === slug);
   if (!job) {
     setRoute("./");
     return;
