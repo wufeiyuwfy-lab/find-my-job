@@ -2,9 +2,11 @@ const app = document.querySelector("#app");
 const refreshButton = document.querySelector("#refreshButton");
 const cardTemplate = document.querySelector("#jobCardTemplate");
 const hiddenKey = "job-fit-dashboard-hidden";
+const appliedKey = "job-fit-dashboard-applied";
 
 let allJobs = [];
 let activeTab = "report";
+let activeFilter = "open";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -28,9 +30,27 @@ function setHiddenJobs(hidden) {
   localStorage.setItem(hiddenKey, JSON.stringify([...hidden].sort()));
 }
 
-function visibleJobs() {
+function getAppliedJobs() {
+  try {
+    const applied = JSON.parse(localStorage.getItem(appliedKey) || "[]");
+    return new Set(Array.isArray(applied) ? applied : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function setAppliedJobs(applied) {
+  localStorage.setItem(appliedKey, JSON.stringify([...applied].sort()));
+}
+
+function visibleJobs(filter = activeFilter) {
   const hidden = getHiddenJobs();
-  return allJobs.filter((job) => !hidden.has(job.slug));
+  const applied = getAppliedJobs();
+  return allJobs.filter((job) => {
+    if (hidden.has(job.slug)) return false;
+    if (filter === "applied") return applied.has(job.slug);
+    return !applied.has(job.slug);
+  });
 }
 
 async function loadJobs() {
@@ -74,13 +94,15 @@ function showToast(message) {
 
 function renderHome() {
   const jobs = visibleJobs();
+  const openCount = visibleJobs("open").length;
+  const appliedCount = visibleJobs("applied").length;
   const stats = summarizeScores(jobs);
   app.innerHTML = `
     <section class="hero">
       <div>
         <p class="eyebrow">Application pipeline</p>
-        <h1>Track every job report from strongest fit to weakest fit.</h1>
-        <p class="hero-copy">This static version is hosted from HTML/JSON. Remove only hides jobs in this browser.</p>
+        <h1>${activeFilter === "applied" ? "Review the jobs already marked as applied." : "Track every job report from strongest fit to weakest fit."}</h1>
+        <p class="hero-copy">This static version is hosted from HTML/JSON. Applied and removed jobs are saved only in this browser.</p>
       </div>
       <div class="stats" aria-label="Dashboard summary">
         <div class="stat"><strong>${stats.total}</strong><span>jobs</span></div>
@@ -88,20 +110,35 @@ function renderHome() {
         <div class="stat"><strong>${stats.average}</strong><span>avg score</span></div>
       </div>
     </section>
+    <section class="filter-bar" aria-label="Job filters">
+      <button class="filter-button" data-filter="open" type="button">Open jobs <span>${openCount}</span></button>
+      <button class="filter-button" data-filter="applied" type="button">Applied <span>${appliedCount}</span></button>
+    </section>
     <section class="job-grid" aria-label="Jobs"></section>
   `;
 
+  app.querySelectorAll(".filter-button").forEach((button) => {
+    button.classList.toggle("active", button.dataset.filter === activeFilter);
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.filter;
+      renderHome();
+    });
+  });
+
   const grid = app.querySelector(".job-grid");
   if (!jobs.length) {
-    grid.innerHTML = `<div class="empty-state">No jobs are visible. Clear this browser's site data to restore hidden jobs.</div>`;
+    grid.innerHTML = `<div class="empty-state">${activeFilter === "applied" ? "No jobs are marked as applied yet." : "No open jobs are visible. Check Applied or clear this browser's site data to restore hidden jobs."}</div>`;
     return;
   }
 
+  const applied = getAppliedJobs();
   for (const job of jobs) {
     const node = cardTemplate.content.firstElementChild.cloneNode(true);
+    const isApplied = applied.has(job.slug);
     node.tabIndex = 0;
     node.setAttribute("role", "link");
     node.setAttribute("aria-label", `Open ${job.title} at ${job.company}`);
+    node.classList.toggle("is-applied", isApplied);
     node.style.setProperty("--score-angle", `${Math.max(0, Math.min(100, job.score)) * 3.6}deg`);
     node.querySelector(".score-ring strong").textContent = job.score;
     node.querySelector(".company").textContent = job.company;
@@ -120,6 +157,17 @@ function renderHome() {
     if (!job.applicationUrl) sourceLink.classList.add("disabled");
     sourceLink.addEventListener("click", (event) => event.stopPropagation());
     node.querySelector(".card-footer").appendChild(sourceLink);
+
+    const appliedButton = document.createElement("button");
+    appliedButton.className = "applied-button";
+    appliedButton.type = "button";
+    appliedButton.textContent = isApplied ? "Applied" : "Mark applied";
+    appliedButton.setAttribute("aria-pressed", String(isApplied));
+    appliedButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      toggleApplied(job.slug);
+    });
+    node.querySelector(".card-footer").appendChild(appliedButton);
 
     const removeButton = document.createElement("button");
     removeButton.className = "remove-button";
@@ -143,6 +191,19 @@ function renderHome() {
   }
 }
 
+function toggleApplied(slug) {
+  const applied = getAppliedJobs();
+  const nextState = !applied.has(slug);
+  if (nextState) {
+    applied.add(slug);
+  } else {
+    applied.delete(slug);
+  }
+  setAppliedJobs(applied);
+  showToast(nextState ? "Job marked as applied" : "Job moved back to open jobs");
+  renderRoute();
+}
+
 function removeJob(slug) {
   const hidden = getHiddenJobs();
   hidden.add(slug);
@@ -163,6 +224,7 @@ function renderJob(slug) {
       <aside class="sidebar">
         <div class="job-identity">
           <button class="secondary-button" id="backToJobs" type="button">← Jobs</button>
+          <button class="applied-button" id="toggleCurrentApplied" type="button"></button>
           <button class="danger-button" id="removeCurrentJob" type="button">Remove</button>
           <h1>${escapeHtml(job.title)}</h1>
           <p class="company">${escapeHtml(job.company)}</p>
@@ -179,6 +241,12 @@ function renderJob(slug) {
   `;
 
   app.querySelector("#backToJobs").addEventListener("click", () => setRoute("./"));
+  const applied = getAppliedJobs();
+  const appliedButton = app.querySelector("#toggleCurrentApplied");
+  const isApplied = applied.has(job.slug);
+  appliedButton.textContent = isApplied ? "Applied" : "Mark applied";
+  appliedButton.setAttribute("aria-pressed", String(isApplied));
+  appliedButton.addEventListener("click", () => toggleApplied(job.slug));
   app.querySelector("#removeCurrentJob").addEventListener("click", () => {
     removeJob(job.slug);
     setRoute("./");
