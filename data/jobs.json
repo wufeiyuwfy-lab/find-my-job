@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-23T22:10:17.446Z",
+  "exportedAt": "2026-05-25T09:07:18.365000Z",
   "jobs": [
     {
       "slug": "aimpoint-junior-product-manager",
@@ -192,6 +192,52 @@
       }
     },
     {
+      "slug": "digest-scrive-product-manager",
+      "sourceType": "digest",
+      "title": "Product Manager",
+      "company": "Scrive",
+      "location": "Stockholm / Copenhagen / remote hubs",
+      "score": 76,
+      "verdict": "Open / likely open",
+      "date": "2026-05-25",
+      "summary": "Product-management role with discovery, roadmap ownership, customer champion work, stakeholder communication, product trio collaboration, and commercial strategy across digital identity / SaaS contexts.",
+      "applicationUrl": "https://www.thehub.io/jobs/69fa85592e5259e9ef6ee9c2",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong product-management role with discovery, roadmap ownership, customer champion work, stakeholder communication, product trio collaboration, and commercial strategy. One of the cleaner PM matches for moving toward SaaS/product."
+        ],
+        "gaps": [
+          "They ask for 2-4 years of PM experience and complex SaaS/digital identity experience. Founder/product-development experience helps, but direct SaaS PM evidence is still a gap."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Strong product-management role with discovery, roadmap ownership, customer champion work, stakeholder communication, product trio collaboration, and commercial strategy. One of the cleaner PM matches for moving toward SaaS/product.",
+          "Prepare an honest answer for this risk: They ask for 2-4 years of PM experience and complex SaaS/digital identity experience. Founder/product-development experience helps, but direct SaaS PM evidence is still a gap."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Stockholm/Copenhagen PM market likely around SEK 50k-70k/month or DKK 50k-68k/month depending on location and seniority."
+        }
+      }
+    },
+    {
       "slug": "unionpay-business-development",
       "sourceType": "report",
       "title": "Business Development Associate / Business Development(2026F039)",
@@ -285,6 +331,52 @@
           "high": 55000,
           "period": "month",
           "note": "Swedish business-development benchmarks vary widely. For Stockholm, affärsutvecklare averages are often around SEK 53k-64k/month, while this role is associate/developmental and suitable for 1-3 years or exceptional graduates. A Fei-specific reasonable discussion range is SEK 38k-48k/month, with SEK 45k as a practical midpoint and higher upside if they value Chinese-English headquarters coordination plus founder experience."
+        }
+      }
+    },
+    {
+      "slug": "digest-caliber-product-owner",
+      "sourceType": "digest",
+      "title": "Product Owner",
+      "company": "Caliber",
+      "location": "Copenhagen / Greater Copenhagen / Southern Sweden",
+      "score": 74,
+      "verdict": "Open / likely open",
+      "date": "2026-05-25",
+      "summary": "Product-owner role with user stories, business logic, prioritization, Jira, project management, and connecting developers with business needs.",
+      "applicationUrl": "https://thehub.io/jobs/6327fb34f0071c1ad3967586",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Good regional fit from Lund and a plausible product bridge role. The role connects business needs, product ownership, developers, prioritization, and software delivery."
+        ],
+        "gaps": [
+          "It is still a software/SaaS product-owner role, so Fei needs to frame SensoryWind as practical product ownership and show fast learning around Jira/agile workflows."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Good regional fit from Lund and a plausible product bridge role. The role connects business needs, product ownership, developers, prioritization, and software delivery.",
+          "Prepare an honest answer for this risk: It is still a software/SaaS product-owner role, so Fei needs to frame SensoryWind as practical product ownership and show fast learning around Jira/agile workflows."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Copenhagen product-owner roles often sit around DKK 48k-65k/month depending on seniority and SaaS depth."
         }
       }
     },
@@ -473,6 +565,98 @@
       }
     },
     {
+      "slug": "digest-rebtel-product-manager-payments",
+      "sourceType": "digest",
+      "title": "Product Manager - Payments",
+      "company": "Rebtel",
+      "location": "Stockholm, hybrid",
+      "score": 68,
+      "verdict": "Open / likely open",
+      "date": "2026-05-25",
+      "summary": "Payments product role covering product strategy, roadmap, user payment flows, localization, external provider coordination, and market expansion.",
+      "applicationUrl": "https://rebtel.teamtailor.com/jobs/6578703-product-manager-payments",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "International product, localization, provider coordination, and market expansion can connect to Fei's China/international background and founder experience."
+        ],
+        "gaps": [
+          "Payments/fintech domain knowledge and provider/card-network experience are likely expected. This is a stretch unless they value cross-cultural product and business-development background."
+        ],
+        "interview_points": [
+          "Explain why this role fits: International product, localization, provider coordination, and market expansion can connect to Fei's China/international background and founder experience.",
+          "Prepare an honest answer for this risk: Payments/fintech domain knowledge and provider/card-network experience are likely expected. This is a stretch unless they value cross-cultural product and business-development background."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Stockholm payments PM roles likely around SEK 50k-70k/month depending on PM and fintech experience."
+        }
+      }
+    },
+    {
+      "slug": "digest-h-m-plm-cad-application-expert",
+      "sourceType": "digest",
+      "title": "PLM/CAD Application Expert",
+      "company": "H&M",
+      "location": "Stockholm",
+      "score": 67,
+      "verdict": "Open / likely open",
+      "date": "2026-05-25",
+      "summary": "Product-tech bridge role connecting product development, PLM/CAD tools, business requirements, workshops, stakeholders, testing, and user-centered process improvement.",
+      "applicationUrl": "https://career.hm.com/us-en/job/3188daea-20db-4c4f-8cb4-46c7f8b30856/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Not a classic PM role, but it uses industrial design, product development, tool/process thinking, stakeholder work, and user-centered improvement."
+        ],
+        "gaps": [
+          "They may prefer direct PLM/CAD system integration experience. The role also requires 4 days per week in the Stockholm office."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Not a classic PM role, but it uses industrial design, product development, tool/process thinking, stakeholder work, and user-centered improvement.",
+          "Prepare an honest answer for this risk: They may prefer direct PLM/CAD system integration experience. The role also requires 4 days per week in the Stockholm office."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Stockholm application expert / PLM business-tech roles likely around SEK 45k-60k/month depending on system and stakeholder experience."
+        }
+      }
+    },
+    {
       "slug": "digest-visma-software-nordic-product-specialist-visma-net",
       "sourceType": "digest",
       "title": "Product Specialist Visma Net",
@@ -561,6 +745,52 @@
           "high": "",
           "period": "",
           "note": "Unpaid internship."
+        }
+      }
+    },
+    {
+      "slug": "digest-univrses-business-developer",
+      "sourceType": "digest",
+      "title": "Business Developer",
+      "company": "Univrses",
+      "location": "Stockholm",
+      "score": 63,
+      "verdict": "Open / likely open",
+      "date": "2026-05-25",
+      "summary": "Deep-tech business development role around 3D computer vision, infrastructure intelligence, ROI narratives, public/corporate stakeholders, and international expansion.",
+      "applicationUrl": "https://thehub.io/jobs/69ded5e7c14e3e7a51f7a7a1",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Could use Fei's founder, product-development, stakeholder, and technical-translation strengths in a deep-tech commercial setting."
+        ],
+        "gaps": [
+          "It expects proven sales/business development experience, ideally SaaS/deep tech/high-growth startup. It is less direct for product management than Scrive or Caliber."
+        ],
+        "interview_points": [
+          "Explain why this role fits: Could use Fei's founder, product-development, stakeholder, and technical-translation strengths in a deep-tech commercial setting.",
+          "Prepare an honest answer for this risk: It expects proven sales/business development experience, ideally SaaS/deep tech/high-growth startup. It is less direct for product management than Scrive or Caliber."
+        ],
+        "questions_to_ask": [],
+        "salary": {
+          "currency": "",
+          "low": "",
+          "mid": "",
+          "high": "",
+          "period": "",
+          "note": "Stockholm deep-tech business developer roles likely around SEK 40k-60k/month plus possible variable depending on seniority."
         }
       }
     },
