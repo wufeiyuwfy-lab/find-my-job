@@ -112,6 +112,15 @@ function currentSlug() {
   return params.get("job");
 }
 
+function isNewToday(job) {
+  const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Stockholm" });
+  return job.addedDate === today || (Array.isArray(job.tags) && job.tags.includes("New today") && job.date === today);
+}
+
+function newTodayBadge(job) {
+  return isNewToday(job) ? '<span class="new-today-badge">New today</span>' : "";
+}
+
 function summarizeScores(jobs) {
   if (!jobs.length) return { total: 0, average: 0, top: 0 };
   const totalScore = jobs.reduce((sum, job) => sum + job.score, 0);
@@ -187,6 +196,7 @@ function renderHome() {
     node.classList.toggle("is-deleted", isDeleted);
     node.style.setProperty("--score-angle", `${Math.max(0, Math.min(100, job.score)) * 3.6}deg`);
     node.querySelector(".score-ring strong").textContent = job.score;
+    node.querySelector(".card-text").prepend(document.createRange().createContextualFragment(newTodayBadge(job)));
     node.querySelector(".company").textContent = job.company;
     node.querySelector("h2").textContent = job.title;
     node.querySelector(".meta-line").textContent = job.location;
@@ -312,6 +322,7 @@ function renderJob(slug) {
           <button class="secondary-button" id="backToJobs" type="button">← Jobs</button>
           <button class="applied-button" id="toggleCurrentApplied" type="button"></button>
           <button class="danger-button" id="removeCurrentJob" type="button">Remove</button>
+          ${newTodayBadge(job)}
           <h1>${escapeHtml(job.title)}</h1>
           <p class="company">${escapeHtml(job.company)}</p>
           <p class="meta-line">${escapeHtml(job.location)}</p>
