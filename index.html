@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Job Fit Dashboard</title>
-    <link rel="stylesheet" href="./styles.css?v=20260526-native-scroll">
+    <link rel="stylesheet" href="./styles.css?v=20260526-language-switch">
   </head>
   <body>
     <header class="topbar">
@@ -16,6 +16,10 @@
         </span>
       </a>
       <div class="top-actions">
+        <div class="language-switch" aria-label="Language">
+          <button class="language-button active" data-language="en" type="button">EN</button>
+          <button class="language-button" data-language="zh" type="button">中文</button>
+        </div>
         <button class="icon-button" id="refreshButton" type="button" title="Refresh jobs" aria-label="Refresh jobs">↻</button>
       </div>
     </header>
@@ -45,6 +49,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260526-native-scroll" defer></script>
+    <script src="./app.js?v=20260526-language-switch" defer></script>
   </body>
 </html>

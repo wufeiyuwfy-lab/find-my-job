@@ -1,15 +1,135 @@
 const app = document.querySelector("#app");
 const refreshButton = document.querySelector("#refreshButton");
 const cardTemplate = document.querySelector("#jobCardTemplate");
+const languageButtons = [...document.querySelectorAll("[data-language]")];
 const hiddenKey = "job-fit-dashboard-hidden";
 const appliedKey = "job-fit-dashboard-applied";
 const restoredKey = "job-fit-dashboard-restored";
+const languageKey = "job-fit-dashboard-language";
 
 let allJobs = [];
 let allDeletedJobs = [];
 let defaultAppliedJobs = [];
 let activeTab = "report";
 let activeFilter = "open";
+let activeLanguage = getSavedLanguage();
+
+const translations = {
+  en: {
+    pageTitle: "Job Fit Dashboard",
+    brandSubtitle: "Static GitHub Pages version",
+    refreshJobs: "Refresh jobs",
+    pipeline: "Application pipeline",
+    jobs: "jobs",
+    topScore: "top score",
+    avgScore: "avg score",
+    openJobs: "Open jobs",
+    applied: "Applied",
+    deleted: "Deleted",
+    newToday: "New today",
+    fit: "fit",
+    noSummary: "No summary available.",
+    noVerdict: "No verdict",
+    prepared: "prepared",
+    originalSource: "Original source",
+    noSourceLink: "No source link",
+    restore: "Restore",
+    markApplied: "Mark applied",
+    remove: "Remove",
+    appliedTitle: "Review the jobs already marked as applied.",
+    deletedTitle: "Review jobs removed from the main dashboard.",
+    openTitle: "Track every job report from strongest fit to weakest fit.",
+    deletedCopy: "Deleted jobs are hidden from Open and Applied, but kept here so you can restore them if needed.",
+    openCopy: "This static version is hosted from HTML/JSON. Applied and deleted jobs are saved in this browser, with the latest exported state included.",
+    noApplied: "No jobs are marked as applied yet.",
+    noDeleted: "No jobs have been deleted from the dashboard.",
+    noOpen: "No open jobs are visible. Check Applied or Deleted, or clear this browser's site data to restore local changes.",
+    markedApplied: "Job marked as applied",
+    movedToOpen: "Job moved back to open jobs",
+    hiddenInBrowser: "Job hidden in this browser",
+    restoredToOpen: "Job restored to open jobs",
+    backJobs: "← Jobs",
+    fitScore: "/100 fit",
+    report: "Report",
+    cv: "CV",
+    letter: "Letter",
+    ppt: "Interview PPT",
+    reviewReport: "Review the job report and preparation strategy.",
+    deepAnalysisReady: "Deep analysis report ready",
+    deepAnalysisMissing: "Deep analysis report missing from export for this high-score job.",
+    deepAnalysisReport: "Deep analysis report",
+    highScoreAutoReport: "High-score auto report",
+    additionalReport: "Additional report",
+    fitScoreBreakdown: "Fit score breakdown",
+    salarySignal: "Salary signal",
+    noSalary: "No salary range available.",
+    strengths: "Strengths",
+    gaps: "Gaps to handle",
+    noItems: "No items available.",
+    staticDraft: "Static exported draft. Edit in the local app if you need to save changes.",
+    noDraft: "No draft was exported for this job.",
+    noContentPrefix: "No",
+    noContentSuffix: "content available in this static export.",
+    loadError: "Could not load static job data.",
+  },
+  zh: {
+    pageTitle: "求职匹配看板",
+    brandSubtitle: "GitHub Pages 静态版",
+    refreshJobs: "刷新职位",
+    pipeline: "申请进度",
+    jobs: "职位",
+    topScore: "最高分",
+    avgScore: "平均分",
+    openJobs: "开放职位",
+    applied: "已申请",
+    deleted: "已删除",
+    newToday: "今日新增",
+    fit: "匹配",
+    noSummary: "暂无摘要。",
+    noVerdict: "暂无结论",
+    prepared: "已准备",
+    originalSource: "原始链接",
+    noSourceLink: "暂无链接",
+    restore: "恢复",
+    markApplied: "标记已申请",
+    remove: "删除",
+    appliedTitle: "查看已经标记为已申请的职位。",
+    deletedTitle: "查看从主看板移除的职位。",
+    openTitle: "按匹配度从高到低追踪每个职位报告。",
+    deletedCopy: "已删除职位会从开放和已申请列表中隐藏，但保留在这里，方便需要时恢复。",
+    openCopy: "这是 HTML/JSON 托管的静态版本。已申请和已删除状态会保存在此浏览器中，并包含最新导出的状态。",
+    noApplied: "目前还没有标记为已申请的职位。",
+    noDeleted: "目前没有从看板删除的职位。",
+    noOpen: "目前没有可见的开放职位。请查看已申请或已删除，或清除浏览器站点数据以恢复本地更改。",
+    markedApplied: "已标记为已申请",
+    movedToOpen: "已移回开放职位",
+    hiddenInBrowser: "职位已在此浏览器中隐藏",
+    restoredToOpen: "职位已恢复到开放列表",
+    backJobs: "← 职位",
+    fitScore: "/100 匹配",
+    report: "报告",
+    cv: "简历",
+    letter: "动机信",
+    ppt: "面试PPT",
+    reviewReport: "查看职位报告和申请准备策略。",
+    deepAnalysisReady: "深度分析报告已生成",
+    deepAnalysisMissing: "此高分职位的深度分析报告未包含在导出中。",
+    deepAnalysisReport: "深度分析报告",
+    highScoreAutoReport: "高分职位自动报告",
+    additionalReport: "补充报告",
+    fitScoreBreakdown: "匹配分数拆解",
+    salarySignal: "薪资信号",
+    noSalary: "暂无薪资范围。",
+    strengths: "优势",
+    gaps: "需要处理的差距",
+    noItems: "暂无内容。",
+    staticDraft: "这是静态导出的草稿。如需保存修改，请在本地应用中编辑。",
+    noDraft: "此职位未导出该草稿。",
+    noContentPrefix: "暂无",
+    noContentSuffix: "内容可在此静态导出中查看。",
+    loadError: "无法加载静态职位数据。",
+  },
+};
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -18,6 +138,39 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function t(key) {
+  return translations[activeLanguage]?.[key] || translations.en[key] || key;
+}
+
+function getSavedLanguage() {
+  try {
+    const saved = localStorage.getItem(languageKey);
+    return saved === "zh" ? "zh" : "en";
+  } catch {
+    return "en";
+  }
+}
+
+function setLanguage(language) {
+  activeLanguage = language === "zh" ? "zh" : "en";
+  localStorage.setItem(languageKey, activeLanguage);
+  updateLanguageMeta();
+  renderRoute();
+}
+
+function updateLanguageMeta() {
+  document.documentElement.lang = activeLanguage === "zh" ? "zh-CN" : "en";
+  document.title = t("pageTitle");
+  const subtitle = document.querySelector(".brand small");
+  if (subtitle) subtitle.textContent = t("brandSubtitle");
+  refreshButton.title = t("refreshJobs");
+  refreshButton.setAttribute("aria-label", t("refreshJobs"));
+  languageButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.language === activeLanguage);
+    button.setAttribute("aria-pressed", String(button.dataset.language === activeLanguage));
+  });
 }
 
 function getHiddenJobs() {
@@ -92,7 +245,7 @@ async function loadJobs() {
     fetch("./data/deleted-jobs.json", { cache: "no-store" }).catch(() => null),
     fetch("./data/applied-jobs.json", { cache: "no-store" }).catch(() => null),
   ]);
-  if (!jobsResponse.ok) throw new Error("Could not load static job data.");
+  if (!jobsResponse.ok) throw new Error(t("loadError"));
   const jobsPayload = await jobsResponse.json();
   const deletedPayload = deletedResponse?.ok ? await deletedResponse.json() : {};
   const appliedPayload = appliedResponse?.ok ? await appliedResponse.json() : {};
@@ -118,7 +271,7 @@ function isNewToday(job) {
 }
 
 function newTodayBadge(job) {
-  return isNewToday(job) ? '<span class="new-today-badge">New today</span>' : "";
+  return isNewToday(job) ? `<span class="new-today-badge">${t("newToday")}</span>` : "";
 }
 
 function summarizeScores(jobs) {
@@ -152,20 +305,20 @@ function renderHome() {
   app.innerHTML = `
     <section class="hero">
       <div>
-        <p class="eyebrow">Application pipeline</p>
+        <p class="eyebrow">${t("pipeline")}</p>
         <h1>${homeTitle()}</h1>
         <p class="hero-copy">${homeCopy()}</p>
       </div>
       <div class="stats" aria-label="Dashboard summary">
-        <div class="stat"><strong>${stats.total}</strong><span>jobs</span></div>
-        <div class="stat"><strong>${stats.top}</strong><span>top score</span></div>
-        <div class="stat"><strong>${stats.average}</strong><span>avg score</span></div>
+        <div class="stat"><strong>${stats.total}</strong><span>${t("jobs")}</span></div>
+        <div class="stat"><strong>${stats.top}</strong><span>${t("topScore")}</span></div>
+        <div class="stat"><strong>${stats.average}</strong><span>${t("avgScore")}</span></div>
       </div>
     </section>
     <section class="filter-bar" aria-label="Job filters">
-      <button class="filter-button" data-filter="open" type="button">Open jobs <span>${openCount}</span></button>
-      <button class="filter-button" data-filter="applied" type="button">Applied <span>${appliedCount}</span></button>
-      <button class="filter-button" data-filter="deleted" type="button">Deleted <span>${deletedCount}</span></button>
+      <button class="filter-button" data-filter="open" type="button">${t("openJobs")} <span>${openCount}</span></button>
+      <button class="filter-button" data-filter="applied" type="button">${t("applied")} <span>${appliedCount}</span></button>
+      <button class="filter-button" data-filter="deleted" type="button">${t("deleted")} <span>${deletedCount}</span></button>
     </section>
     <section class="job-grid" aria-label="Jobs"></section>
   `;
@@ -200,16 +353,17 @@ function renderHome() {
     node.querySelector(".company").textContent = job.company;
     node.querySelector("h2").textContent = job.title;
     node.querySelector(".meta-line").textContent = job.location;
-    node.querySelector(".summary").textContent = job.summary || "No summary available.";
-    node.querySelector(".verdict").textContent = job.verdict || "No verdict";
-    node.querySelector(".progress-pill").textContent = `${job.progress.completed}/${job.progress.total} prepared`;
+    node.querySelector(".summary").textContent = job.summary || t("noSummary");
+    node.querySelector(".verdict").textContent = job.verdict || t("noVerdict");
+    node.querySelector(".score-ring span").textContent = t("fit");
+    node.querySelector(".progress-pill").textContent = `${job.progress.completed}/${job.progress.total} ${t("prepared")}`;
 
     const sourceLink = document.createElement("a");
     sourceLink.className = "source-link";
     sourceLink.href = job.applicationUrl || "#";
     sourceLink.target = "_blank";
     sourceLink.rel = "noreferrer";
-    sourceLink.textContent = job.applicationUrl ? "Original source" : "No source link";
+    sourceLink.textContent = job.applicationUrl ? t("originalSource") : t("noSourceLink");
     if (!job.applicationUrl) sourceLink.classList.add("disabled");
     sourceLink.addEventListener("click", (event) => event.stopPropagation());
     node.querySelector(".card-footer").appendChild(sourceLink);
@@ -218,7 +372,7 @@ function renderHome() {
       const restoreButton = document.createElement("button");
       restoreButton.className = "restore-button";
       restoreButton.type = "button";
-      restoreButton.textContent = "Restore";
+      restoreButton.textContent = t("restore");
       restoreButton.addEventListener("click", (event) => {
         event.stopPropagation();
         restoreJob(job.slug);
@@ -228,7 +382,7 @@ function renderHome() {
       const appliedButton = document.createElement("button");
       appliedButton.className = "applied-button";
       appliedButton.type = "button";
-      appliedButton.textContent = isApplied ? "Applied" : "Mark applied";
+      appliedButton.textContent = isApplied ? t("applied") : t("markApplied");
       appliedButton.setAttribute("aria-pressed", String(isApplied));
       appliedButton.addEventListener("click", (event) => {
         event.stopPropagation();
@@ -239,7 +393,7 @@ function renderHome() {
       const removeButton = document.createElement("button");
       removeButton.className = "remove-button";
       removeButton.type = "button";
-      removeButton.textContent = "Remove";
+      removeButton.textContent = t("remove");
       removeButton.addEventListener("click", (event) => {
         event.stopPropagation();
         removeJob(job.slug);
@@ -260,20 +414,20 @@ function renderHome() {
 }
 
 function homeTitle() {
-  if (activeFilter === "applied") return "Review the jobs already marked as applied.";
-  if (activeFilter === "deleted") return "Review jobs removed from the main dashboard.";
-  return "Track every job report from strongest fit to weakest fit.";
+  if (activeFilter === "applied") return t("appliedTitle");
+  if (activeFilter === "deleted") return t("deletedTitle");
+  return t("openTitle");
 }
 
 function homeCopy() {
-  if (activeFilter === "deleted") return "Deleted jobs are hidden from Open and Applied, but kept here so you can restore them if needed.";
-  return "This static version is hosted from HTML/JSON. Applied and deleted jobs are saved in this browser, with the latest exported state included.";
+  if (activeFilter === "deleted") return t("deletedCopy");
+  return t("openCopy");
 }
 
 function emptyMessage() {
-  if (activeFilter === "applied") return "No jobs are marked as applied yet.";
-  if (activeFilter === "deleted") return "No jobs have been deleted from the dashboard.";
-  return "No open jobs are visible. Check Applied or Deleted, or clear this browser's site data to restore local changes.";
+  if (activeFilter === "applied") return t("noApplied");
+  if (activeFilter === "deleted") return t("noDeleted");
+  return t("noOpen");
 }
 
 function toggleApplied(slug) {
@@ -285,7 +439,7 @@ function toggleApplied(slug) {
     applied.delete(slug);
   }
   setAppliedJobs(applied);
-  showToast(nextState ? "Job marked as applied" : "Job moved back to open jobs");
+  showToast(nextState ? t("markedApplied") : t("movedToOpen"));
   renderRoute();
 }
 
@@ -293,7 +447,7 @@ function removeJob(slug) {
   const hidden = getHiddenJobs();
   hidden.add(slug);
   setHiddenJobs(hidden);
-  showToast("Job hidden in this browser");
+  showToast(t("hiddenInBrowser"));
   renderHome();
 }
 
@@ -304,7 +458,7 @@ function restoreJob(slug) {
   restored.add(slug);
   setHiddenJobs(hidden);
   setRestoredJobs(restored);
-  showToast("Job restored to open jobs");
+  showToast(t("restoredToOpen"));
   renderHome();
 }
 
@@ -319,15 +473,15 @@ function renderJob(slug) {
     <section class="detail-layout">
       <aside class="sidebar">
         <div class="job-identity">
-          <button class="secondary-button" id="backToJobs" type="button">← Jobs</button>
+          <button class="secondary-button" id="backToJobs" type="button">${t("backJobs")}</button>
           <button class="applied-button" id="toggleCurrentApplied" type="button"></button>
-          <button class="danger-button" id="removeCurrentJob" type="button">Remove</button>
+          <button class="danger-button" id="removeCurrentJob" type="button">${t("remove")}</button>
           ${newTodayBadge(job)}
           <h1>${escapeHtml(job.title)}</h1>
           <p class="company">${escapeHtml(job.company)}</p>
           <p class="meta-line">${escapeHtml(job.location)}</p>
-          <p class="score-large"><strong>${job.score}</strong><span>/100 fit</span></p>
-          <p><span class="progress-pill">${job.progress.completed}/${job.progress.total} prepared</span></p>
+          <p class="score-large"><strong>${job.score}</strong><span>${t("fitScore")}</span></p>
+          <p><span class="progress-pill">${job.progress.completed}/${job.progress.total} ${t("prepared")}</span></p>
         </div>
         <nav class="tabs" aria-label="Job detail sections">
           ${["report", "cv", "letter", "ppt"].map((tab) => `<button class="tab-button" data-tab="${tab}" type="button">${tabLabel(tab)}</button>`).join("")}
@@ -341,7 +495,7 @@ function renderJob(slug) {
   const applied = getAppliedJobs();
   const appliedButton = app.querySelector("#toggleCurrentApplied");
   const isApplied = applied.has(job.slug);
-  appliedButton.textContent = isApplied ? "Applied" : "Mark applied";
+  appliedButton.textContent = isApplied ? t("applied") : t("markApplied");
   appliedButton.setAttribute("aria-pressed", String(isApplied));
   appliedButton.addEventListener("click", () => toggleApplied(job.slug));
   app.querySelector("#removeCurrentJob").addEventListener("click", () => {
@@ -360,22 +514,22 @@ function renderJob(slug) {
 }
 
 function tabLabel(tab) {
-  if (tab === "cv") return "CV";
-  if (tab === "letter") return "Letter";
-  if (tab === "ppt") return "Interview PPT";
-  return "Report";
+  if (tab === "cv") return t("cv");
+  if (tab === "letter") return t("letter");
+  if (tab === "ppt") return t("ppt");
+  return t("report");
 }
 
 function renderTab(job) {
-  if (activeTab === "cv") return renderTextFile(job, "cv", "CV");
-  if (activeTab === "letter") return renderTextFile(job, "letter", "Motivation letter");
-  if (activeTab === "ppt") return renderTextFile(job, "ppt", "Interview PPT");
+  if (activeTab === "cv") return renderTextFile(job, "cv", t("cv"));
+  if (activeTab === "letter") return renderTextFile(job, "letter", t("letter"));
+  if (activeTab === "ppt") return renderTextFile(job, "ppt", t("ppt"));
   return renderReport(job);
 }
 
 function listItems(items, limit = 6) {
   const safeItems = Array.isArray(items) ? items.slice(0, limit) : [];
-  if (!safeItems.length) return "<li>No items available.</li>";
+  if (!safeItems.length) return `<li>${t("noItems")}</li>`;
   return safeItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
 }
 
@@ -388,16 +542,16 @@ function renderDeepAnalysis(job) {
   const report = job.files?.deepReport || "";
   const content = report.trim()
     ? `
-      <div class="analysis-status ready">Deep analysis report ready</div>
+      <div class="analysis-status ready">${t("deepAnalysisReady")}</div>
       <article class="markdown-preview">${markdownToHtml(report)}</article>
     `
-    : `<div class="empty-state">Deep analysis report missing from export for this high-score job.</div>`;
+    : `<div class="empty-state">${t("deepAnalysisMissing")}</div>`;
 
   return `
     <section class="deep-analysis" id="deepAnalysisPanel">
       <div class="deep-analysis-heading">
-        <h3>Deep analysis report</h3>
-        <span>${Number(job.score) >= 80 ? "High-score auto report" : "Additional report"}</span>
+        <h3>${t("deepAnalysisReport")}</h3>
+        <span>${Number(job.score) >= 80 ? t("highScoreAutoReport") : t("additionalReport")}</span>
       </div>
       ${content}
     </section>
@@ -512,27 +666,27 @@ function renderReport(job) {
   document.querySelector("#contentPanel").innerHTML = `
     <div class="panel-header">
       <div>
-        <h2>Report</h2>
-        <p>${escapeHtml(job.summary || "Review the job report and preparation strategy.")}</p>
+        <h2>${t("report")}</h2>
+        <p>${escapeHtml(job.summary || t("reviewReport"))}</p>
       </div>
     </div>
     ${renderDeepAnalysis(job)}
     <div class="summary-grid">
       <article class="info-box">
-        <h3>Fit score breakdown</h3>
-        <ul>${(job.analysis?.score_breakdown || []).map((item) => `<li>${escapeHtml(item.label)}: ${escapeHtml(item.score)}/${escapeHtml(item.weight)}</li>`).join("") || "<li>No breakdown available.</li>"}</ul>
+        <h3>${t("fitScoreBreakdown")}</h3>
+        <ul>${(job.analysis?.score_breakdown || []).map((item) => `<li>${escapeHtml(item.label)}: ${escapeHtml(item.score)}/${escapeHtml(item.weight)}</li>`).join("") || `<li>${t("noItems")}</li>`}</ul>
       </article>
       <article class="info-box">
-        <h3>Salary signal</h3>
-        <p>${salary.currency ? `${escapeHtml(salary.currency)} ${escapeHtml(salary.low)}-${escapeHtml(salary.high)} / ${escapeHtml(salary.period || "period")}` : "No salary range available."}</p>
+        <h3>${t("salarySignal")}</h3>
+        <p>${salary.currency ? `${escapeHtml(salary.currency)} ${escapeHtml(salary.low)}-${escapeHtml(salary.high)} / ${escapeHtml(salary.period || "period")}` : t("noSalary")}</p>
         <p>${escapeHtml(salary.note || "")}</p>
       </article>
       <article class="info-box">
-        <h3>Strengths</h3>
+        <h3>${t("strengths")}</h3>
         <ul>${listItems(job.analysis?.strengths)}</ul>
       </article>
       <article class="info-box">
-        <h3>Gaps to handle</h3>
+        <h3>${t("gaps")}</h3>
         <ul>${listItems(job.analysis?.gaps)}</ul>
       </article>
     </div>
@@ -545,10 +699,10 @@ function renderTextFile(job, key, title) {
     <div class="panel-header">
       <div>
         <h2>${title}</h2>
-        <p>${content ? "Static exported draft. Edit in the local app if you need to save changes." : "No draft was exported for this job."}</p>
+        <p>${content ? t("staticDraft") : t("noDraft")}</p>
       </div>
     </div>
-    ${content ? `<textarea class="editor" readonly>${escapeHtml(content)}</textarea>` : `<div class="empty-state">No ${escapeHtml(title.toLowerCase())} content available in this static export.</div>`}
+    ${content ? `<textarea class="editor" readonly>${escapeHtml(content)}</textarea>` : `<div class="empty-state">${t("noContentPrefix")} ${escapeHtml(title.toLowerCase())} ${t("noContentSuffix")}</div>`}
   `;
 }
 
@@ -567,8 +721,12 @@ refreshButton.addEventListener("click", () => {
     app.innerHTML = `<section class="error-state">${escapeHtml(error.message)}</section>`;
   });
 });
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.language));
+});
 window.addEventListener("popstate", renderRoute);
 
+updateLanguageMeta();
 loadJobs().then(renderRoute).catch((error) => {
   app.innerHTML = `<section class="error-state">${escapeHtml(error.message)}</section>`;
 });

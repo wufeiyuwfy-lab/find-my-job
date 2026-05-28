@@ -91,6 +91,43 @@ button {
   font-size: 13px;
 }
 
+.top-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.language-button {
+  min-width: 44px;
+  min-height: 32px;
+  padding: 5px 9px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.language-button.active {
+  background: var(--olive);
+  color: #fff;
+}
+
+.language-button:focus {
+  outline: 2px solid rgba(81, 109, 145, 0.45);
+  outline-offset: 2px;
+}
+
 .icon-button {
   display: grid;
   place-items: center;
@@ -785,6 +822,11 @@ h1 {
 @media (max-width: 520px) {
   .topbar {
     align-items: flex-start;
+  }
+
+  .top-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .brand small {
