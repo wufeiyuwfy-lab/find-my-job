@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-25T22:45:45.566Z",
+  "exportedAt": "2026-05-28T12:17:21.104Z",
   "jobs": [
     {
       "slug": "aimpoint-junior-product-manager",
@@ -261,6 +261,122 @@
         "language_fit": "English fluency required; Swedish is not necessary.",
         "company_signal": "Official H&M careers page has Apply now visible and describes the role as full-time temporary contract.",
         "application_angle": "Best angle is commercial hardgoods design: industrial designer with product-development, materials, prototyping, and visualisation strength."
+      }
+    },
+    {
+      "slug": "digest-schibsted-product-manager-ad-solutions",
+      "sourceType": "digest",
+      "title": "Product Manager, Ad Solutions",
+      "company": "Schibsted News Media",
+      "location": "Stockholm / Oslo",
+      "score": 76,
+      "verdict": "Open / English likely OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product manager role for Schibsted's Admarket advertising platform, focused on product strategy, discovery, success metrics, backlog prioritization, UX/engineering collaboration, stakeholder trade-offs, and experimentation with new tools.",
+      "applicationUrl": "https://schibsted.teamtailor.com/jobs/7563819-product-manager-ad-solutions",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong true product-management role with discovery, roadmap/prioritization, product metrics, UX/engineering collaboration, stakeholder communication, and experimentation with emerging tools.",
+          "The listing is in English and no Swedish requirement was found in the extracted role text."
+        ],
+        "gaps": [
+          "They want proven digital product management experience, ideally in platform or advertising technology domains."
+        ],
+        "interview_points": [
+          "Frame SensoryWind as evidence of structured product ownership from problem discovery through prototype, pilot, stakeholder feedback, and iteration.",
+          "Prepare examples of turning ambiguous user/business needs into product priorities."
+        ],
+        "questions_to_ask": [
+          "How senior is this role in practice, and what support exists from the Head of Product?",
+          "How technical/ad-tech-specific is the first six months?",
+          "What metrics define success for Admarket product initiatives?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "50k",
+          "mid": "60k",
+          "high": "70k",
+          "period": "month",
+          "note": "Estimated Stockholm digital PM range depending on level. Confirm salary, pension, and leveling directly."
+        },
+        "language_fit": "English likely OK; no Swedish requirement found in the extracted Teamtailor listing.",
+        "company_signal": "Teamtailor page shows Apply and deadline June 30, 2026.",
+        "application_angle": "A product-builder story: user-centered discovery, product decision-making, stakeholder trade-offs, and fast learning."
+      }
+    },
+    {
+      "slug": "digest-hm-junior-product-developer-edition-campaign",
+      "sourceType": "digest",
+      "title": "Junior Product Developer for Edition & Campaign",
+      "company": "H&M Womenswear",
+      "location": "Stockholm",
+      "score": 75,
+      "verdict": "Active / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Junior product-development role supporting Edition & Campaign at H&M Womenswear, connecting trend insight, customer needs, samples, product follow-up, cross-functional coordination, and commercial assortment development.",
+      "applicationUrl": "https://career.hm.com/us-en/job/d8e488c8-9589-4370-b650-5fd51cf05ae6/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong bridge into product development through trend/customer insight, product follow-up, sample coordination, and cross-functional work with designers and planners.",
+          "Listing asks for CV in English and does not list Swedish as a requirement."
+        ],
+        "gaps": [
+          "Fashion-specific role asking for 2+ years in product development, buying, fashion, or retail."
+        ],
+        "interview_points": [
+          "Use industrial design, product development, prototyping, materials, and user-centered portfolio examples.",
+          "Frame founder experience as commercial product ownership and cross-functional coordination."
+        ],
+        "questions_to_ask": [
+          "What is the length of the temporary contract and possible extension path?",
+          "How much portfolio/product sample work should be included in the application?",
+          "How is success measured for a junior product developer in the first season?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "35k",
+          "mid": "43k",
+          "high": "55k",
+          "period": "month",
+          "note": "Jobbland benchmark for similar product developer roles shows about SEK 47k-63k/month, but junior temporary roles may be lower."
+        },
+        "language_fit": "English OK; listing asks for CV in English and does not state Swedish as required.",
+        "company_signal": "Jobbland page links to H&M Careers application and says applications are handled continuously.",
+        "application_angle": "A practical product-development bridge: trend insight, product quality, materials, samples, and commercial customer understanding."
       }
     },
     {
@@ -680,6 +796,64 @@
       }
     },
     {
+      "slug": "digest-wolt-product-manager-courier-compliance",
+      "sourceType": "digest",
+      "title": "Product Manager, Courier Compliance",
+      "company": "Wolt",
+      "location": "Stockholm / Helsinki / Berlin",
+      "score": 68,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product role in Wolt's courier compliance area, focused on scalable compliance workflows, courier and operational experience, legal/stakeholder alignment, and global/local delivery-product adaptation.",
+      "applicationUrl": "https://job-boards.greenhouse.io/wolt/jobs/7653842",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Relevant cross-functional product role involving user trust, scalable workflows, operations, and stakeholder alignment.",
+          "English-language Greenhouse listing with no Swedish requirement found."
+        ],
+        "gaps": [
+          "Likely expects demonstrated PM experience, compliance/logistics/regulatory complexity, and ability to lead mature cross-functional teams."
+        ],
+        "interview_points": [
+          "Position SensoryWind and management studies as evidence of cross-functional execution and stakeholder learning.",
+          "Prepare a realistic story around learning compliance-heavy product domains."
+        ],
+        "questions_to_ask": [
+          "What compliance domain knowledge is expected from day one?",
+          "How senior is the role and what PM support exists?",
+          "What courier/customer metrics does this team own?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "55k",
+          "mid": "65k",
+          "high": "75k",
+          "period": "month",
+          "note": "Estimated Stockholm PM range for a mature tech company; may include equity/RSUs depending on level."
+        },
+        "language_fit": "English OK; no Swedish requirement found in the extracted Greenhouse listing.",
+        "company_signal": "Greenhouse page has Apply and application form visible.",
+        "application_angle": "A stretch PM application centered on cross-functional product execution, user trust, and operational systems."
+      }
+    },
+    {
       "slug": "digest-inriver-product-manager",
       "sourceType": "digest",
       "title": "Product Manager",
@@ -827,6 +1001,64 @@
         "language_fit": "No Swedish requirement found in the Greenhouse listing.",
         "company_signal": "Greenhouse page labels the role as New and includes an active application form.",
         "application_angle": "A stretch application should focus on business transformation, stakeholder communication, and AI literacy rather than design."
+      }
+    },
+    {
+      "slug": "digest-hm-product-developer-heavy-woven",
+      "sourceType": "digest",
+      "title": "Product Developer Heavy Woven",
+      "company": "H&M Womenswear",
+      "location": "Stockholm",
+      "score": 64,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-26",
+      "addedDate": "2026-05-26",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product developer role for H&M Womenswear heavy woven products, focused on product quality, trend translation, commercial assortment work, and cross-functional collaboration with product manager, planner, designer, and pattern maker.",
+      "applicationUrl": "https://career.hm.com/job/a58fa8ef-1b38-4546-8771-42ba3582e6d8/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Connects with Fei's industrial/product design, materials, product development, and user-centered commercial assortment interests.",
+          "Listing asks for CV in English and does not state Swedish as required."
+        ],
+        "gaps": [
+          "Asks for 5+ years in product development or buying and specific heavy woven/trousers experience, so it is senior and fashion-specific."
+        ],
+        "interview_points": [
+          "Only apply if using this as a product-development bridge rather than a direct PM move.",
+          "Lead with materials, prototyping, product quality, and commercial product-development thinking."
+        ],
+        "questions_to_ask": [
+          "How strict is the 5+ years requirement?",
+          "Could industrial/product design experience substitute for fashion-specific product development?",
+          "What product categories and materials are the first priority?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "47k",
+          "mid": "55k",
+          "high": "63k",
+          "period": "month",
+          "note": "Estimated from Swedish product-developer benchmarks; exact range depends on seniority and contract terms."
+        },
+        "language_fit": "English OK; listing asks for CV in English and does not state Swedish as required.",
+        "company_signal": "Official H&M Careers page has Apply now visible.",
+        "application_angle": "A lower-priority stretch role using design/materials/product development rather than software PM positioning."
       }
     },
     {
@@ -1411,6 +1643,533 @@
           "period": "",
           "note": "Product owner roles in Sweden are often around SEK 45k-65k/month depending on seniority and technical depth."
         }
+      }
+    },
+    {
+      "slug": "digest-duni-e-commerce-manager",
+      "sourceType": "digest",
+      "title": "E-commerce Manager to Duni Group",
+      "company": "Duni Group",
+      "location": "Malmö, hybrid",
+      "score": 73,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-27",
+      "addedDate": "2026-05-27",
+      "tags": [
+        "New today"
+      ],
+      "summary": "E-commerce leadership role in Malmö driving profitable digital sales growth, customer journey improvement, e-commerce roadmap, UX, analytics, and cross-functional business/IT collaboration for Duni Group.",
+      "applicationUrl": "https://dunigroupmalmo.teamtailor.com/jobs/7739715-e-commerce-manager-to-duni-group",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong Malmö location and English application path; role connects product, customer journey, UX, analytics, digital growth, and cross-functional business/IT work.",
+          "Good bridge from Fei’s product-development and management direction into commercial digital product ownership."
+        ],
+        "gaps": [
+          "This is a manager-level e-commerce role and likely expects proven digital growth/e-commerce leadership experience."
+        ],
+        "interview_points": [
+          "Frame SensoryWind as evidence of customer insight, product-market thinking, stakeholder coordination, and hands-on execution.",
+          "Prepare a careful answer about limited direct e-commerce leadership experience and emphasize fast learning, analytics curiosity, and cross-functional product thinking."
+        ],
+        "questions_to_ask": [
+          "How senior is the role in practice and what team support exists?",
+          "Which e-commerce platform, PIM, analytics, and CRM tools does the team use?",
+          "What salary range and hybrid expectations apply?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "45k",
+          "mid": "58k",
+          "high": "70k",
+          "period": "month",
+          "note": "Estimated Malmö e-commerce/digital manager range; verify salary, bonus, pension, and responsibility level directly."
+        },
+        "language_fit": "English OK. The official listing asks for good English and requests CV and cover letter in English by June 5, 2026.",
+        "company_signal": "Official Teamtailor page has Apply visible; Duni states it has around 2,700 employees in 26 countries and HQ in Malmö.",
+        "application_angle": "Digital customer journey and product-growth angle: industrial design + management + founder execution applied to e-commerce experience and business impact."
+      }
+    },
+    {
+      "slug": "digest-hm-beauty-junior-buyer-private-label",
+      "sourceType": "digest",
+      "title": "Junior Buyer Private Label to H&M Beauty",
+      "company": "H&M Beauty",
+      "location": "Stockholm, 10-month contract",
+      "score": 72,
+      "verdict": "Active / English OK / New today",
+      "date": "2026-05-27",
+      "addedDate": "2026-05-27",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Junior buyer role supporting Product Manager work for H&M Beauty private label, focused on assortment development, trends, customer needs, commercial insight, and product-development coordination.",
+      "applicationUrl": "https://career.hm.com/us-en/job/45e07f69-d97a-45d1-b7e9-37105f45132d/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Junior level and global retail product-development context fit Fei’s industrial design, product development, customer insight, and commercial management direction.",
+          "The listing asks for an English CV and does not show Swedish as a must-have in the extracted job text."
+        ],
+        "gaps": [
+          "Beauty/fashion buying is not Fei’s core product domain, and the role is a 10-month temporary contract."
+        ],
+        "interview_points": [
+          "Use examples of translating user needs and trends into tangible product decisions from SensoryWind, H22, and industrial design projects.",
+          "Position the role as a practical bridge into commercial product development rather than pure product management."
+        ],
+        "questions_to_ask": [
+          "Is there a possibility of extension after the 10-month contract?",
+          "How much work is product development versus buying/admin coordination?",
+          "What portfolio or product examples would strengthen the application?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "30k",
+          "mid": "36k",
+          "high": "43k",
+          "period": "month",
+          "note": "Estimated junior buyer/product-development range in Stockholm; confirm contract terms and benefits."
+        },
+        "language_fit": "English OK based on the official H&M page asking for application/CV in English and no Swedish must-have found in extracted text.",
+        "company_signal": "Official H&M Careers page has Apply now visible and describes the role as a full-time temporary position in Stockholm.",
+        "application_angle": "Commercial product-development bridge: customer needs, trend sense, physical/product design, and structured stakeholder work."
+      }
+    },
+    {
+      "slug": "digest-teton-operations-strategy",
+      "sourceType": "digest",
+      "title": "Operations & Strategy",
+      "company": "Teton",
+      "location": "Copenhagen",
+      "score": 74,
+      "verdict": "Open / language likely OK / New today",
+      "date": "2026-05-27",
+      "addedDate": "2026-05-27",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Strategy and operations role at a healthcare AI startup, supporting business scaling, internal projects, operational systems, customer delivery, finance/commercial/legal workflows, and AI-enabled execution.",
+      "applicationUrl": "https://www.thehub.io/jobs/69fb00284ea5414118b65c19",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong startup-operator fit: ownership, cross-functional execution, healthcare/wellbeing product context, AI curiosity, and scaling operations.",
+          "Teton’s care-staff AI/hardware/software context connects well with Fei’s health, wellbeing, and hardware-to-software bridge."
+        ],
+        "gaps": [
+          "This is operations/strategy rather than product management, and Copenhagen work eligibility/practical relocation needs checking."
+        ],
+        "interview_points": [
+          "Lead with founder execution: funding, pilots, partner coordination, and turning ambiguity into concrete next steps.",
+          "Connect SensoryWind/NASA wellbeing work to Teton’s healthcare operations and AI-enabled care context."
+        ],
+        "questions_to_ask": [
+          "Is English the working language and is Danish required for any public-sector/customer tasks?",
+          "Would a Sweden-based candidate be considered, or is Copenhagen presence required?",
+          "What does success look like in the first three months?"
+        ],
+        "salary": {
+          "currency": "DKK",
+          "low": "35k",
+          "mid": "45k",
+          "high": "55k",
+          "period": "month",
+          "note": "Estimated Copenhagen startup operations/strategy range depending on level and equity; verify directly."
+        },
+        "language_fit": "Language not explicit in extracted listing; likely English-friendly due international AI startup context, but verify Danish is not required.",
+        "company_signal": "The Hub listing is active and describes Teton as a fast-growing, well-funded healthcare startup with healthcare AI/hardware/software product context.",
+        "application_angle": "Founder-operator angle: structured execution, stakeholder work, healthcare/wellbeing product interest, and AI-enabled systems thinking."
+      }
+    },
+    {
+      "slug": "digest-priceagent-commercial-outbound-sales-rep",
+      "sourceType": "digest",
+      "title": "Commercial Outbound Sales Rep",
+      "company": "Priceagent",
+      "location": "Stockholm, onsite",
+      "score": 61,
+      "verdict": "Open / English required / New today",
+      "date": "2026-05-27",
+      "addedDate": "2026-05-27",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Commercial sales role in a pricing-intelligence SaaS company, focused on full-cycle sales, inbound/outbound motions, customer value, pricing insights, and global SaaS growth.",
+      "applicationUrl": "https://thehub.io/jobs/69279552efed440a42f8bbc7",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "English required, Stockholm-based SaaS, and connects to product/value/pricing insight rather than generic retail sales.",
+          "Could build commercial experience useful for future product or business-development roles."
+        ],
+        "gaps": [
+          "It is mainly sales, not product management; asks for 1-3 years B2B sales experience and onsite Stockholm presence."
+        ],
+        "interview_points": [
+          "Use SensoryWind funding/partner/customer conversations as evidence of commercial initiative.",
+          "Be honest that this is a business-development path rather than a direct PM path."
+        ],
+        "questions_to_ask": [
+          "What training is provided for candidates without full-cycle SaaS sales experience?",
+          "Is there a path toward product marketing, customer insight, or product roles later?",
+          "What are OTE, base salary, targets, and probation terms?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "32k",
+          "mid": "42k",
+          "high": "55k+",
+          "period": "month",
+          "note": "Sales roles may include commission/OTE; verify base salary, targets, and ramp expectations."
+        },
+        "language_fit": "English required according to The Hub listing; no Swedish must-have found.",
+        "company_signal": "The Hub listing has Apply signal and describes Priceagent as a global SaaS with fresh funding and strong market traction.",
+        "application_angle": "Lower-priority commercial option: pricing insight, SaaS customer value, and business development experience."
+      }
+    },
+    {
+      "slug": "digest-volumental-senior-product-manager-ai-builder-instore",
+      "sourceType": "digest",
+      "title": "Senior Product Manager (AI Builder) - In-store Experience",
+      "company": "Volumental",
+      "location": "Stockholm, hybrid",
+      "score": 79,
+      "verdict": "Open / English office / New today",
+      "date": "2026-05-28",
+      "addedDate": "2026-05-28",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Senior product role for Volumental's in-store FitTech experience, combining 3D scanning, machine learning, physical retail behavior, discovery with shoppers and staff, AI-assisted prototyping, and B2B2C product strategy.",
+      "applicationUrl": "https://thehub.io/jobs/69e2ca3ea9c78524de16a46c",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Excellent domain bridge for Fei: physical user experience, hardware/sensors, retail behavior, AI, and product discovery.",
+          "The role values interaction design, usability, human behavior, customer observation, prototyping, and B2B2C thinking, which connects well with industrial design and SensoryWind."
+        ],
+        "gaps": [
+          "It asks for 5+ years of product management or equivalent product-building experience and is explicitly senior.",
+          "Stockholm hybrid setup requires at least three office days per week."
+        ],
+        "interview_points": [
+          "Use SensoryWind as evidence of equivalent product-building: user need, physical experience, prototype, pilot, stakeholder feedback, and iteration.",
+          "Prepare a direct story about observing real users in physical environments and translating behavior into product decisions."
+        ],
+        "questions_to_ask": [
+          "Would founder-led product development and industrial design count as equivalent product-building experience?",
+          "How senior is the role in practice, and what onboarding support exists?",
+          "How much travel and Stockholm office presence is required?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "55k",
+          "mid": "68k",
+          "high": "85k",
+          "period": "month",
+          "note": "Estimated Stockholm senior PM range for a funded scale-up; verify base salary, options, pension, and office expectations."
+        },
+        "language_fit": "English-friendly. The listing mentions a team with 15+ nationalities in an English-speaking office.",
+        "company_signal": "The Hub listing is active with Apply visible. Volumental states it works across 3,000+ stores in 60 countries with 60M+ foot scans.",
+        "application_angle": "Stretch but strategically strong: position Fei as a user-centered physical-product founder moving into AI-enabled product management."
+      }
+    },
+    {
+      "slug": "digest-scrive-product-manager-identity-trust",
+      "sourceType": "digest",
+      "title": "Product Manager",
+      "company": "Scrive",
+      "location": "Stockholm / Copenhagen / remote Europe",
+      "score": 76,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-28",
+      "addedDate": "2026-05-28",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product Manager role in Scrive's Identity and Trust portfolio, focused on product vision, roadmap, product outcomes, product trio collaboration, user feedback, pricing, go-to-market, partnerships, and digital trust.",
+      "applicationUrl": "https://careers.scrive.com/jobs/7685966-product-manager",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "True product-management role with discovery, roadmap, user empathy, stakeholder communication, and execution explicitly named.",
+          "English fluency is enough, and the role is remote-friendly with Stockholm and Copenhagen hubs."
+        ],
+        "gaps": [
+          "They ask for 2-4 years in a Product Manager role and experience with complex SaaS or regulated products.",
+          "Digital identity, e-signature, API, and compliance domain experience is not obvious in Fei's profile."
+        ],
+        "interview_points": [
+          "Frame SensoryWind as product ownership and stakeholder management, while being honest about transitioning from physical product to SaaS.",
+          "Prepare examples of customer feedback, product prioritization, and communicating trade-offs."
+        ],
+        "questions_to_ask": [
+          "Is the team open to founder/product-development experience as a PM-equivalent background?",
+          "How technical is the Identity and Trust portfolio day to day?",
+          "What support exists for learning e-signature, compliance, and API-driven products?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "48k",
+          "mid": "60k",
+          "high": "72k",
+          "period": "month",
+          "note": "Estimated Stockholm SaaS PM range; verify level, pension, bonus, and remote/hub expectations."
+        },
+        "language_fit": "English OK. The official listing asks for excellent communication and fluency in English, with no Swedish must-have found.",
+        "company_signal": "Official careers page has Apply now visible and says Scrive is a Swedish-founded digital trust company trusted by 13,000+ customers.",
+        "application_angle": "Transition-to-SaaS PM angle: user empathy, roadmap thinking, stakeholder communication, and founder-led product ownership."
+      }
+    },
+    {
+      "slug": "digest-geoguessr-business-analyst",
+      "sourceType": "digest",
+      "title": "Business Analyst",
+      "company": "GeoGuessr",
+      "location": "Stockholm",
+      "score": 68,
+      "verdict": "Open / English or Swedish / New today",
+      "date": "2026-05-28",
+      "addedDate": "2026-05-28",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Business analyst role in GeoGuessr's central insights team, focused on business KPIs, finance analytics, growth, profitability, what-if models, dashboards, product-offer economics, and stakeholder recommendations.",
+      "applicationUrl": "https://thehub.io/jobs/6945e7adefed440a42dfe794",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Good product-adjacent route into analytics, growth, KPIs, business strategy, and product economics in a consumer digital product company.",
+          "The role allows English and/or Swedish communication and is connected to a large global user base."
+        ],
+        "gaps": [
+          "Requires stronger finance analytics, modeling, dashboards, and SaaS metrics than Fei currently shows.",
+          "It is business analytics rather than product management."
+        ],
+        "interview_points": [
+          "Use management studies, startup funding, and SensoryWind business decisions as the basis for commercial analysis interest.",
+          "Prepare one clear example of using user or business evidence to make a product or strategy decision."
+        ],
+        "questions_to_ask": [
+          "Which tools are used for analytics and dashboards?",
+          "How much training/support is available for someone still growing in finance modeling?",
+          "Is English alone sufficient for all stakeholder work?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "42k",
+          "mid": "52k",
+          "high": "65k",
+          "period": "month",
+          "note": "Estimated Stockholm business analyst/product analytics range; verify level and expected modeling depth."
+        },
+        "language_fit": "Likely OK. The listing asks for excellent communication in English and/or Swedish.",
+        "company_signal": "The Hub listing is active with Apply visible; GeoGuessr states it has 80+ colleagues and more than 100M players worldwide.",
+        "application_angle": "Product-adjacent analytics path: show founder business judgment, curiosity about metrics, and ability to translate insight into decisions."
+      }
+    },
+    {
+      "slug": "digest-silex-product-manager-product-development",
+      "sourceType": "digest",
+      "title": "Product Manager - Product Development",
+      "company": "Silex Microsystems",
+      "location": "Jarfalla, Stockholm area",
+      "score": 62,
+      "verdict": "Open / English OK, Swedish beneficial / New today",
+      "date": "2026-05-28",
+      "addedDate": "2026-05-28",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Highly technical product-development role in MEMS manufacturing, leading customer concepts through manufacturability review, process flow, prototype execution, cleanroom evaluation, cross-functional technical coordination, and delivery.",
+      "applicationUrl": "https://silex.teamtailor.com/jobs/7449554-product-manager-product-development",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong physical-product, manufacturability, prototype, customer-interface, and cross-functional project-management connection.",
+          "The role includes hands-on training and values clear communication, organization, curiosity, and business-minded delivery."
+        ],
+        "gaps": [
+          "Hard technical gap: the listing asks for a Master's or PhD with microfabrication/nanotechnology coursework and microfabrication experience.",
+          "Swedish is considered highly beneficial because much internal documentation is in Swedish."
+        ],
+        "interview_points": [
+          "Only apply if Fei wants a technical hardware/manufacturing path and can credibly explain adjacent technical learning.",
+          "Emphasize prototype development, engineering collaboration, manufacturability thinking, and customer/stakeholder coordination."
+        ],
+        "questions_to_ask": [
+          "Is microfabrication experience a hard requirement or can adjacent product/manufacturing experience be considered?",
+          "How much Swedish documentation must be handled independently?",
+          "What training is provided before customer-facing technical responsibility?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "42k",
+          "mid": "55k",
+          "high": "70k",
+          "period": "month",
+          "note": "Estimated technical product/project manager range in Stockholm area; verify based on level and technical expectations."
+        },
+        "language_fit": "English required for technical communication; Swedish is beneficial and may be a practical risk due internal documentation.",
+        "company_signal": "Official Teamtailor page has Apply visible. Silex states it has about 440 coworkers and approx. $150M turnover.",
+        "application_angle": "Technical hardware stretch: prototype/manufacturability and product-development story, not software PM."
+      }
+    },
+    {
+      "slug": "digest-nutrish-ai-product-experience-intern",
+      "sourceType": "digest",
+      "title": "Product Experience Intern (unpaid)",
+      "company": "Nutrish.ai",
+      "location": "Remote",
+      "score": 60,
+      "verdict": "Open / unpaid / New today",
+      "date": "2026-05-28",
+      "addedDate": "2026-05-28",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Remote unpaid product-experience internship using an AI nutrition coach as a real user, documenting friction, trust, onboarding, meal planning, weekly check-ins, and structured product feedback for founders.",
+      "applicationUrl": "https://thehub.io/jobs/69e0d1152256b193bdad85f7",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Very relevant for building product portfolio evidence around AI product experience, UX feedback, user trust, structured observations, and founder collaboration.",
+          "Remote and junior-friendly; the listing explicitly links the experience to future PM, UX research, customer experience, product ops, and product analyst paths."
+        ],
+        "gaps": [
+          "It is unpaid, so it should not replace paid job search.",
+          "It is an internship/portfolio-building option rather than a stable employment opportunity."
+        ],
+        "interview_points": [
+          "If applying, be clear that Fei can provide disciplined product feedback from a user-centered design and founder perspective.",
+          "Ask for expected hours and a concrete portfolio/reference outcome before accepting unpaid work."
+        ],
+        "questions_to_ask": [
+          "How many hours per week are expected?",
+          "Will there be a written reference, portfolio case, or public recommendation at the end?",
+          "What conditions would lead to paid QA, product, or UX work later?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "0",
+          "mid": "0",
+          "high": "0",
+          "period": "month",
+          "note": "Unpaid internship. Consider only if workload is small and portfolio value is concrete."
+        },
+        "language_fit": "English-friendly by context; no Swedish requirement found in the listing.",
+        "company_signal": "The Hub listing is active with Apply visible and states the startup is bootstrapped and unpaid initially.",
+        "application_angle": "Portfolio-building option: use it only to create a strong AI product-experience case study while continuing paid applications."
       }
     }
   ]
