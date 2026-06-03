@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-05-28T12:17:21.104Z",
+  "exportedAt": "2026-06-03T16:22:54.398Z",
   "jobs": [
     {
       "slug": "aimpoint-junior-product-manager",
@@ -2170,6 +2170,755 @@
         "language_fit": "English-friendly by context; no Swedish requirement found in the listing.",
         "company_signal": "The Hub listing is active with Apply visible and states the startup is bootstrapped and unpaid initially.",
         "application_angle": "Portfolio-building option: use it only to create a strong AI product-experience case study while continuing paid applications."
+      }
+    },
+    {
+      "slug": "digest-landfolk-product-manager",
+      "sourceType": "digest",
+      "title": "Product Manager",
+      "company": "Landfolk",
+      "location": "Aarhus, Denmark, hybrid",
+      "score": 78,
+      "verdict": "Open / English-friendly / New today",
+      "date": "2026-05-31",
+      "addedDate": "2026-05-31",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product Manager role owning one of Landfolk's core product tracks, improving the live guest/host product experience across search, booking, onboarding, communication, usability, conversion, retention, and AI-enabled iteration.",
+      "applicationUrl": "https://thehub.io/jobs/69bc8f10a1eb5cb7041bad23",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong true-product role focused on user friction, product thinking, shipped improvements, conversion, retention, usability, and real customer journeys.",
+          "The listing explicitly welcomes people from design backgrounds who care about outcomes, and asks for product thinking rather than a perfect CV."
+        ],
+        "gaps": [
+          "Aarhus is less practical from Lund than Copenhagen or Malmö, and the role expects several office days per week.",
+          "They ask for evidence of shipped products and marketplace product thinking, which Fei should frame carefully from SensoryWind and design projects."
+        ],
+        "interview_points": [
+          "Use SensoryWind as evidence of shaping and testing a product, finding user friction, and making product decisions with real stakeholders.",
+          "Prepare the requested short answers: product shipped, one unpopular-but-right product decision, and biggest product challenge in vacation rental marketplaces."
+        ],
+        "questions_to_ask": [
+          "Would Sweden-based candidates be considered, or is Aarhus-area presence required?",
+          "How many office days per week are expected?",
+          "What level of prior PM title experience is required versus product-building evidence?"
+        ],
+        "salary": {
+          "currency": "DKK",
+          "low": "45k",
+          "mid": "55k",
+          "high": "68k",
+          "period": "month",
+          "note": "Estimated Denmark PM range for a marketplace scale-up; verify level, pension, and hybrid expectations."
+        },
+        "language_fit": "English-friendly. The listing is in English and does not state Danish as a must-have.",
+        "company_signal": "The Hub listing is active with Apply visible and says applications are reviewed on a rolling basis.",
+        "application_angle": "Best angle: design-founder product thinker who can improve real user journeys and connect experience quality with commercial outcomes."
+      }
+    },
+    {
+      "slug": "digest-gelato-product-manager-gelatoconnect",
+      "sourceType": "digest",
+      "title": "Product Manager, GelatoConnect",
+      "company": "Gelato",
+      "location": "Stockholm / London / Madrid, hybrid",
+      "score": 76,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-31",
+      "addedDate": "2026-05-31",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product Manager role for GelatoConnect, an AI-powered operating system for print service providers, focused on discovery with real customers, operations workflows, procurement, logistics, usability, and sustainable local production.",
+      "applicationUrl": "https://jobs.ashbyhq.com/gelato/33aa7515-d189-4004-a09d-0825dd72a1cb/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong bridge between physical production, sustainability, operational workflows, software, AI, and customer discovery.",
+          "Stockholm hybrid option and English CV/application route make it more accessible than Swedish-required local roles."
+        ],
+        "gaps": [
+          "Likely expects proven B2B SaaS product management and operational software ownership.",
+          "Print production and logistics software are not Fei's direct domain, so the application must emphasize transferable manufacturing and product-development thinking."
+        ],
+        "interview_points": [
+          "Connect SensoryWind manufacturing/prototype work to real-world operations constraints and product decisions.",
+          "Use sustainability/local production interest as the mission fit, but keep the application focused on product discovery and workflow usability."
+        ],
+        "questions_to_ask": [
+          "How senior is the role in practice?",
+          "How much domain knowledge in print operations is expected from day one?",
+          "What does the Stockholm hybrid setup look like?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "55k",
+          "mid": "68k",
+          "high": "85k",
+          "period": "month",
+          "note": "Estimated Stockholm B2B SaaS PM range; verify level, bonus/equity, pension, and hybrid expectations."
+        },
+        "language_fit": "English OK. The listing asks applicants to upload CV in English regardless of country.",
+        "company_signal": "Ashby listing is active; Gelato describes a global on-demand production network with 140+ production partners in 32 countries.",
+        "application_angle": "Hardware-to-software operations angle: user-centered product development, manufacturability thinking, sustainability, and workflow clarity."
+      }
+    },
+    {
+      "slug": "digest-lovable-product-manager-build-experience",
+      "sourceType": "digest",
+      "title": "Product Manager (Build Experience)",
+      "company": "Lovable",
+      "location": "Stockholm, on-site",
+      "score": 73,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-31",
+      "addedDate": "2026-05-31",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Senior Product Manager role owning Lovable's design and visual build experience, including visual editing, content editing, design systems, theming, AI-first creation, consistency, brand quality, and experimentation.",
+      "applicationUrl": "https://jobs.ashbyhq.com/lovable/e8897c7e-53bd-43f8-94bb-02237f4459bb/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Very strong design/product surface fit: visual editing, design systems, theming, brand consistency, experimentation, and AI-first product creation.",
+          "English application language and Stockholm location are workable if Fei wants a high-ambition AI product stretch."
+        ],
+        "gaps": [
+          "The role is senior and likely expects direct PM ownership in fast-scaling software products.",
+          "On-site Stockholm and high-velocity startup expectations may be demanding."
+        ],
+        "interview_points": [
+          "Use Fei's design background and website/product experimentation as evidence of product taste and visual-system thinking.",
+          "Frame SensoryWind as founder-level product ownership, not as direct software PM experience."
+        ],
+        "questions_to_ask": [
+          "Is the role open to a design-founder profile transitioning into software PM?",
+          "How much direct coding or technical systems experience is expected?",
+          "What are the on-site expectations and relocation/hybrid flexibility?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "60k",
+          "mid": "78k",
+          "high": "95k",
+          "period": "month",
+          "note": "Estimated senior Stockholm AI product range; verify level, equity, pension, and work setup."
+        },
+        "language_fit": "English OK. The listing asks applicants to submit the application in English.",
+        "company_signal": "Ashby listing is active and describes Lovable as a Stockholm AI product company with millions of users.",
+        "application_angle": "Stretch AI/design PM angle: industrial design taste, systems thinking, product experimentation, and founder ownership."
+      }
+    },
+    {
+      "slug": "digest-securitas-it-wfm-product-owner",
+      "sourceType": "digest",
+      "title": "IT WFM Product Owner",
+      "company": "Securitas",
+      "location": "Europe flexible, hybrid",
+      "score": 66,
+      "verdict": "Open / English OK / New today",
+      "date": "2026-05-31",
+      "addedDate": "2026-05-31",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product Owner role for Securitas Europe's workforce-management IT products, managing roadmap, backlogs, vendor delivery, country rollouts, service continuity, KPIs, business value, and hybrid-agile implementation.",
+      "applicationUrl": "https://securitas.teamtailor.com/jobs/7742541-it-wfm-product-owner",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong product-owner vocabulary: roadmap, backlog, business priorities, rollout, KPIs, business value, vendor coordination, and stakeholder alignment.",
+          "English fluency is the stated language requirement and location is Europe-flexible/hybrid."
+        ],
+        "gaps": [
+          "Large seniority/domain gap: WFM platforms, Infor WFM, vendor management, team leadership, and complex European rollouts.",
+          "This is enterprise IT product ownership rather than user-centered product development."
+        ],
+        "interview_points": [
+          "Only apply as a stretch if Fei wants enterprise IT/product-owner exposure.",
+          "Emphasize structured stakeholder work, process thinking, project delivery, and ability to learn complex domains quickly."
+        ],
+        "questions_to_ask": [
+          "How much WFM/Informatica or Infor experience is non-negotiable?",
+          "Could a junior/associate product-owner path exist in the same team?",
+          "Which country/location would the role be attached to?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "55k",
+          "mid": "70k",
+          "high": "90k",
+          "period": "month",
+          "note": "Estimated enterprise IT Product Owner range; verify country-specific salary, pension, and travel expectations."
+        },
+        "language_fit": "English OK. The official listing states fluent English and no Swedish must-have.",
+        "company_signal": "Official Teamtailor page has Apply visible and lists Europe flexible/hybrid location.",
+        "application_angle": "Enterprise product-owner stretch: stakeholder coordination, roadmap thinking, and process/product delivery discipline."
+      }
+    },
+    {
+      "slug": "digest-univrses-business-developer",
+      "sourceType": "digest",
+      "title": "Business Developer",
+      "company": "Univrses",
+      "location": "Stockholm",
+      "score": 70,
+      "verdict": "Open / English application / New today",
+      "date": "2026-05-31",
+      "addedDate": "2026-05-31",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Business Developer role at a Stockholm 3D computer vision and AI company, translating infrastructure-intelligence data into commercial ROI narratives, building outbound systems, developing international customers, and representing the company in public-sector/deep-tech contexts.",
+      "applicationUrl": "https://thehub.io/jobs/69ded5e7c14e3e7a51f7a7a1",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Strong founder/business-development bridge: technical translation, AI/deep-tech, public infrastructure, stakeholder communication, international growth, and market creation.",
+          "Good fit if Fei wants a product-adjacent commercial path in AI and urban/infrastructure technology."
+        ],
+        "gaps": [
+          "It is sales/business development, not product management.",
+          "The listing asks for proven sales or business development experience, ideally in SaaS/deep tech."
+        ],
+        "interview_points": [
+          "Use SensoryWind funding, pilots, LOI, and partner coordination as evidence of business-building and technical storytelling.",
+          "Position Fei as a technical translator who can connect product capability with stakeholder value."
+        ],
+        "questions_to_ask": [
+          "How much of the role is sales quota versus market strategy/product feedback?",
+          "What training exists for public-sector/infrastructure sales?",
+          "Is there a future path toward product marketing, partnerships, or product strategy?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "38k",
+          "mid": "50k",
+          "high": "70k+",
+          "period": "month",
+          "note": "Business development roles may include commission or bonus; verify base salary, targets, and ramp expectations."
+        },
+        "language_fit": "English application required. The listing says application materials must be in English because the company works with global partners.",
+        "company_signal": "The Hub listing is active with Apply visible; Univrses describes itself as a Stockholm-based 3D computer vision and AI company.",
+        "application_angle": "Commercial product-adjacent angle: founder story, technical translation, AI/urban infrastructure curiosity, and stakeholder value."
+      }
+    },
+    {
+      "slug": "digest-fishbrain-open-application-product",
+      "sourceType": "digest",
+      "title": "Open application - Product",
+      "company": "Fishbrain",
+      "location": "Stockholm, hybrid",
+      "score": 67,
+      "verdict": "Open / English required / New today",
+      "date": "2026-05-31",
+      "addedDate": "2026-05-31",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Open product application for future Product Manager, Product Designer, UX Researcher, Product Analyst, or user-centered product roles at Fishbrain, a Stockholm product-focused startup with a global outdoor/fishing community app.",
+      "applicationUrl": "https://thehub.io/jobs/6913ce42cc00a86a100fcafb",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [],
+        "strengths": [
+          "Useful speculative route for product, UX research, product design, and user-centered digital strategy.",
+          "English applications are required and the company explicitly values user-centered experience, product development, UX/UI, and product analysis."
+        ],
+        "gaps": [
+          "It is not a concrete open role, so response probability may be lower.",
+          "Fishing/outdoor community domain is not Fei's core experience unless framed through community, wellbeing, and product experience."
+        ],
+        "interview_points": [
+          "Send a short focused note naming the exact roles Fei wants: associate PM, product development, UX research, or product strategy.",
+          "Use SensoryWind/NASA wellbeing and outdoor/nature experience as a relevant product story."
+        ],
+        "questions_to_ask": [
+          "Which product roles are most likely to open in the next 3-6 months?",
+          "Would a design-founder profile be useful for product discovery or UX research?",
+          "Is hybrid Stockholm presence negotiable?"
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": "35k",
+          "mid": "50k",
+          "high": "70k",
+          "period": "month",
+          "note": "Depends entirely on future role type and level; open application has no salary."
+        },
+        "language_fit": "English required. The listing says applications not submitted in English will not be reviewed.",
+        "company_signal": "The Hub listing is active with Apply visible and presents this as a product talent-pool application.",
+        "application_angle": "Low-friction speculative application: user-centered product, UX research, outdoor/wellbeing story, and design-founder profile."
+      }
+    },
+    {
+      "slug": "tetra-pak-technical-product-manager-lund",
+      "sourceType": "digest",
+      "title": "Technical Product Manager",
+      "company": "Tetra Pak",
+      "location": "Lund, Sweden",
+      "score": 74,
+      "verdict": "Strong local product stretch",
+      "date": "2026-06-03",
+      "addedDate": "2026-06-03",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Technical product management role in Tetra Pak OEM Components, owning pneumatics and tank component portfolios across lifecycle, supplier collaboration, internal stakeholder support, documentation, standards, training, and portfolio improvement. Local Lund role with fluent English requirement and deadline June 4, 2026.",
+      "applicationUrl": "https://jobs.tetrapak.com/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 20
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 19
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 12
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 10
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 9
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 4
+          }
+        ],
+        "strengths": [
+          "Excellent Lund location and global product environment.",
+          "Physical-product and lifecycle management fit Feiyu's industrial design/product-development background.",
+          "English requirement is explicit and the role works across stakeholders, suppliers, documentation, training, and portfolio strategy."
+        ],
+        "gaps": [
+          "The ad asks for at least 5 years of relevant experience and technical knowledge in pneumatics and/or tank components.",
+          "This is more technical component portfolio management than user-facing PM."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 48000,
+          "mid": 62000,
+          "high": 78000,
+          "period": "month",
+          "note": "Estimated for experienced technical product manager in Swedish manufacturing; exact range not published."
+        }
+      }
+    },
+    {
+      "slug": "telavox-crm-product-owner-malmo",
+      "sourceType": "digest",
+      "title": "CRM Product Owner",
+      "company": "Telavox",
+      "location": "Malmo, Sweden",
+      "score": 68,
+      "verdict": "Practical Malmo product-owner stretch",
+      "date": "2026-06-03",
+      "addedDate": "2026-06-03",
+      "tags": [
+        "New today"
+      ],
+      "summary": "CRM Product Owner role owning HubSpot CRM roadmap, AI-driven CRM features, integrations, data quality, governance, reporting, user adoption, and cross-functional sales/marketing/customer-operations enablement at Telavox in Malmo.",
+      "applicationUrl": "https://career.telavox.com/jobs/7563314-crm-product-owner",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 18
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 17
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 10
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 9
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 10
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 4
+          }
+        ],
+        "strengths": [
+          "Malmo location is very practical from Lund.",
+          "Strong bridge between business needs, product ownership, AI-enabled tools, stakeholder adoption, and process improvement.",
+          "Application in English is explicitly requested and Telavox has an international setup."
+        ],
+        "gaps": [
+          "HubSpot/CRM management and integrations are central, and Feiyu's current profile does not show direct HubSpot ownership.",
+          "Commercial operations product ownership is less aligned than user-centered hardware/product development."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 42000,
+          "mid": 56000,
+          "high": 70000,
+          "period": "month",
+          "note": "Estimated for CRM/Product Owner roles in Malmo/Sweden; exact range not published."
+        }
+      }
+    },
+    {
+      "slug": "rebtel-product-designer-stockholm",
+      "sourceType": "digest",
+      "title": "Product Designer",
+      "company": "Rebtel",
+      "location": "Stockholm, Sweden, hybrid",
+      "score": 72,
+      "verdict": "Good design-product fit",
+      "date": "2026-06-03",
+      "addedDate": "2026-06-03",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product Designer role in a small Rebtel product team, owning end-to-end design across app and web, user research, usability testing, visual design, product quality, and cross-functional collaboration. English working environment in Stockholm hybrid setup.",
+      "applicationUrl": "https://rebtel.teamtailor.com/jobs/7566401-product-designer",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 21
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 20
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 11
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 9
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 7
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 4
+          }
+        ],
+        "strengths": [
+          "Strong match for industrial design, user research, prototyping, Figma, and product-quality thinking.",
+          "Role sits close to PM/engineering and can strengthen a product career route.",
+          "English working environment is stated."
+        ],
+        "gaps": [
+          "Stockholm hybrid may require relocation or frequent travel.",
+          "This is a design role rather than product management, so it is best if Feiyu wants a design-to-product path."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 40000,
+          "mid": 54000,
+          "high": 68000,
+          "period": "month",
+          "note": "Estimated for Product Designer roles in Stockholm; exact range not published."
+        }
+      }
+    },
+    {
+      "slug": "reshape-biotech-product-designer-copenhagen",
+      "sourceType": "digest",
+      "title": "Product Designer",
+      "company": "Reshape Biotech",
+      "location": "Copenhagen, Denmark",
+      "score": 76,
+      "verdict": "Strong design plus hardware/software fit",
+      "date": "2026-06-03",
+      "addedDate": "2026-06-03",
+      "tags": [
+        "New today"
+      ],
+      "summary": "First Product Designer role at Reshape Biotech in Copenhagen, working with the CEO on web application design, product portfolio development, customer discovery, research, prototyping, handover, and some hardware design around a biotech discovery platform.",
+      "applicationUrl": "https://thehub.io/jobs/653f6ab69b2d0f68a4628751",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 23
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 21
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 13
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 10
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 6
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 3
+          }
+        ],
+        "strengths": [
+          "Excellent match for design-founder profile: discovery, research, prototypes, web application, and some hardware design.",
+          "Biotech tools connect physical systems and digital product experience.",
+          "Copenhagen is geographically plausible from Lund, though cross-border details matter."
+        ],
+        "gaps": [
+          "Copenhagen location adds commute/tax/social insurance complexity.",
+          "The role may need strong SaaS/web product design portfolio evidence."
+        ],
+        "salary": {
+          "currency": "DKK",
+          "low": 38000,
+          "mid": 50000,
+          "high": 64000,
+          "period": "month",
+          "note": "Estimated for Copenhagen product design roles; exact range not published."
+        }
+      }
+    },
+    {
+      "slug": "nordea-product-owner-ai-ml-financial-crime",
+      "sourceType": "digest",
+      "title": "Product Owner - AI & Machine Learning (Financial Crime Prevention)",
+      "company": "Nordea",
+      "location": "Stockholm, Sweden / Helsinki, Finland / Tallinn, Estonia",
+      "score": 62,
+      "verdict": "AI product-owner stretch",
+      "date": "2026-06-03",
+      "addedDate": "2026-06-03",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product Owner role in Nordea's AI and Machine Learning team for financial crime prevention, translating product vision into roadmap and backlog, coordinating stakeholders, and guiding AI/ML-enabled detection and investigation products.",
+      "applicationUrl": "https://careers.nordea.com/job/Stockholm-Product-Owner-AI-%26amp%3Bamp%3B-Machine-Learning-%28Financial-Crime-Prevention%29-111-46/1287940601/?feedId=451033",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 13
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 16
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 9
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 8
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 10
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 6
+          }
+        ],
+        "strengths": [
+          "Real product-owner scope with roadmap, vision, backlog, stakeholder coordination, and design-thinking language.",
+          "English-friendly multinational Nordic environment.",
+          "Could be useful if Feiyu wants an AI/product-owner direction."
+        ],
+        "gaps": [
+          "Major hard gap: 5+ years of AI or machine-learning experience is requested.",
+          "Financial-crime and banking domain are not visible in Feiyu's profile, so this is a lower-priority stretch."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 58000,
+          "mid": 76000,
+          "high": 95000,
+          "period": "month",
+          "note": "Estimated for experienced AI/product-owner roles in Stockholm banking; exact range not published."
+        }
       }
     }
   ]
