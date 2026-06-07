@@ -212,15 +212,23 @@ function setAppliedJobs(applied) {
   localStorage.setItem(appliedKey, JSON.stringify([...applied].sort()));
 }
 
+function sortJobsByScore(jobs) {
+  return [...jobs].sort((a, b) => {
+    const scoreDifference = Number(b.score || 0) - Number(a.score || 0);
+    if (scoreDifference) return scoreDifference;
+    return String(a.company || "").localeCompare(String(b.company || "")) || String(a.title || "").localeCompare(String(b.title || ""));
+  });
+}
+
 function visibleJobs(filter = activeFilter) {
   const hidden = getHiddenJobs();
   const applied = getAppliedJobs();
   if (filter === "deleted") return deletedJobs();
-  return activeJobs().filter((job) => {
+  return sortJobsByScore(activeJobs().filter((job) => {
     if (hidden.has(job.slug)) return false;
     if (filter === "applied") return applied.has(job.slug);
     return !applied.has(job.slug);
-  });
+  }));
 }
 
 function deletedJobs() {
@@ -229,14 +237,14 @@ function deletedJobs() {
   const localDeleted = allJobs.filter((job) => hidden.has(job.slug));
   const exportedDeleted = allDeletedJobs.filter((job) => !restored.has(job.slug));
   const bySlug = new Map([...exportedDeleted, ...localDeleted].map((job) => [job.slug, { ...job, deleted: true }]));
-  return [...bySlug.values()].sort((a, b) => b.score - a.score || a.company.localeCompare(b.company));
+  return sortJobsByScore([...bySlug.values()]);
 }
 
 function activeJobs() {
   const restored = getRestoredJobs();
   const restoredDeleted = allDeletedJobs.filter((job) => restored.has(job.slug));
   const bySlug = new Map([...allJobs, ...restoredDeleted].map((job) => [job.slug, { ...job, deleted: false }]));
-  return [...bySlug.values()];
+  return sortJobsByScore([...bySlug.values()]);
 }
 
 async function loadJobs() {

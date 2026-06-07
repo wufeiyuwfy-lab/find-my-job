@@ -1,5 +1,5 @@
 {
-  "exportedAt": "2026-06-03T16:22:54.398Z",
+  "exportedAt": "2026-06-07T15:24:30.534Z",
   "jobs": [
     {
       "slug": "aimpoint-junior-product-manager",
@@ -2918,6 +2918,243 @@
           "high": 95000,
           "period": "month",
           "note": "Estimated for experienced AI/product-owner roles in Stockholm banking; exact range not published."
+        }
+      }
+    },
+    {
+      "slug": "cleverex-junior-product-manager-automotive-eskilstuna",
+      "sourceType": "digest",
+      "title": "Junior Product Manager within the automotive industry",
+      "company": "Cleverex / Volvo CE client",
+      "location": "Eskilstuna, Sweden",
+      "score": 78,
+      "verdict": "Best hardware product-management match today",
+      "date": "2026-06-07",
+      "addedDate": "2026-06-07",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Junior Product Manager consultant role for an automotive/transport client, supporting parts and uptime portfolio work across electrics, electronics, e-mobility, transmissions, axles, hydraulic parts, product strategy, sales analysis, market needs, and cross-functional product development.",
+      "applicationUrl": "https://www.eskilstunajobb.se/yrke/tekniskt-arbete/ovriga-civilingenjorsyrken/produktutvecklare/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 24
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 20
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 14
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 9
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 7
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 4
+          }
+        ],
+        "strengths": [
+          "Explicit junior product manager role with mentorship and a technical/automotive product portfolio.",
+          "Strong physical-product fit through vehicle parts, uptime, E-mobility, market needs, and product lifecycle work.",
+          "Fluent English is listed and no Swedish must-have was visible in the listing text."
+        ],
+        "gaps": [
+          "Eskilstuna is less practical from Lund than Malmo/Lund/Copenhagen.",
+          "The application route is through a job-board listing/recruiter page, so the original client is not fully transparent."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 35000,
+          "mid": 45000,
+          "high": 56000,
+          "period": "month",
+          "note": "Estimated for junior product manager/product specialist roles in Swedish automotive or technical-product environments."
+        }
+      }
+    },
+    {
+      "slug": "qualisys-biomechanics-product-specialist-gothenburg",
+      "sourceType": "digest",
+      "title": "Biomechanics Product Specialist",
+      "company": "Qualisys",
+      "location": "Gothenburg, Sweden",
+      "score": 74,
+      "verdict": "Strong hands-on hardware/software product fit",
+      "date": "2026-06-07",
+      "addedDate": "2026-06-07",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Product specialist role in a cross-functional biomechanics product team at Qualisys, working with motion capture workflows, in-house high-speed cameras, 3D tracking software, mechanical/electronics/software teams, hands-on testing, customer needs, and product examples for life-science users.",
+      "applicationUrl": "https://www.qualisys.com/about/careers/biomechanics-product-specialist/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 21
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 19
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 14
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 10
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 6
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 4
+          }
+        ],
+        "strengths": [
+          "Very relevant hardware/software product environment: cameras, 3D tracking, biomechanics workflows, mechanical and electronics development.",
+          "Hands-on testing and user/product workflow work matches Feiyu's prototype and user-centered product background.",
+          "Working proficiency in English is listed; Swedish was not visible as a must-have."
+        ],
+        "gaps": [
+          "The role prefers experienced motion-capture/life-science biomechanics users, which is not explicit in Feiyu's profile.",
+          "Relocation or regular presence in Gothenburg is required."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 38000,
+          "mid": 50000,
+          "high": 65000,
+          "period": "month",
+          "note": "Estimated for product specialist / application specialist roles in Gothenburg technical-product companies."
+        }
+      }
+    },
+    {
+      "slug": "hm-jr-product-developer-open-application-stockholm",
+      "sourceType": "digest",
+      "title": "Jr Product Developer to H&M Brand - open application",
+      "company": "H&M",
+      "location": "Stockholm, Sweden",
+      "score": 70,
+      "verdict": "Useful early-career physical product-development route",
+      "date": "2026-06-07",
+      "addedDate": "2026-06-07",
+      "tags": [
+        "New today"
+      ],
+      "summary": "Open application for current and upcoming Junior Product Developer roles across H&M Brand business units and lifestyle brands, supporting Product Developers across samples, assortment development, designers, pattern makers, planners, and collection/product workflows.",
+      "applicationUrl": "https://career.hm.com/us-en/job/ee401036-a7d2-44a9-8cc9-6ea6859f97e1/",
+      "progress": {
+        "completed": 0,
+        "total": 7,
+        "percent": 0
+      },
+      "files": {
+        "pdf": "",
+        "cv": "",
+        "letter": "",
+        "ppt": "",
+        "deepReport": ""
+      },
+      "analysis": {
+        "score_breakdown": [
+          {
+            "label": "Must-have requirements",
+            "weight": 30,
+            "score": 24
+          },
+          {
+            "label": "Relevant experience and achievements",
+            "weight": 25,
+            "score": 18
+          },
+          {
+            "label": "Product/domain match",
+            "weight": 15,
+            "score": 10
+          },
+          {
+            "label": "Software/tools/process match",
+            "weight": 15,
+            "score": 8
+          },
+          {
+            "label": "Location/language fit",
+            "weight": 10,
+            "score": 7
+          },
+          {
+            "label": "Growth potential and motivation",
+            "weight": 5,
+            "score": 3
+          }
+        ],
+        "strengths": [
+          "Early-career friendly: preferably minimum one year of product development/buying experience.",
+          "Physical product-development process, samples, assortment work, trend/customer insight, and cross-functional coordination fit Feiyu's design background.",
+          "Application is in English and the official page has an Apply now route."
+        ],
+        "gaps": [
+          "Fashion/textile product development is not Feiyu's strongest hardware/product-management target.",
+          "Stockholm location and open-application format reduce certainty."
+        ],
+        "salary": {
+          "currency": "SEK",
+          "low": 30000,
+          "mid": 38000,
+          "high": 48000,
+          "period": "month",
+          "note": "Estimated for junior product developer roles in Stockholm retail/fashion product development."
         }
       }
     }
