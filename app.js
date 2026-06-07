@@ -1,5 +1,6 @@
 const app = document.querySelector("#app");
 const refreshButton = document.querySelector("#refreshButton");
+const resetViewButton = document.querySelector("#resetViewButton");
 const cardTemplate = document.querySelector("#jobCardTemplate");
 const languageButtons = [...document.querySelectorAll("[data-language]")];
 const hiddenKey = "job-fit-dashboard-hidden";
@@ -19,6 +20,9 @@ const translations = {
     pageTitle: "Job Fit Dashboard",
     brandSubtitle: "Static GitHub Pages version",
     refreshJobs: "Refresh jobs",
+    resetView: "Reset view",
+    resetViewTitle: "Clear saved applied and deleted view changes",
+    resetViewDone: "Saved view reset",
     pipeline: "Application pipeline",
     jobs: "jobs",
     topScore: "top score",
@@ -76,6 +80,9 @@ const translations = {
     pageTitle: "求职匹配看板",
     brandSubtitle: "GitHub Pages 静态版",
     refreshJobs: "刷新职位",
+    resetView: "重置视图",
+    resetViewTitle: "清除本浏览器保存的已申请和已删除状态",
+    resetViewDone: "已重置保存的视图",
     pipeline: "申请进度",
     jobs: "职位",
     topScore: "最高分",
@@ -167,6 +174,9 @@ function updateLanguageMeta() {
   if (subtitle) subtitle.textContent = t("brandSubtitle");
   refreshButton.title = t("refreshJobs");
   refreshButton.setAttribute("aria-label", t("refreshJobs"));
+  resetViewButton.textContent = t("resetView");
+  resetViewButton.title = t("resetViewTitle");
+  resetViewButton.setAttribute("aria-label", t("resetViewTitle"));
   languageButtons.forEach((button) => {
     button.classList.toggle("active", button.dataset.language === activeLanguage);
     button.setAttribute("aria-pressed", String(button.dataset.language === activeLanguage));
@@ -210,6 +220,15 @@ function getAppliedJobs() {
 
 function setAppliedJobs(applied) {
   localStorage.setItem(appliedKey, JSON.stringify([...applied].sort()));
+}
+
+function resetSavedView() {
+  localStorage.removeItem(hiddenKey);
+  localStorage.removeItem(restoredKey);
+  setAppliedJobs(new Set(defaultAppliedJobs));
+  activeFilter = "open";
+  showToast(t("resetViewDone"));
+  setRoute("./");
 }
 
 function sortJobsByScore(jobs) {
@@ -729,6 +748,7 @@ refreshButton.addEventListener("click", () => {
     app.innerHTML = `<section class="error-state">${escapeHtml(error.message)}</section>`;
   });
 });
+resetViewButton.addEventListener("click", resetSavedView);
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
 });

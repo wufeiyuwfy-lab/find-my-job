@@ -140,6 +140,27 @@ button {
   font-size: 20px;
 }
 
+.reset-view-button {
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 1px solid rgba(169, 109, 85, 0.35);
+  border-radius: 8px;
+  background: #fff5eb;
+  color: #8d4f3d;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.reset-view-button:hover {
+  border-color: rgba(169, 109, 85, 0.65);
+  background: #ffefdf;
+}
+
+.reset-view-button:focus {
+  outline: 2px solid rgba(169, 109, 85, 0.32);
+  outline-offset: 2px;
+}
+
 .shell {
   width: min(1180px, calc(100vw - 32px));
   margin: 0 auto;
