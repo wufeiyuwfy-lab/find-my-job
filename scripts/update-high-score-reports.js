@@ -3,7 +3,7 @@ const path = require("path");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const DATA_FILE = path.join(ROOT_DIR, "data", "jobs.json");
-const THRESHOLD = 80;
+const THRESHOLD = 70;
 
 const SEEDED_REPORTS = {
   "digest-contour-design-software-product-manager": `# Company Job Validation Report
@@ -550,6 +550,71 @@ This job is promising because it scored ${job.score}, but the deep report still 
 `;
 }
 
+function makeChineseFallbackReport(job) {
+  const strengths = Array.isArray(job.analysis?.strengths) ? job.analysis.strengths : [];
+  const gaps = Array.isArray(job.analysis?.gaps) ? job.analysis.gaps : [];
+  const salary = job.analysis?.salary || {};
+  const scoreBreakdown = Array.isArray(job.analysis?.score_breakdown) ? job.analysis.score_breakdown : [];
+  const hardwareSignal = String(`${job.title || ""} ${job.summary || ""}`).match(/hardware|mechanical|prototype|physical|industrial|automotive|biomechanics|camera|electronics|product development|technical product/i);
+
+  return `# 中文公司与职位深度分析报告
+
+## 1. 快速结论
+
+- 公司：${job.company || "未知"}
+- 职位：${job.title || "未知"}
+- 地点：${job.location || "未标明"}
+- 匹配分：${job.score}/100
+- 初步建议：可以继续了解，但申请前需要核实关键问题
+- 一句话判断：这个职位分数超过 ${THRESHOLD}，值得进入候选池；但仍需确认职位是否接受早期职业候选人、英文是否足够、是否存在硬性 5+ 年经验要求，以及薪资/合同是否合理。
+
+## 2. 为什么可能适合 Feiyu
+
+- Feiyu 当前定位：刚毕业，约 3 年硬件创业/产品开发经验，适合初级、毕业生、associate、junior、产品开发、硬件产品管理、技术产品支持类路径。
+- 这个职位的本地摘要：${job.summary || "暂无摘要。"}
+- 硬件/实体产品信号：${hardwareSignal ? "有。标题或摘要中出现硬件、实体产品、工程、汽车、相机、电子、原型或产品开发相关信号。" : "不明显。需要确认它是否真的符合硬件产品管理优先方向。"}
+
+## 3. 匹配分拆解
+
+${scoreBreakdown.length ? scoreBreakdown.map((item) => `- ${item.label}: ${item.score}/${item.weight}`).join("\n") : "- 暂无分数拆解。"}
+
+## 4. 主要优势
+
+${strengths.length ? strengths.slice(0, 6).map((item) => `- ${item}`).join("\n") : "- 暂无导出的优势要点。"}
+
+## 5. 主要风险
+
+${gaps.length ? gaps.slice(0, 6).map((item) => `- ${item}`).join("\n") : "- 暂无导出的风险要点。"}
+- 需要重新确认职位是否有硬性 5+ 年经验要求；如果有，未来普通 digest 应该跳过。
+- 需要确认英文是否足够；如果要求流利瑞典语/丹麦语，应降低优先级或跳过。
+
+## 6. 薪资信号
+
+- 估算薪资：${salary.currency ? `${salary.currency} ${salary.low}-${salary.high}/${salary.period || "period"}` : "暂未估算"}
+- 说明：${salary.note || "申请前需要用本地薪资来源或雇主信息确认。"}
+- 面试中建议确认：月薪、养老金、保险、假期、试用期、加班政策、远程/混合办公规则。
+
+## 7. 申请前要问的问题
+
+- 这个职位是否适合刚毕业、但有约 3 年硬件创业/产品开发经验的人？
+- SensoryWind 的用户测试、原型开发、资金申请、合作伙伴沟通和产品迭代，是否可以算作相关产品经验？
+- 日常工作是否英文足够？
+- 前 3-6 个月的成功标准是什么？
+- 谁会直接管理或指导这个角色？
+- 薪资区间和福利是什么？
+
+## 8. 最终建议
+
+- 如果职位仍开放、英文足够、没有硬性 5+ 年经验要求，并且工作内容接近硬件产品管理/产品开发：可以申请。
+- 如果职位偏 senior、纯软件 PM、要求独立负责复杂路线图，或语言要求是流利瑞典语/丹麦语：建议跳过或低优先级观察。
+
+## 9. 来源
+
+- 本地网站数据：data/jobs.json
+- 申请链接：${job.applicationUrl || "未提供"}
+`;
+}
+
 async function main() {
   const data = JSON.parse(await fs.readFile(DATA_FILE, "utf8"));
   if (!Array.isArray(data.jobs)) {
@@ -558,11 +623,18 @@ async function main() {
 
   let updated = 0;
   for (const job of data.jobs) {
-    if (Number(job.score) < THRESHOLD) continue;
+    if (Number(job.score) <= THRESHOLD) continue;
     job.files = job.files || {};
-    if (typeof job.files.deepReport === "string" && job.files.deepReport.trim()) continue;
-    job.files.deepReport = SEEDED_REPORTS[job.slug] || makeFallbackReport(job);
-    updated += 1;
+    let changed = false;
+    if (!(typeof job.files.deepReport === "string" && job.files.deepReport.trim())) {
+      job.files.deepReport = SEEDED_REPORTS[job.slug] || makeFallbackReport(job);
+      changed = true;
+    }
+    if (!(typeof job.files.deepReportZh === "string" && job.files.deepReportZh.trim())) {
+      job.files.deepReportZh = makeChineseFallbackReport(job);
+      changed = true;
+    }
+    if (changed) updated += 1;
   }
 
   data.exportedAt = new Date().toISOString();

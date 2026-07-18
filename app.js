@@ -1,12 +1,15 @@
 const app = document.querySelector("#app");
 const refreshButton = document.querySelector("#refreshButton");
 const resetViewButton = document.querySelector("#resetViewButton");
+const checkAllStatusButton = document.querySelector("#checkAllStatusButton");
 const cardTemplate = document.querySelector("#jobCardTemplate");
 const languageButtons = [...document.querySelectorAll("[data-language]")];
 const hiddenKey = "job-fit-dashboard-hidden";
 const appliedKey = "job-fit-dashboard-applied";
 const restoredKey = "job-fit-dashboard-restored";
 const languageKey = "job-fit-dashboard-language";
+const reportLanguageKey = "job-fit-dashboard-report-language";
+const statusKey = "job-fit-dashboard-status-v2";
 
 let allJobs = [];
 let allDeletedJobs = [];
@@ -14,6 +17,7 @@ let defaultAppliedJobs = [];
 let activeTab = "report";
 let activeFilter = "open";
 let activeLanguage = getSavedLanguage();
+let activeReportLanguage = getSavedReportLanguage();
 
 const translations = {
   en: {
@@ -23,6 +27,12 @@ const translations = {
     resetView: "Reset view",
     resetViewTitle: "Clear saved applied and deleted view changes",
     resetViewDone: "Saved view reset",
+    reportLanguage: "Report language",
+    reportEnglish: "English",
+    reportChinese: "中文",
+    chineseReportTitle: "Chinese job report",
+    chineseSummaryIntro: "Quick Chinese summary",
+    chineseDeepAnalysisUnavailable: "Chinese deep analysis is not available yet. Switch to English to read the exported report.",
     pipeline: "Application pipeline",
     jobs: "jobs",
     topScore: "top score",
@@ -37,6 +47,15 @@ const translations = {
     prepared: "prepared",
     originalSource: "Original source",
     noSourceLink: "No source link",
+    checkStatus: "Check status",
+    checkAllStatusTitle: "Check all open job source links with Codex",
+    checkingStatus: "Checking source",
+    allStatusCheckQueued: "All open jobs queued for status check",
+    statusChecked: "Status check started",
+    markExpired: "Mark expired",
+    expiredMarked: "Moved to Deleted as expired",
+    lastChecked: "Last checked",
+    sourceUnavailable: "No source link to check",
     restore: "Restore",
     markApplied: "Mark applied",
     remove: "Remove",
@@ -83,6 +102,12 @@ const translations = {
     resetView: "重置视图",
     resetViewTitle: "清除本浏览器保存的已申请和已删除状态",
     resetViewDone: "已重置保存的视图",
+    reportLanguage: "报告语言",
+    reportEnglish: "English",
+    reportChinese: "中文",
+    chineseReportTitle: "中文职位报告",
+    chineseSummaryIntro: "中文快速摘要",
+    chineseDeepAnalysisUnavailable: "暂时没有中文深度分析。请切换到英文查看已导出的报告。",
     pipeline: "申请进度",
     jobs: "职位",
     topScore: "最高分",
@@ -97,6 +122,15 @@ const translations = {
     prepared: "已准备",
     originalSource: "原始链接",
     noSourceLink: "暂无链接",
+    checkStatus: "检查状态",
+    checkAllStatusTitle: "用 Codex 检查所有开放职位的原始链接",
+    checkingStatus: "正在检查来源",
+    allStatusCheckQueued: "已将所有开放职位加入状态检查",
+    statusChecked: "已开始检查状态",
+    markExpired: "标记过期",
+    expiredMarked: "已作为过期职位移到已删除",
+    lastChecked: "上次检查",
+    sourceUnavailable: "没有可检查的原始链接",
     restore: "恢复",
     markApplied: "标记已申请",
     remove: "删除",
@@ -160,6 +194,21 @@ function getSavedLanguage() {
   }
 }
 
+function getSavedReportLanguage() {
+  try {
+    const saved = localStorage.getItem(reportLanguageKey);
+    return saved === "zh" ? "zh" : "en";
+  } catch {
+    return "en";
+  }
+}
+
+function setReportLanguage(language) {
+  activeReportLanguage = language === "zh" ? "zh" : "en";
+  localStorage.setItem(reportLanguageKey, activeReportLanguage);
+  renderRoute();
+}
+
 function setLanguage(language) {
   activeLanguage = language === "zh" ? "zh" : "en";
   localStorage.setItem(languageKey, activeLanguage);
@@ -174,6 +223,9 @@ function updateLanguageMeta() {
   if (subtitle) subtitle.textContent = t("brandSubtitle");
   refreshButton.title = t("refreshJobs");
   refreshButton.setAttribute("aria-label", t("refreshJobs"));
+  checkAllStatusButton.textContent = t("checkStatus");
+  checkAllStatusButton.title = t("checkAllStatusTitle");
+  checkAllStatusButton.setAttribute("aria-label", t("checkAllStatusTitle"));
   resetViewButton.textContent = t("resetView");
   resetViewButton.title = t("resetViewTitle");
   resetViewButton.setAttribute("aria-label", t("resetViewTitle"));
@@ -222,9 +274,23 @@ function setAppliedJobs(applied) {
   localStorage.setItem(appliedKey, JSON.stringify([...applied].sort()));
 }
 
+function getJobStatuses() {
+  try {
+    const statuses = JSON.parse(localStorage.getItem(statusKey) || "{}");
+    return statuses && typeof statuses === "object" && !Array.isArray(statuses) ? statuses : {};
+  } catch {
+    return {};
+  }
+}
+
+function setJobStatuses(statuses) {
+  localStorage.setItem(statusKey, JSON.stringify(statuses));
+}
+
 function resetSavedView() {
   localStorage.removeItem(hiddenKey);
   localStorage.removeItem(restoredKey);
+  localStorage.removeItem(statusKey);
   setAppliedJobs(new Set(defaultAppliedJobs));
   activeFilter = "open";
   showToast(t("resetViewDone"));
@@ -365,10 +431,12 @@ function renderHome() {
   }
 
   const applied = getAppliedJobs();
+  const statuses = getJobStatuses();
   for (const job of jobs) {
     const node = cardTemplate.content.firstElementChild.cloneNode(true);
     const isApplied = applied.has(job.slug);
     const isDeleted = activeFilter === "deleted";
+    const status = statuses[job.slug];
     node.tabIndex = 0;
     node.setAttribute("role", "link");
     node.setAttribute("aria-label", `Open ${job.title} at ${job.company}`);
@@ -382,6 +450,9 @@ function renderHome() {
     node.querySelector(".meta-line").textContent = job.location;
     node.querySelector(".summary").textContent = job.summary || t("noSummary");
     node.querySelector(".verdict").textContent = job.verdict || t("noVerdict");
+    if (status?.lastChecked) {
+      node.querySelector(".verdict").textContent = `${job.verdict || t("noVerdict")} · ${t("lastChecked")} ${formatCheckDate(status.lastChecked)}`;
+    }
     node.querySelector(".score-ring span").textContent = t("fit");
     node.querySelector(".progress-pill").textContent = `${job.progress.completed}/${job.progress.total} ${t("prepared")}`;
 
@@ -416,6 +487,16 @@ function renderHome() {
         toggleApplied(job.slug);
       });
       node.querySelector(".card-footer").appendChild(appliedButton);
+
+      const expiredButton = document.createElement("button");
+      expiredButton.className = "expired-button";
+      expiredButton.type = "button";
+      expiredButton.textContent = t("markExpired");
+      expiredButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        markExpired(job.slug);
+      });
+      node.querySelector(".card-footer").appendChild(expiredButton);
 
       const removeButton = document.createElement("button");
       removeButton.className = "remove-button";
@@ -470,11 +551,55 @@ function toggleApplied(slug) {
   renderRoute();
 }
 
-function removeJob(slug) {
+function formatCheckDate(value) {
+  try {
+    return new Intl.DateTimeFormat(activeLanguage === "zh" ? "zh-CN" : "en-SE", {
+      month: "short",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date(value));
+  } catch {
+    return "";
+  }
+}
+
+function queueAllStatusChecks() {
+  const jobsToCheck = activeJobs().filter((job) => job.applicationUrl);
+  if (!jobsToCheck.length) {
+    showToast(t("sourceUnavailable"));
+    return;
+  }
+  const statuses = getJobStatuses();
+  const checkedAt = new Date().toISOString();
+  for (const job of jobsToCheck) {
+    statuses[job.slug] = {
+      state: "checking",
+      lastChecked: checkedAt,
+      url: job.applicationUrl,
+    };
+  }
+  setJobStatuses(statuses);
+  showToast(t("allStatusCheckQueued"));
+  renderRoute();
+}
+
+function markExpired(slug) {
+  const statuses = getJobStatuses();
+  statuses[slug] = {
+    ...(statuses[slug] || {}),
+    state: "expired",
+    lastChecked: new Date().toISOString(),
+  };
+  setJobStatuses(statuses);
+  removeJob(slug, t("expiredMarked"));
+}
+
+function removeJob(slug, message = t("hiddenInBrowser")) {
   const hidden = getHiddenJobs();
   hidden.add(slug);
   setHiddenJobs(hidden);
-  showToast(t("hiddenInBrowser"));
+  showToast(message);
   renderHome();
 }
 
@@ -502,7 +627,9 @@ function renderJob(slug) {
         <div class="job-identity">
           <button class="secondary-button" id="backToJobs" type="button">${t("backJobs")}</button>
           <button class="applied-button" id="toggleCurrentApplied" type="button"></button>
+          <button class="expired-button" id="markCurrentExpired" type="button">${t("markExpired")}</button>
           <button class="danger-button" id="removeCurrentJob" type="button">${t("remove")}</button>
+          <a class="detail-source-link${job.applicationUrl ? "" : " disabled"}" href="${escapeHtml(job.applicationUrl || "#")}" target="_blank" rel="noreferrer">${job.applicationUrl ? t("originalSource") : t("noSourceLink")}</a>
           ${newTodayBadge(job)}
           <h1>${escapeHtml(job.title)}</h1>
           <p class="company">${escapeHtml(job.company)}</p>
@@ -519,6 +646,10 @@ function renderJob(slug) {
   `;
 
   app.querySelector("#backToJobs").addEventListener("click", () => setRoute("./"));
+  app.querySelector("#markCurrentExpired").addEventListener("click", () => {
+    markExpired(job.slug);
+    setRoute("./");
+  });
   const applied = getAppliedJobs();
   const appliedButton = app.querySelector("#toggleCurrentApplied");
   const isApplied = applied.has(job.slug);
@@ -561,24 +692,25 @@ function listItems(items, limit = 6) {
 }
 
 function shouldShowDeepAnalysis(job) {
-  return Number(job.score) >= 80 || Boolean(job.files?.deepReport?.trim());
+  return Number(job.score) > 70 || Boolean(job.files?.deepReport?.trim()) || Boolean(job.files?.deepReportZh?.trim());
 }
 
 function renderDeepAnalysis(job) {
   if (!shouldShowDeepAnalysis(job)) return "";
-  const report = job.files?.deepReport || "";
+  const report = activeReportLanguage === "zh" ? job.files?.deepReportZh || "" : job.files?.deepReport || "";
+  const isChineseReport = activeReportLanguage === "zh";
   const content = report.trim()
     ? `
-      <div class="analysis-status ready">${t("deepAnalysisReady")}</div>
+      <div class="analysis-status ready">${isChineseReport ? "已自动生成深度分析报告" : t("deepAnalysisReady")}</div>
       <article class="markdown-preview">${markdownToHtml(report)}</article>
     `
-    : `<div class="empty-state">${t("deepAnalysisMissing")}</div>`;
+    : `<div class="empty-state">${isChineseReport ? t("chineseDeepAnalysisUnavailable") : t("deepAnalysisMissing")}</div>`;
 
   return `
     <section class="deep-analysis" id="deepAnalysisPanel">
       <div class="deep-analysis-heading">
-        <h3>${t("deepAnalysisReport")}</h3>
-        <span>${Number(job.score) >= 80 ? t("highScoreAutoReport") : t("additionalReport")}</span>
+        <h3>${isChineseReport ? "深度分析报告" : t("deepAnalysisReport")}</h3>
+        <span>${Number(job.score) > 70 ? (isChineseReport ? "70 分以上自动生成" : t("highScoreAutoReport")) : t("additionalReport")}</span>
       </div>
       ${content}
     </section>
@@ -690,34 +822,87 @@ function markdownToHtml(markdown) {
 
 function renderReport(job) {
   const salary = job.analysis?.salary || {};
+  const isChineseReport = activeReportLanguage === "zh";
+  const summaryText = isChineseReport ? chineseSummary(job) : job.summary || t("reviewReport");
   document.querySelector("#contentPanel").innerHTML = `
     <div class="panel-header">
       <div>
-        <h2>${t("report")}</h2>
-        <p>${escapeHtml(job.summary || t("reviewReport"))}</p>
+        <h2>${isChineseReport ? t("chineseReportTitle") : t("report")}</h2>
+        <p>${escapeHtml(summaryText)}</p>
+      </div>
+      <div class="report-language-switch" aria-label="${t("reportLanguage")}">
+        <button class="report-language-button" data-report-language="en" type="button">${t("reportEnglish")}</button>
+        <button class="report-language-button" data-report-language="zh" type="button">${t("reportChinese")}</button>
       </div>
     </div>
     ${renderDeepAnalysis(job)}
     <div class="summary-grid">
       <article class="info-box">
-        <h3>${t("fitScoreBreakdown")}</h3>
-        <ul>${(job.analysis?.score_breakdown || []).map((item) => `<li>${escapeHtml(item.label)}: ${escapeHtml(item.score)}/${escapeHtml(item.weight)}</li>`).join("") || `<li>${t("noItems")}</li>`}</ul>
+        <h3>${isChineseReport ? "匹配分拆解" : t("fitScoreBreakdown")}</h3>
+        <ul>${(job.analysis?.score_breakdown || []).map((item) => `<li>${escapeHtml(isChineseReport ? translateScoreLabel(item.label) : item.label)}: ${escapeHtml(item.score)}/${escapeHtml(item.weight)}</li>`).join("") || `<li>${t("noItems")}</li>`}</ul>
       </article>
       <article class="info-box">
-        <h3>${t("salarySignal")}</h3>
+        <h3>${isChineseReport ? "薪资信号" : t("salarySignal")}</h3>
         <p>${salary.currency ? `${escapeHtml(salary.currency)} ${escapeHtml(salary.low)}-${escapeHtml(salary.high)} / ${escapeHtml(salary.period || "period")}` : t("noSalary")}</p>
-        <p>${escapeHtml(salary.note || "")}</p>
+        <p>${escapeHtml(isChineseReport ? chineseSalaryNote(job, salary) : salary.note || "")}</p>
       </article>
       <article class="info-box">
-        <h3>${t("strengths")}</h3>
-        <ul>${listItems(job.analysis?.strengths)}</ul>
+        <h3>${isChineseReport ? "主要优势" : t("strengths")}</h3>
+        <ul>${isChineseReport ? listItems(chineseStrengths(job)) : listItems(job.analysis?.strengths)}</ul>
       </article>
       <article class="info-box">
-        <h3>${t("gaps")}</h3>
-        <ul>${listItems(job.analysis?.gaps)}</ul>
+        <h3>${isChineseReport ? "主要风险" : t("gaps")}</h3>
+        <ul>${isChineseReport ? listItems(chineseGaps(job)) : listItems(job.analysis?.gaps)}</ul>
       </article>
     </div>
   `;
+
+  document.querySelectorAll("[data-report-language]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.reportLanguage === activeReportLanguage);
+    button.setAttribute("aria-pressed", String(button.dataset.reportLanguage === activeReportLanguage));
+    button.addEventListener("click", () => setReportLanguage(button.dataset.reportLanguage));
+  });
+}
+
+function chineseSummary(job) {
+  return `${job.company} 的 ${job.title}，地点：${job.location || "未标明"}。当前匹配分为 ${job.score}/100。这个中文版本用于快速判断是否值得申请；请重点看匹配优势、主要风险、薪资信号和下方深度分析。`;
+}
+
+function translateScoreLabel(label) {
+  const normalized = String(label || "").toLowerCase();
+  if (normalized.includes("must")) return "硬性要求";
+  if (normalized.includes("experience")) return "相关经验与成果";
+  if (normalized.includes("domain") || normalized.includes("product")) return "产品/行业匹配";
+  if (normalized.includes("software") || normalized.includes("tools") || normalized.includes("process")) return "工具/流程匹配";
+  if (normalized.includes("location") || normalized.includes("language")) return "地点/语言/签证匹配";
+  if (normalized.includes("growth") || normalized.includes("motivation")) return "成长潜力与动机";
+  return label;
+}
+
+function chineseSalaryNote(job, salary) {
+  if (!salary.currency) return "暂时没有可用薪资区间。申请或面试前应确认月薪、养老金、保险、假期、加班和试用期。";
+  return `${salary.currency} ${salary.low}-${salary.high}/${salary.period || "period"} 是基于职位类型和地区的估算；正式申请前需要向雇主确认薪资范围、养老金、保险、假期和加班政策。`;
+}
+
+function chineseStrengths(job) {
+  const strengths = [
+    `匹配分 ${job.score}/100，说明这个职位与当前方向有一定相关性。`,
+    `职位地点为 ${job.location || "未标明"}，需要结合通勤、搬家或远程可能性判断。`,
+  ];
+  if (String(job.title || "").toLowerCase().includes("product")) strengths.push("职位与产品管理、产品开发或产品运营相关，可以用于积累产品职业路径经验。");
+  if (String(job.summary || "").toLowerCase().match(/hardware|mechanical|prototype|physical|industrial|automotive|biomechanics|camera|electronics/)) {
+    strengths.push("职位含有硬件、实体产品、工程或产品开发信号，较符合你的工业设计和硬件创业背景。");
+  }
+  return strengths.concat((job.analysis?.strengths || []).slice(0, 3).map((item) => `原始优势：${item}`));
+}
+
+function chineseGaps(job) {
+  const gaps = [
+    "需要确认职位是否真的接受早期职业候选人，以及是否有明确导师和入职支持。",
+    "需要确认英文是否足够；如果要求流利瑞典语/丹麦语，应降低优先级或跳过。",
+  ];
+  if (Number(job.score) <= 75) gaps.push("匹配分不是最高，申请前应重点确认硬性要求、经验年限和领域差距。");
+  return gaps.concat((job.analysis?.gaps || []).slice(0, 3).map((item) => `原始风险：${item}`));
 }
 
 function renderTextFile(job, key, title) {
@@ -749,6 +934,7 @@ refreshButton.addEventListener("click", () => {
   });
 });
 resetViewButton.addEventListener("click", resetSavedView);
+checkAllStatusButton.addEventListener("click", queueAllStatusChecks);
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
 });

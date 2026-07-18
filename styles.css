@@ -140,15 +140,35 @@ button {
   font-size: 20px;
 }
 
+.check-status-button,
 .reset-view-button {
   min-height: 40px;
   padding: 8px 12px;
-  border: 1px solid rgba(169, 109, 85, 0.35);
   border-radius: 8px;
-  background: #fff5eb;
-  color: #8d4f3d;
   font-size: 13px;
   font-weight: 800;
+}
+
+.check-status-button {
+  border: 1px solid rgba(102, 115, 84, 0.42);
+  background: #f7faef;
+  color: #536242;
+}
+
+.check-status-button:hover {
+  border-color: rgba(102, 115, 84, 0.68);
+  background: #eef4df;
+}
+
+.check-status-button:focus {
+  outline: 2px solid rgba(102, 115, 84, 0.32);
+  outline-offset: 2px;
+}
+
+.reset-view-button {
+  border: 1px solid rgba(169, 109, 85, 0.35);
+  background: #fff5eb;
+  color: #8d4f3d;
 }
 
 .reset-view-button:hover {
@@ -442,8 +462,36 @@ h1 {
   opacity: 0.65;
 }
 
+.detail-source-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid rgba(102, 115, 84, 0.38);
+  border-radius: 8px;
+  background: #f9fbf3;
+  color: var(--olive);
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.detail-source-link:hover,
+.detail-source-link:focus {
+  border-color: var(--olive);
+  outline: none;
+}
+
+.detail-source-link.disabled {
+  pointer-events: none;
+  color: var(--muted);
+  opacity: 0.65;
+}
+
 .applied-button,
 .restore-button,
+.expired-button,
 .remove-button,
 .danger-button {
   display: inline-flex;
@@ -482,6 +530,18 @@ h1 {
 .applied-button:hover,
 .applied-button:focus {
   border-color: #315174;
+  outline: none;
+}
+
+.expired-button {
+  border: 1px solid rgba(138, 118, 90, 0.42);
+  background: #fbf6ed;
+  color: #73583b;
+}
+
+.expired-button:hover,
+.expired-button:focus {
+  border-color: #73583b;
   outline: none;
 }
 
@@ -591,6 +651,38 @@ h1 {
   margin-bottom: 0;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.report-language-switch {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.report-language-button {
+  min-width: 72px;
+  min-height: 34px;
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.report-language-button.active {
+  background: var(--blue);
+  color: #fff;
+}
+
+.report-language-button:focus {
+  outline: 2px solid rgba(81, 109, 145, 0.36);
+  outline-offset: 2px;
 }
 
 .button-row {
